@@ -1,12 +1,12 @@
 html,
 body {
-	background-color: black;
+	background-color: #14161b;
 	color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	line-height: 1.6;
 	font-size: 24px;
-	overflow: hidden;
+/*	overflow: hidden; */
 }
 
 * {
@@ -16,14 +16,10 @@ body {
 }
 
 a {
-  color: blue;
+  color: #337DFF;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-main {
-	display: none;
 }

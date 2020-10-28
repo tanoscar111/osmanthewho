@@ -5,7 +5,7 @@ export default function Layout({ children }) {
 	return (
 		<div>
 			<Head>
-				<title>Osman Işık — Film Creator</title>
+				<title>Osman Işık | Film Creator</title>
         <link rel="icon" href="/favicon.ico" />
 			</Head>
 
