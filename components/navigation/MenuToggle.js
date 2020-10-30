@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import styles from '../../styles/components/navigation/MenuToggle.module.css'
 
 export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
 
@@ -10,7 +9,7 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
 
 	return (
 		<motion.svg
-			className={styles.menuToggleSvg}
+			className='menu-toggle-svg'
 			animate={ isMenuOpen ? 'open' : 'closed' }
 			variants={iconVariants}
 			onClick={() => setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen)}

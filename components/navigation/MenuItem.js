@@ -13,7 +13,7 @@ const menuItemVariants = {
 }
 
 export default function MenuItem({ link }) {
-	if (link === 'home') {
+	if (link === 'Home') {
 			return (
 			<motion.li
 				variants={menuItemVariants}

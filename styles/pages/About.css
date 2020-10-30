@@ -1,0 +1,33 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	color: var(--color-grey);
+
+	font-size: 7em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: -3px;
+}
+
+.hero > div:nth-child(even) {
+	align-self: end;
+}
+
+.hero > div:nth-child(odd) {
+	align-self: start;
+}
+
+.hero {
+	--a: var(--color-dark) 0%;
+	--b: var(--color-grey) 60%;
+}
+
+.hero > div {
+	background: linear-gradient(180deg, var(--a), var(--b));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

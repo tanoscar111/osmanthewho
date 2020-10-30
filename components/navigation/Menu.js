@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import styles from '../../styles/components/navigation/Menu.module.css'
 import MenuItem from './MenuItem'
 
 export default function Menu({ isMenuOpen }) {
@@ -25,11 +24,11 @@ export default function Menu({ isMenuOpen }) {
 		}
 	}
 
-	const links = ['home', 'about', 'contact', 'work']
+	const links = ['Home', 'About', 'Contact', 'Work']
 
 	return (
 			<motion.nav
-				className={styles.nav}
+				className='nav'
 				initial={false}
 				animate={ isMenuOpen ? 'open' : 'closed' }
 			  variants={menuVariants}
