@@ -9,8 +9,7 @@
 
 	font-size: 7em;
 	font-weight: bold;
-	line-height: 1em;
-	letter-spacing: -3px;
+	line-height: 0.8em;
 }
 
 .hero > div:nth-child(even) {
@@ -23,11 +22,13 @@
 
 .hero {
 	--a: var(--color-dark) 0%;
-	--b: var(--color-grey) 60%;
+	--b: var(--color-grey) 70%;
 }
 
 .hero > div {
 	background: linear-gradient(180deg, var(--a), var(--b));
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	will-change: transform;
+	/* z-index: -1; */
 }

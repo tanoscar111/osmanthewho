@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "framer-motion": "^2.8.0",
-    "next": "9.5.5",
+    "next": "^9.5.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "resize-observer-polyfill": "^1.5.1"
   }
 }

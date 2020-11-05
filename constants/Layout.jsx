@@ -8,12 +8,8 @@ export default function Layout({ children }) {
 				<title>Osman Işık | Film Creator</title>
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-
 			<Navigation />
-
-			<div style={{ width: '90%', height: '200vh', margin: 'auto' }}>
-				{ children }
-			</div>
+			{ children }
 		</>
 	)
 }

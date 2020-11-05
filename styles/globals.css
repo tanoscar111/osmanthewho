@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
 :root {
 	--color-dark: #14161b;
@@ -7,26 +8,55 @@
 	--color-white: #ffffff;
 }
 
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
 	background-color: var(--color-dark);
 	color: white;
+	overflow-x: hidden;
+	user-select: none;
+	overscroll-behavior-y: none;
+
+	line-height: 1.6;
+	font-family: 'Inter', sans-serif;
+	font-size: 24px;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 /*  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-	font-family: 'Josefin Sans', sans-serif;
-	line-height: 1.6;
-	font-size: 24px;
-	overflow-x: hidden;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-	user-select: none;
+/*
+	background: url('../public/images/noise.png');
+	animation: animate .5s steps(10) infinite;
+	opacity: 0.9; (reduces the scroll animation performance)
+*/
 }
 
 a {
   color: var(--color-blue);
 	text-decoration: none;
 }
+
+/* smooth scroll container */
+.scroll-container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 90%;
+	will-change: transform;
+}
+
+/*
+	@keyframes animate {
+		0% { background-position: 0 0; }
+		100% { background-position: 100% 100%; }
+	}
+*/
