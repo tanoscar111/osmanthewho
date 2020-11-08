@@ -1,4 +1,5 @@
 .hero {
+	background: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,7 +23,7 @@
 
 .hero {
 	--a: var(--color-dark) 0%;
-	--b: var(--color-grey) 70%;
+	--b: var(--color-grey) 50%;
 }
 
 .hero > div {
@@ -30,5 +31,13 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	will-change: transform;
-	/* z-index: -1; */
+}
+
+.introduce-description {
+	background-color: black;
+	width: 60%;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.3em;
+	margin: 0 auto;
+	font-size: 1.6em;
 }

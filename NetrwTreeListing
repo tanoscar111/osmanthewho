@@ -1,0 +1,8 @@
+../
+osmanthewho/
+| components/
+| constants/
+| pages/
+| public/
+| styles/
+| package.json

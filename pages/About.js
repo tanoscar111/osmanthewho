@@ -5,11 +5,11 @@ import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motio
 
 export default function About() {
 
-const { scrollYProgress } = useViewportScroll()
-	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
+const { scrollYProgress, scrollY } = useViewportScroll()
+const physics = { damping: 5, mass: 0.3, stiffness: 20 }
 
-const transformRight = useTransform(scrollYProgress, [0, 1], [0, 400])
-const transformLeft = useTransform(scrollYProgress, [0, 1], [0, -400])
+const transformRight = useTransform(scrollY, [0, 600], [0, 200])
+const transformLeft = useTransform(scrollY, [0, 600], [0, -200])
 
 const springRight = useSpring(transformRight, physics)
 const springLeft = useSpring(transformLeft, physics)
@@ -29,18 +29,14 @@ const springLeft = useSpring(transformLeft, physics)
 					<motion.div style={{ x: springLeft }}>DESIGNER</motion.div>
 				</div>
 
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
-					Ipsum nulla sequi perferendis iste alias? Quasi fuga doloremque fuga rerum tempora Rerum nesciunt explicabo ut minima mollitia error qui Dolor placeat aperiam aliquid ex ullam nemo adipisci. Harum eaque.
+				<div className='introduce-description'>
+					<p>
+						I promote living your life to the fullest and seeing the world through an optimistic lens.
+						I'm Osman. I'm a filmmaker, videographer and designer in Turkey.
+						I produce original content for brands and artists.
+						Hit me up if you wanna collabrate. You can look my projects for more.
+					</p>
+				</div>
 
 			</SmoothScroll>
 		</Layout>

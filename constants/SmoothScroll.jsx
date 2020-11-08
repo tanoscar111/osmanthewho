@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useLayoutEffect } from "react";
+import React, { useRef, useState, useCallback, useLayoutEffect, useEffect } from "react";
 import { useViewportScroll, useTransform, useSpring, motion } from 'framer-motion'
 import ResizeObserver from 'resize-observer-polyfill'
 
@@ -16,8 +16,8 @@ const SmoothScroll = ({ children }) => {
 		}
 	}, [])
 
-	// observe when browser is resizing
-	useLayoutEffect(() => {
+	// observe when browser is resizing | useEffect will be changed with useLayoutEffect
+	useEffect(() => {
 		const resizeObserver = new ResizeObserver((entries) => {
 			resizePageHeight(entries)
 		})
