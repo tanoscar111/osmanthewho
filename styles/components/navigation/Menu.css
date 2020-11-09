@@ -10,5 +10,9 @@
 	width: 100vw;
 	z-index: 1;
 	-webkit-user-select: none;
-	background: var(--color-white);
+	background: var(--color-dark);
+}
+
+.nav ul {
+	list-style-type: none;
 }

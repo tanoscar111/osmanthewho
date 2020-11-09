@@ -5,15 +5,14 @@ import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motio
 
 export default function About() {
 
-const { scrollYProgress, scrollY } = useViewportScroll()
-const physics = { damping: 5, mass: 0.3, stiffness: 20 }
+	const { scrollYProgress, scrollY } = useViewportScroll()
+	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
 
-const transformRight = useTransform(scrollY, [0, 600], [0, 200])
-const transformLeft = useTransform(scrollY, [0, 600], [0, -200])
+	const transformRight = useTransform(scrollY, [0, 600], [0, 200])
+	const transformLeft = useTransform(scrollY, [0, 600], [0, -200])
 
-const springRight = useSpring(transformRight, physics)
-const springLeft = useSpring(transformLeft, physics)
-
+	const springRight = useSpring(transformRight, physics)
+	const springLeft = useSpring(transformLeft, physics)
 
 	return (
 		<Layout>
@@ -22,22 +21,24 @@ const springLeft = useSpring(transformLeft, physics)
 					<title>About Osman Işık</title>
 				</Head>
 
-				<div className='hero'>
+				<section className='hero'>
 					<motion.div style={{ x: springRight }}>FILMMAKER</motion.div>
 					<motion.div style={{ x: springLeft }}>VIDEO ―</motion.div>
 					<motion.div style={{ x: springRight }}>― GRAPHER</motion.div>
 					<motion.div style={{ x: springLeft }}>DESIGNER</motion.div>
-				</div>
+				</section>
 
-				<div className='introduce-description'>
-					<p>
-						I promote living your life to the fullest and seeing the world through an optimistic lens.
-						I'm Osman. I'm a filmmaker, videographer and designer in Turkey.
-						I produce original content for brands and artists.
-						Hit me up if you wanna collabrate. You can look my projects for more.
-					</p>
-				</div>
-
+				<section className='intro'>
+					<div className='intro-image'>
+						<img src="../images/osman/osman.png" alt="Osman Işık" />
+						<img src="../images/osman/gh5.png" alt="Panasonic Lumix GH5" />
+					</div>
+					<div className='intro-text'>
+						<p>I promote living the life to the fullest and seeing the world through an optimistic lens.</p>
+						<p>I'm Osman. I'm a filmmaker, videographer and designer in Turkey. I produce creative content for brands and artists.</p>
+						<p>You know what, I make good shit. I mean <a href="https://www.instagram.com/osmanthewho" target="_blank">really good shit. →</a></p>
+					</div>
+				</section>
 			</SmoothScroll>
 		</Layout>
 	)

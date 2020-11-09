@@ -1,5 +1,4 @@
 .hero {
-	background: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,7 +9,7 @@
 
 	font-size: 7em;
 	font-weight: bold;
-	line-height: 0.8em;
+	line-height: 0.75em;
 }
 
 .hero > div:nth-child(even) {
@@ -33,11 +32,46 @@
 	will-change: transform;
 }
 
-.introduce-description {
-	background-color: black;
-	width: 60%;
+.intro {
+	height: 100vh;
 	font-family: 'Josefin Sans', sans-serif;
 	line-height: 1.3em;
 	margin: 0 auto;
-	font-size: 1.6em;
+	font-size: 1.65em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-text {
+	width: 50%;
+	margin-left: 3em;
+}
+
+.intro-text p:nth-child(-n+2) {
+	margin-bottom: 1em;
+}
+
+.intro a {
+	text-decoration: underline;
+}
+
+.intro-image {
+	position: relative;
+}
+
+.intro-image img:nth-child(1) {
+	width: 440px;
+	height: 548px;
+	z-index: 1;
+}
+
+.intro-image img:nth-child(2) {
+	width: 210px;
+	height: 163px;
+	z-index: 2;
+	position: absolute;
+	top: 150px;
+	left: 120px;
+	transform:  rotate(17deg);
 }
