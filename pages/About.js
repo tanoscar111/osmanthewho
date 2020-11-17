@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from '../constants/Layout'
-import SmoothScroll from '../constants/SmoothScroll'
+import Layout from '../components/constants/Layout'
+import SmoothScroll from '../components/constants/SmoothScroll'
 import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motion'
 
 export default function About() {
@@ -8,8 +8,8 @@ export default function About() {
 	const { scrollYProgress, scrollY } = useViewportScroll()
 	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
 
-	const transformRight = useTransform(scrollY, [0, 600], [0, 200])
-	const transformLeft = useTransform(scrollY, [0, 600], [0, -200])
+	const transformRight = useTransform(scrollY, [0, 600], [0, 150])
+	const transformLeft = useTransform(scrollY, [0, 600], [0, -150])
 
 	const springRight = useSpring(transformRight, physics)
 	const springLeft = useSpring(transformLeft, physics)
@@ -23,9 +23,9 @@ export default function About() {
 
 				<section className='hero'>
 					<motion.div style={{ x: springRight }}>FILMMAKER</motion.div>
-					<motion.div style={{ x: springLeft }}>VIDEO ―</motion.div>
-					<motion.div style={{ x: springRight }}>― GRAPHER</motion.div>
-					<motion.div style={{ x: springLeft }}>DESIGNER</motion.div>
+					<motion.div style={{ x: springLeft }}>STORY ―</motion.div>
+					<motion.div style={{ x: springRight }}>― TELLER</motion.div>
+					<motion.div style={{ x: springLeft }}>DIRECTOR</motion.div>
 				</section>
 
 				<section className='intro'>

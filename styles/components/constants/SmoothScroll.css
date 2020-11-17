@@ -1,0 +1,19 @@
+.scroll-container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	display: grid;
+	grid-template-columns: 1fr min(1050px, calc(100% - 1rem)) 1fr;
+	will-change: transform;
+	background: #141414;
+}
+
+.scroll-container > * {
+	grid-column: 2;
+}
+
+/* not used */
+.full-bleed {
+	width: 100%;
+	grid-column: 1 / -1;
+}
