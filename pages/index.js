@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Layout from '../constants/Layout'
+import Layout from '../components/constants/Layout'
 
 export default function Home() {
   return (
 		<Layout>
-			<h3>bura home</h3>
 		</Layout>
   )
 }
