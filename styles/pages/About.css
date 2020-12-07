@@ -3,33 +3,30 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 	height: 100vh;
 	color: var(--color-grey);
-
 	font-size: 5em;
 	font-weight: bold;
 	line-height: 0.8em;
-
-	will-change: transform;
-
 	background: #111;
+	will-change: transform;
 }
 
 .hero > div {
 	background: linear-gradient(180deg, var(--a), var(--b));
 	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	will-change: transform;
 	background: #000;
 }
 
 .hero > div:nth-child(even) {
-	align-self: end;
+	align-self: flex-end;
 }
 
 .hero > div:nth-child(odd) {
-	align-self: start;
+	align-self: flex-start;
 }
 
 .hero {

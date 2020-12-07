@@ -3,22 +3,18 @@ import Link from 'next/link'
 
 const menuItemVariants = {
 	open: {
-		y: 0,
 		opacity: 1,
 	},
 	closed: {
-		y: 50,
 		opacity: 0,
 	}
 }
 
 export default function MenuItem({ link }) {
-	if (link === 'Home') {
+	if (link === 'HOME') {
 			return (
 			<motion.li
 				variants={menuItemVariants}
-				whileHover={{ scale: 1.1 }}
-				whileTap={{ scale: 0.90 }}
 			>
 				<Link href="/">
 					<a>{ link }</a>
@@ -29,10 +25,8 @@ export default function MenuItem({ link }) {
 			return (
 				<motion.li
 					variants={menuItemVariants}
-					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.90 }}
 				>
-					<Link href={`/${ link }`}>
+					<Link href={`/${ link.toLowerCase() }`}>
 						<a>{ link }</a>
 					</Link>
 				</motion.li>

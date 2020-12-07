@@ -14,8 +14,14 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* chrome | safari */
+}
+
 html,
 body {
+	scrollbar-width: none; /* firefox */
 	color: var(--color-white);
 	overflow-x: hidden;
 	user-select: none;

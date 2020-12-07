@@ -6,25 +6,22 @@ export default function Menu({ isMenuOpen }) {
 
 	const menuVariants = {
 		open: {
-			right: 0,
+			display: 'flex',
 			transition: {
-				duration: 0.5,
-				staggerChildren: 0.15,
-				delayChildren: 0.7,
+				staggerChildren: 0.05,
 			}
 		},
 		closed: {
-			right: '-100vw',
+			display: 'none',
 			transition: {
 				delay: 0.7,
-				duration: 0.5,
-				staggerChildren: 0.15,
+				staggerChildren: 0.05,
 				staggerDirection: -1,
 			}
 		}
 	}
 
-	const links = ['Home', 'About', 'Contact', 'Work']
+	const links = ['HOME', 'ABOUT', 'CONTACT', 'WORK']
 
 	return (
 			<motion.nav
@@ -41,4 +38,3 @@ export default function Menu({ isMenuOpen }) {
 			</motion.nav>
 	)
 }
-
