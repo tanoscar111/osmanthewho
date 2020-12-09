@@ -1,6 +1,8 @@
 import React, { useRef, useState, useCallback, useLayoutEffect, useEffect } from "react";
 import { useViewportScroll, useTransform, useSpring, motion } from 'framer-motion'
 import ResizeObserver from 'resize-observer-polyfill'
+// css transform fucked up fixed elements (nav menu).
+import Footer from '../footer/Footer'
 
 const SmoothScroll = ({ children }) => {
 	// scroll container
@@ -40,6 +42,7 @@ const SmoothScroll = ({ children }) => {
 				className='scroll-container'
 			>
 				{children}
+				<Footer />
 			</motion.div>
 			{/* blank div that has a dynamic height based on the content's inherent height */}
       {/* this is neccessary to allow the scroll container to scroll... */}

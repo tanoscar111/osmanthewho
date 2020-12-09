@@ -9,8 +9,8 @@
 	grid-template-rows: 5fr 1fr 1fr;
 	grid-template-areas:
   	"headline  headline  headline"
-		"logo			 mail      span"
-		"punchline social    copyright";
+		"logo			 mail      copyright"
+		"punchline social    span";
 }
 
 .blank-span {
@@ -50,35 +50,41 @@
 }
 
 .footer-social > a:not(:first-child) {
-	margin-left: 1.2rem;
+	margin-left: 1rem;
 }
 
 .footer-email {
 	grid-area: mail;
 	font-size: 0.7rem;
 	align-self: end;
+	padding-top: 1.5rem;
+	border-top: 1px solid grey;
 }
 
 .footer-copyright {
 	grid-area: copyright;
-	align-self: start;
+	align-self: end;
 	font-size: 0.7rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid grey;
 }
 
 .button-cta {
 	margin-top: -0.4rem;
 	border: none;
-	color: #000;
 	font-size: 2rem;
 	background: transparent;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	font-family: 'Akzidenz-Grotesk', sans-serif;
-	text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-	cursor: pointer;
 }
 
-.button-cta:hover {
+.button-cta a {
+	text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+	color: #000;
+}
+
+.button-cta a:hover {
 	color: #fff;
 	text-shadow: none;
 }

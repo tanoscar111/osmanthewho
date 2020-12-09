@@ -15,12 +15,11 @@ export default function About() {
 	const springLeft = useSpring(transformLeft, physics)
 
 	return (
-		<SmoothScroll>
-			<Layout>
+		<Layout>
+			<SmoothScroll>
 				<Head>
 					<title>About Osman Işık</title>
 				</Head>
-
 				<section className='hero'>
 					<motion.div style={{ x: springRight }}>FILMMAKER</motion.div>
 					<motion.div style={{ x: springLeft }}>STORY ―</motion.div>
@@ -39,7 +38,7 @@ export default function About() {
 						<p>You know what, I make good shit. I mean <a href="https://www.instagram.com/osmanthewho" target="_blank">really good shit. →</a></p>
 					</div>
 				</section>
-			</Layout>
-		</SmoothScroll>
+			</SmoothScroll>
+		</Layout>
 	)
 }

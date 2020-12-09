@@ -8,7 +8,11 @@ export default function Footer() {
 				<h2>LET'S MAKE</h2>
 				<h1>GREAT THINGS TOGETHER.</h1>
 				<button className='button-cta'>
-					<h2>HIT ME UP ➤</h2>
+					<h2>
+						<Link href="/contact">
+							<a>HIT ME UP ➤</a>
+						</Link>
+					</h2>
 				</button>
 			</div>
 
@@ -21,10 +25,10 @@ export default function Footer() {
 			<p className='footer-punchline'>Enough about me, tell me about you.</p>
 
 			<div className='footer-social'>
-					<a href='#'><img src="../../icons/social/instagram.svg" alt="Instagram" /></a>
-					<a href='#'><img src="../../icons/social/youtube.svg" alt="YouTube" /></a>
-					<a href='#'><img src="../../icons/social/vimeo.svg" alt="Vimeo" /></a>
-					<a href='#'><img src="../../icons/social/behance.svg" alt="Behance" /></a>
+					<a target='_blank' href='https://www.instagram.com/osmanthewho/'><img src="../../icons/social/instagram.svg" alt="Instagram" /></a>
+					<a target='_blank' href='https://youtube.com/osmanthewho'><img src="../../icons/social/youtube.svg" alt="YouTube" /></a>
+					<a target='_blank' href='https://vimeo.com/osmanthewho/'><img src="../../icons/social/vimeo.svg" alt="Vimeo" /></a>
+					<a target='_blank' href='https://www.behance.net/osmanthewho'><img src="../../icons/social/behance.svg" alt="Behance" /></a>
 			</div>
 
 			<div className='footer-email'><Link href="#"><a>info@osmanthewho.com</a></Link></div>
