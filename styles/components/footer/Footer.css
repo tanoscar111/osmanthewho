@@ -1,36 +1,83 @@
 .footer {
+	margin-top: 5rem;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 5fr 1fr 1fr;
+	grid-template-areas:
+  	"headline  headline  headline"
+		"logo			 mail      span"
+		"punchline social    copyright";
+}
 
+.blank-span {
+	grid-area: span;
+}
+
+.footer-social img {
+	width: 24px;
+	height: 24px;
+}
+
+.footer-headline {
+	grid-area: headline;
+	font-family: 'Akzidenz-Grotesk', sans-serif;
+	font-size: 2rem;
+	letter-spacing: -2px;
+	line-height: 0.9;
+	padding-bottom: 3rem;
 }
 
 .footer-logo {
-	position: relative;
-	background: red;
+	grid-area: logo;
+	justify-self: start;
+	align-self: end;
+}
+
+.footer-punchline {
+	grid-area: punchline;
+	justify-self: start;
+	align-self: start;
+	font-size: 0.85rem
 }
 
 .footer-social {
-
+	grid-area: social;
+	align-self: start;
 }
 
-.footer-links {
-
+.footer-social > a:not(:first-child) {
+	margin-left: 1.2rem;
 }
 
-.footer-links .col1 {
-
-}
-
-.footer-links .col2 {
-
-}
-
-.footer-cta {
-
-}
-
-.button-cta {
-
+.footer-email {
+	grid-area: mail;
+	font-size: 0.7rem;
+	align-self: end;
 }
 
 .footer-copyright {
+	grid-area: copyright;
+	align-self: start;
+	font-size: 0.7rem;
+}
 
+.button-cta {
+	border: none;
+	color: #000;
+	font-size: 2rem;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: 'Akzidenz-Grotesk', sans-serif;
+	text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+	cursor: pointer;
+}
+
+.button-cta:hover {
+	color: #fff;
+	text-shadow: none;
 }
