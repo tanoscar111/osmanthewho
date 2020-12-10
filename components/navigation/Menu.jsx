@@ -7,14 +7,14 @@ export default function Menu({ isMenuOpen }) {
 		open: {
 			display: 'flex',
 			transition: {
-				staggerChildren: 0.05,
+				staggerChildren: 0.07,
 			}
 		},
 		closed: {
 			display: 'none',
 			transition: {
 				delay: 0.7,
-				staggerChildren: 0.05,
+				staggerChildren: 0.07,
 				staggerDirection: -1,
 			}
 		}
