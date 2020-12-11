@@ -1,0 +1,15 @@
+../
+osmanthewho/
+| components/
+| pages/
+| public/
+| styles/
+| | components/
+| | | constants/
+| | | contactForm/
+| | | | ContactForm.css
+| | | footer/
+| | | navigation/
+| | pages/
+| | globals.css
+| package.json
