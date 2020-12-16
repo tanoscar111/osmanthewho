@@ -24,7 +24,7 @@
 
 .footer-headline {
 	grid-area: headline;
-	font-family: 'Akzidenz-Grotesk', sans-serif;
+	font-family: 'Akzidenz Grotesk Bold', sans-serif;
 	font-size: 2rem;
 	letter-spacing: -2px;
 	line-height: 0.9;
@@ -76,7 +76,7 @@
 	background: transparent;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	font-family: 'Akzidenz-Grotesk', sans-serif;
+	font-family: 'Akzidenz Grotesk Bold', sans-serif;
 }
 
 .button-cta a {

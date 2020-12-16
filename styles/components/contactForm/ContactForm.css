@@ -40,6 +40,11 @@
 	background: none;
 	color: #fff;
 	border: 1px solid #fff;
-	font-family: 'Akzidenz-Grotesk', sans-serif;
+	font-family: 'Akzidenz Grotesk Bold', sans-serif;
 	cursor: pointer;
+}
+
+.form-container button:hover {
+	background: #fff;
+	color: #000;
 }

@@ -4,9 +4,9 @@ import SmoothScroll from '../components/constants/SmoothScroll'
 
 export default function Home() {
   return (
-		<SmoothScroll>
-			<Layout>
-			</Layout>
-		</SmoothScroll>
+		<Layout>
+			<SmoothScroll>
+			</SmoothScroll>
+		</Layout>
   )
 }

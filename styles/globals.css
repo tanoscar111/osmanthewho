@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-@font-face { font-family: 'Akzidenz-Grotesk'; src: url('../public/fonts/Akzidenz-Grotesk-Bold.woff2'); }
+@font-face { font-family: 'Akzidenz Grotesk'; src: url('../public/fonts/AkzidenzGroteskPro-MdEx.woff2'); }
+@font-face { font-family: 'Akzidenz Grotesk Bold'; src: url('../public/fonts/AkzidenzGroteskPro-BoldEx.woff2'); }
 
 :root {
 	--color-dark: #000;
