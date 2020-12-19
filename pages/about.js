@@ -34,7 +34,7 @@ export default function About() {
 					</div>
 					<div className='intro-text'>
 						<p>I promote living the life to the fullest and seeing the world through an optimistic lens.</p>
-						<p>I'm Osman. I'm a filmmaker, photographer, designer and director living in the Turkey. I produce creative content for brands and artists.</p>
+						<p>I'm Osman. I'm a filmmaker, photographer, designer and director living in Turkey. I produce creative content for brands and artists.</p>
 						<p>You can take a look at and see what I'm doing on my <a href="https://www.instagram.com/osmanthewho" target="_blank"><b>Instagram</b></a> account.</p>
 						<p>I'm available for freelance work.</p>
 					</div>

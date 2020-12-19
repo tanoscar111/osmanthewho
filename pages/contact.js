@@ -6,7 +6,7 @@ export default function Contact() {
 	return (
 		<Layout>
 			<SmoothScroll>
-				<h2 style={{ fontFamily: 'Akzidenz-Grotesk', paddingTop: '1rem', fontSize: '2rem' }}>GET IN TOUCH!</h2>
+				<h2 style={{ fontFamily: 'Akzidenz Grotesk Bold', paddingTop: '1rem', fontSize: '2rem' }}>GET IN TOUCH!</h2>
 				<ContactForm />
 			</SmoothScroll>
 		</Layout>

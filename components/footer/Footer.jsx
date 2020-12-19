@@ -31,7 +31,7 @@ export default function Footer() {
 					<a target='_blank' href='https://www.behance.net/osmanthewho'><img src="../../icons/social/behance.svg" alt="Behance" /></a>
 			</div>
 
-			<div className='footer-email'><Link href="#"><a>info@osmanthewho.com</a></Link></div>
+			<div className='footer-email'><a target='_blank' href="mailto:info@osmanthewho.com">info@osmanthewho.com</a></div>
 
 			<span className='blank-span'></span>
 
