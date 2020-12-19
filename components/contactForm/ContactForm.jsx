@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import kwesforms from 'kwesforms';
 
-export default function ContactForm() {
+/*export default function ContactForm() {
 	useEffect(() => {
 		kwesforms.init();
-	}, [])
+	}, [])*/
 
 	return (
 		<div className='form-container'>
