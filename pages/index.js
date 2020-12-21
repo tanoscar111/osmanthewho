@@ -6,6 +6,7 @@ export default function Home() {
   return (
 		<Layout>
 			<SmoothScroll>
+				<h1>GIFLER AZ BİŞE RESPONSİVE</h1>
 			</SmoothScroll>
 		</Layout>
   )

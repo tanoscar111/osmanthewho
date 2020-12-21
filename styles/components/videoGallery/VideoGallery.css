@@ -1,8 +1,8 @@
 .video-gallery-container {
 	padding-top: 3rem;
 	display: grid;
-	grid-gap: 50px 10px;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 150px 10px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .video-thumbnail img {
@@ -11,19 +11,19 @@
 	object-fit: contain;
 }
 
-.px-600-338 {
-	max-width: 600px;
-	max-height: 338px;
+.px-480-270 {
+	max-width: 480px;
+	max-height: 270px;
 }
 
-.px-600-261 {
-	max-width: 600px;
-	max-height: 261px;
+.px-480-209 {
+	max-width: 480px;
+	max-height: 209px;
 }
 
-.px-600-750 {
-	max-width: 600px;
-	max-height: 750px;
+.px-440-550 {
+	max-width: 440px;
+	max-height: 550px;
 }
 
 article {

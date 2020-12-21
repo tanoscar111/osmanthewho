@@ -8,7 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@giphy/js-fetch-api": "^2.0.1",
+    "@giphy/react-components": "^2.0.1",
     "framer-motion": "^2.9.5",
+    "isomorphic-fetch": "^3.0.0",
     "next": "^9.5.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
