@@ -16,7 +16,7 @@ export default function Footer() {
 				</button>
 			</div>
 
-			<Link href='#'>
+			<Link href='/'>
 				<a className='footer-logo'>
 					<img src="../../images/osman/osmanthewho.png" alt="osmanthewho" />
 				</a>

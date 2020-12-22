@@ -12,7 +12,6 @@
     "@giphy/react-components": "^2.0.1",
     "framer-motion": "^3.1.1",
     "isomorphic-fetch": "^3.0.0",
-    "kwesforms": "^2.0.4",
     "next": "^10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
