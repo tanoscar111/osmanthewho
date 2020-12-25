@@ -10,6 +10,8 @@
 	line-height: 0.8;
 	will-change: transform;
 	font-family: 'Akzidenz Grotesk Bold', sans-serif;
+	font-style: italic;
+	letter-spacing: -5px;
 }
 
 .hero > div {
@@ -18,6 +20,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	will-change: transform;
+	padding-right: 20px;
 }
 
 .hero > div:nth-child(even) {
@@ -73,5 +76,10 @@
 	position: absolute;
 	top: 150px;
 	left: 120px;
-	transform:  rotate(17deg);
+	transform: rotate(17deg) translateZ(40px) scale(0.8);
+}
+
+.tilt-osman-gh5 {
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
 }

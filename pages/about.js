@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/constants/Layout'
 import SmoothScroll from '../components/constants/SmoothScroll'
 import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
 
 export default function About() {
 
@@ -28,10 +29,17 @@ export default function About() {
 				</section>
 
 				<section className='intro'>
-					<div className='intro-image'>
-						<img src="../images/osman/osman.png" alt="Osman Işık" />
-						<img src="../images/osman/gh5.png" alt="Panasonic Lumix GH5" />
-					</div>
+					<Tilt
+					className='tilt-osman-gh5'
+					tiltMaxAngleX={40}
+					tiltMaxAngleY={40}
+					transitionSpeed={1500}
+					gyroscope={true}>
+						<div className='intro-image'>
+							<img src="../images/osman/osman.png" alt="Osman Işık" />
+							<img src="../images/osman/gh5.png" alt="Panasonic Lumix GH5" />
+						</div>
+					</Tilt>
 					<div className='intro-text'>
 						<p>I promote living the life to the fullest and seeing the world through an optimistic lens.</p>
 						<p>I'm Osman. I'm a filmmaker, photographer, designer and director living in Turkey. I produce creative content for brands and artists.</p>

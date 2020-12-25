@@ -38,7 +38,7 @@ export default function WorkGif({ gifs }) {
 									className="full-bleed"
 									initialGifs={gifs}
 									width={width}
-									columns={width < 800 ? 2 : 3}
+									columns={width < 800 ? 4 : 5}
 									noLink={true}
 									gutter={0}
 									hideAttribution={true} />
