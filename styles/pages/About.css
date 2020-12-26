@@ -5,13 +5,12 @@
 	justify-content: center;
 	height: 100vh;
 	color: var(--color-grey);
-	font-size: 5em;
+	font-size: 6.5em;
 	font-weight: bold;
 	line-height: 0.8;
 	will-change: transform;
 	font-family: 'Akzidenz Grotesk Bold', sans-serif;
-	font-style: italic;
-	letter-spacing: -5px;
+	letter-spacing: 5px;
 }
 
 .hero > div {
@@ -20,7 +19,6 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	will-change: transform;
-	padding-right: 20px;
 }
 
 .hero > div:nth-child(even) {
@@ -38,48 +36,27 @@
 
 .intro {
 	height: 100vh;
-	line-height: 1.3em;
-	margin: 0 auto;
-	font-size: 1.3em;
+	line-height: 1.4em;
+	font-size: 1.2em;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .intro-text {
-	padding-top: 2em;
-	margin-left: 3em;
+	width: 18em;
+	height: auto;
 }
 
 .intro-text p:nth-child(-n+2) {
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
 }
 
 .intro a {
 	text-decoration: underline;
 }
 
-.intro-image {
-	position: relative;
-}
-
-.intro-image img:nth-child(1) {
-	width: 400px;
-	height: 508px;
-	z-index: 1;
-}
-
-.intro-image img:nth-child(2) {
-	width: 180px;
-	height: 133px;
-	z-index: 2;
-	position: absolute;
-	top: 150px;
-	left: 120px;
-	transform: rotate(17deg) translateZ(40px) scale(0.8);
-}
-
-.tilt-osman-gh5 {
-	transform-style: preserve-3d;
-	transform: perspective(1000px);
+.lan {
+	width: 452px;
+	height: 552px;
 }

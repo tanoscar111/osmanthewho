@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
 @font-face { font-family: 'Akzidenz Grotesk'; src: url('../public/fonts/AkzidenzGroteskPro-MdEx.woff2'); }
 @font-face { font-family: 'Akzidenz Grotesk Bold'; src: url('../public/fonts/AkzidenzGroteskPro-BoldEx.woff2'); }
+@font-face { font-family: 'Monument Extended'; src: url('../public/fonts/Monument-Extended-Regular.woff2'); }
+@font-face { font-family: 'Monument Extended Bold'; src: url('../public/fonts/Monument-Extended-Bold.woff2'); }
 
 :root {
 	--color-dark: #000;
@@ -28,7 +31,7 @@ body {
 	user-select: none;
 	overscroll-behavior-y: none;
 	line-height: 1.6;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Space Grotesk', sans-serif;
 	font-size: 24px;
 	text-rendering: optimizeLegibility;
 	font-smoothing: antialiased;

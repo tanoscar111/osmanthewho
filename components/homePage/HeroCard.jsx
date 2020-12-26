@@ -5,23 +5,21 @@ export default function HeroCard() {
 		<Tilt
 			className="tilt"
 			glareEnable={true}
-			glareMaxOpacity={0.40}
-			scale={1.1}
-			transitionSpeed={2000}
+			glareMaxOpacity={0.7}
+			glareColor='black'
+			glarePosition='all'
+			scale={1.07}
+			transitionSpeed={1500}
 		>
-			<div className="landing-photo-container">
-					<img src="/images/osman/lezmove.png"
-							 alt="Osman Işık"
-							 className='landing-photo-back' />
-					<img src="/images/osman/lezmove-bg-removed.png"
-							 alt="Osman Işık"
-							 className='landing-photo-front' />
-			</div>
-			<div className="landing-title-container">
-				<div>OSMAN IŞIK</div>
-				<div>CREATIVE</div>
-				<div>CONTENT</div>
-				<div>MANAGER</div>
+			<img src="/images/osman/lezmove.png"
+					 alt="Osman Işık"
+					 className='tilt-photo-back' />
+			<img src="/images/osman/lezmove-bg-removed.png"
+					 alt="Osman Işık"
+					 className='tilt-photo-front' />
+			<div className="tilt-title-container">
+				<div>HOVER</div>
+				<div>ME</div>
 			</div>
 		</Tilt>
 	)
