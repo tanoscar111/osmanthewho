@@ -5,12 +5,13 @@
 	justify-content: center;
 	height: 100vh;
 	color: var(--color-grey);
-	font-size: 6.5em;
+	font-size: 5em;
 	font-weight: bold;
-	line-height: 0.8;
+	line-height: 0.90;
 	will-change: transform;
-	font-family: 'Akzidenz Grotesk Bold', sans-serif;
+	font-family: 'Monument Extended', sans-serif;
 	letter-spacing: 5px;
+	font-style: italic;
 }
 
 .hero > div {
@@ -19,6 +20,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	will-change: transform;
+	padding-right: 20px;
 }
 
 .hero > div:nth-child(even) {

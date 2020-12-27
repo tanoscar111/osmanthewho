@@ -23,9 +23,9 @@
 
 .footer-headline {
 	grid-area: headline;
-	font-family: 'Akzidenz Grotesk Bold', sans-serif;
+	font-family: 'Monument Extended', sans-serif;
 	font-size: 2rem;
-	letter-spacing: -2px;
+	letter-spacing: 3px;
 	line-height: 0.9;
 	padding-bottom: 3rem;
 }
@@ -40,7 +40,7 @@
 	grid-area: punchline;
 	justify-self: start;
 	align-self: start;
-	font-size: 0.85rem
+	font-size: 0.70rem;
 }
 
 .footer-social {
@@ -75,15 +75,19 @@
 	background: transparent;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	font-family: 'Akzidenz Grotesk Bold', sans-serif;
+	font-family: 'Monument Extended', sans-serif;
+	letter-spacing: 3px;
+	color: #fff;
 }
 
 .button-cta a {
-	text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-	color: #000;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px white;
 }
 
 .button-cta a:hover {
+	-webkit-text-fill-color: unset;
+	-webkit-text-stroke: 1px white;
 	color: #fff;
-	text-shadow: none;
 }

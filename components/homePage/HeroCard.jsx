@@ -10,6 +10,7 @@ export default function HeroCard() {
 			glarePosition='all'
 			scale={1.07}
 			transitionSpeed={1500}
+			gyroscrope={true}
 		>
 			<img src="/images/osman/lezmove.png"
 					 alt="Osman Işık"
@@ -18,8 +19,8 @@ export default function HeroCard() {
 					 alt="Osman Işık"
 					 className='tilt-photo-front' />
 			<div className="tilt-title-container">
-				<div>HOVER</div>
-				<div>ME</div>
+				<div>THE</div>
+				<div>WHO</div>
 			</div>
 		</Tilt>
 	)

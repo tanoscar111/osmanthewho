@@ -3,15 +3,16 @@
 	align-items: center;
 	position: fixed;
 	padding-left: 5rem;
-	font-size: 3em;
+	font-size: 4em;
 	height: 100vh;
 	width: 100%;
 	z-index: 1;
 	background: url('../../../public/images/noise.png');
 	background-color: var(--color-dark);
 	animation: noise 1s steps(20) infinite;
-	line-height: 1.2;
-	font-family: 'Akzidenz Grotesk Bold', sans-serif;
+	line-height: 0.9;
+	font-family: 'Monument Extended', sans-serif;
+	letter-spacing: 5px;
 }
 
 @keyframes noise {
@@ -24,11 +25,29 @@
 }
 
 .nav ul li a {
-	color: #000;
-	text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px white;
+}
+
+.nav ul li {
+	/* Vay amk */
+	float: left;
+	clear: left;
+}
+
+.nav ul li:hover a {
+	padding-left: 100px;
+	transition: 0.2s; /* opacity not work on chrome */
+	color: #fff;
+}
+
+.nav ul li:not(:hover ) a {
+	transition: 0.2s; /* opacity not work on chrome */
 }
 
 .nav ul li a:hover {
-	color: #fff;
-	text-shadow: none;
+	-webkit-text-fill-color: unset;
+	-webkit-text-stroke: 1px white;
 }

@@ -35,7 +35,7 @@ export default function Footer() {
 
 			<span className='blank-span'></span>
 
-			<p className='footer-copyright'>©Made with ♥ by Yunus Emre.</p>
+			<p className='footer-copyright'>© Made with <a target="_blank" href="https://www.youtube.com/watch?v=2ZIpFytCSVc">🅱🆁🆄🅷</a> by Yunus Emre.</p>
 
 		</footer>
 	)

@@ -28,12 +28,17 @@
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	border: 20px solid black;
-	font-family: 'Akzidenz Grotesk Bold';
-	font-size: 80px;
-	letter-spacing: -2px;
+	font-family: 'Monument Extended Bold';
+	font-size: 120px;
 	line-height: 1;
 	color: lightgrey;
 	mix-blend-mode: overlay;
 	backdrop-filter: blur(10px);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px white;
+	font-style: italic;
+	padding-right: 30px;
+	letter-spacing: 3px;
 }
