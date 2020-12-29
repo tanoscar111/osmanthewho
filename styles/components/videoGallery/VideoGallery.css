@@ -32,3 +32,8 @@
 	max-width: 480px;
 	max-height: 550px;
 }
+
+.px-384-480 {
+	max-width: 384px;
+	max-height: 480px;
+}
