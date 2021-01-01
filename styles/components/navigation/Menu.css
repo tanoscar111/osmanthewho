@@ -3,51 +3,25 @@
 	align-items: center;
 	position: fixed;
 	padding-left: 5rem;
-	font-size: 4em;
+	font-size: 5em;
 	height: 100vh;
 	width: 100%;
 	z-index: 1;
-	background: url('../../../public/images/noise.png');
-	background-color: var(--color-dark);
-	animation: noise 1s steps(20) infinite;
 	line-height: 0.9;
-	font-family: 'Monument Extended', sans-serif;
-	letter-spacing: 5px;
+	background-color: var(--black);
+	font-family: var(--font-heading);
 }
 
-@keyframes noise {
-		0% { background-position: 0 0; }
-		100% { background-position: 100% 100%; }
-}
-
-.nav ul {
-	list-style-type: none;
-}
-
-.nav ul li a {
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 1px white;
-}
-
-.nav ul li {
+.nav li {
 	/* Vay amk */
 	float: left;
 	clear: left;
 }
 
-.nav ul li:hover a {
-	padding-left: 100px;
-	transition: 0.2s; /* opacity not work on chrome */
-	color: #fff;
+.nav a {
+	transition: 0.2s;
 }
 
-.nav ul li:not(:hover ) a {
-	transition: 0.2s; /* opacity not work on chrome */
-}
-
-.nav ul li a:hover {
-	-webkit-text-fill-color: unset;
-	-webkit-text-stroke: 1px white;
+.nav li:hover a {
+	padding-left: 130px;
 }

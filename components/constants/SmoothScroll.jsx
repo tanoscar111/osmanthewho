@@ -1,8 +1,19 @@
-import React, { useRef, useState, useCallback, useLayoutEffect, useEffect } from "react";
-import { useViewportScroll, useTransform, useSpring, motion } from 'framer-motion'
-import ResizeObserver from 'resize-observer-polyfill'
+import React, {
+	useRef,
+	useState,
+	useCallback,
+	useLayoutEffect,
+	useEffect,
+} from "react"
+import {
+	useViewportScroll,
+	useTransform,
+	useSpring,
+	motion,
+} from "framer-motion"
+import ResizeObserver from "resize-observer-polyfill"
 // css transform fucked up fixed elements (nav menu).
-import Footer from '../footer/Footer'
+import Footer from "../footer/Footer"
 
 const SmoothScroll = ({ children }) => {
 	// scroll container
@@ -28,25 +39,25 @@ const SmoothScroll = ({ children }) => {
 	}, [scrollRef, resizePageHeight])
 
 	const { scrollY } = useViewportScroll() // measures how many pixels user has scrolled vertically
-  // as scrollY changes between 0px and the scrollable height, create a negative scroll value...
-  // ... based on current scroll position to translateY the document in a natural way
+	// as scrollY changes between 0px and the scrollable height, create a negative scroll value...
+	// ... based on current scroll position to translateY the document in a natural way
 	const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight])
-	const physics = { damping: 5, mass: 0.3, stiffness: 20 }; // easing of smooth scroll
-	const spring = useSpring(transform, physics); // apply easing to the negative scroll value
+	const physics = { damping: 5, mass: 0.3, stiffness: 20 } // easing of smooth scroll
+	const spring = useSpring(transform, physics) // apply easing to the negative scroll value
 
 	return (
 		<>
 			<motion.div
 				ref={scrollRef}
 				style={{ y: spring }} // translateY of scroll container using negative scroll value
-				className='scroll-container'
+				className="scroll-container"
 			>
 				{children}
 				<Footer />
 			</motion.div>
 			{/* blank div that has a dynamic height based on the content's inherent height */}
-      {/* this is neccessary to allow the scroll container to scroll... */}
-      {/* ... using the browser's native scroll bar */}
+			{/* this is neccessary to allow the scroll container to scroll... */}
+			{/* ... using the browser's native scroll bar */}
 			<div style={{ height: pageHeight }} />
 		</>
 	)

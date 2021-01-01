@@ -1,18 +1,17 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
 
 export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
-
 	const iconVariants = {
 		open: { rotate: 315, scale: 2 },
-		closed: { rotate: 0, scale: 2}
+		closed: { rotate: 0, scale: 2 },
 	}
 
 	return (
 		<motion.svg
-			className='menu-toggle-svg'
-			animate={ isMenuOpen ? 'open' : 'closed' }
+			className="menu-toggle-svg"
+			animate={isMenuOpen ? "open" : "closed"}
 			variants={iconVariants}
-			onClick={() => setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen)}
+			onClick={() => setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen)}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"

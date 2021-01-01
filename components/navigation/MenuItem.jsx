@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from "framer-motion"
+import Link from "next/link"
 
 const menuItemVariants = {
 	open: {
@@ -7,29 +7,25 @@ const menuItemVariants = {
 	},
 	closed: {
 		opacity: 0,
-	}
+	},
 }
 
 export default function MenuItem({ link }) {
-	if (link === 'HOME') {
-			return (
-			<motion.li
-				variants={menuItemVariants}
-			>
+	if (link === "HOME") {
+		return (
+			<motion.li variants={menuItemVariants}>
 				<Link href="/">
-					<a>{ link }</a>
+					<a className="text-stroke">{link}</a>
 				</Link>
 			</motion.li>
 		)
 	} else {
-			return (
-				<motion.li
-					variants={menuItemVariants}
-				>
-					<Link href={`/${ link.toLowerCase() }`}>
-						<a>{ link }</a>
-					</Link>
-				</motion.li>
-			)
+		return (
+			<motion.li variants={menuItemVariants}>
+				<Link href={`/${link.toLowerCase()}`}>
+					<a className="text-stroke">{link}</a>
+				</Link>
+			</motion.li>
+		)
 	}
 }

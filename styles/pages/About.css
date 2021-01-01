@@ -1,15 +1,10 @@
 .hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	height: 100vh;
-	color: var(--color-grey);
 	font-size: 5em;
 	font-weight: bold;
-	line-height: 0.90;
-	will-change: transform;
-	font-family: 'Monument Extended', sans-serif;
+	line-height: 0.9;
+	color: var(--grey);
+	font-family: var(--font-heading);
 	letter-spacing: 5px;
 	font-style: italic;
 }
@@ -32,8 +27,8 @@
 }
 
 .hero {
-	--a: var(--color-dark) 0%;
-	--b: var(--color-grey) 50%;
+	--a: var(--black) 0%;
+	--b: var(--grey) 50%;
 }
 
 .intro {
@@ -50,7 +45,7 @@
 	height: auto;
 }
 
-.intro-text p:nth-child(-n+2) {
+.intro-text p:nth-child(-n + 2) {
 	margin-bottom: 1.2em;
 }
 

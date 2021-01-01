@@ -23,28 +23,23 @@
 	padding-right: 1rem;
 }
 
-.form-container form input, textarea {
+.form-container form input,
+textarea {
 	padding: 1rem;
 	background: none;
 	font-size: 0.75rem;
 	border: 1px solid grey;
 	resize: none;
-	color: #fff;
-	font-family: 'Josefin Sans', sans-serif;
+	color: var(--white);
 }
 
 .form-container button {
 	margin: 1rem 0;
 	width: 5rem;
 	height: 2rem;
-	background: none;
-	color: #fff;
-	border: 1px solid #fff;
-	font-family: 'Akzidenz Grotesk Bold', sans-serif;
-	cursor: pointer;
 }
 
 .form-container button:hover {
-	background: #fff;
-	color: #000;
+	background: var(--white);
+	color: var(--black);
 }

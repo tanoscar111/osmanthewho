@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Menu from './Menu'
-import MenuToggle from './MenuToggle'
+import { useState } from "react"
+import Menu from "./Menu"
+import MenuToggle from "./MenuToggle"
 
 export default function Navigation() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)

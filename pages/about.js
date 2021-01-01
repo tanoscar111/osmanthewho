@@ -1,11 +1,15 @@
-import Head from 'next/head'
-import Layout from '../components/constants/Layout'
-import SmoothScroll from '../components/constants/SmoothScroll'
-import { motion, useSpring, useTransform, useViewportScroll } from 'framer-motion'
-import HeroCard from '../components/homePage/HeroCard'
+import Head from "next/head"
+import Layout from "../components/constants/Layout"
+import SmoothScroll from "../components/constants/SmoothScroll"
+import {
+	motion,
+	useSpring,
+	useTransform,
+	useViewportScroll,
+} from "framer-motion"
+import TiltCard from "../components/tiltCard/TiltCard"
 
 export default function About() {
-
 	const { scrollYProgress, scrollY } = useViewportScroll()
 	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
 
@@ -27,33 +31,34 @@ export default function About() {
 				<Head>
 					<title>About Osman Işık</title>
 				</Head>
-				<section className='hero'>
+				<section className="hero center-content">
 					<motion.div style={{ x: springRight }}>FILMMAKER</motion.div>
 					<motion.div style={{ x: springLeftFast }}>STORY</motion.div>
 					<motion.div style={{ x: springRightFast }}>TELLER</motion.div>
 					<motion.div style={{ x: springLeft }}>DIRECTOR</motion.div>
 				</section>
 
-				<section className='intro'>
-					<div className='lan'>
-						<HeroCard />
+				<section className="intro">
+					<div className="lan">
+						<TiltCard />
 					</div>
-					<div className='intro-text'>
+					<div className="intro-text">
 						<p>
-							I promote living the life to the fullest and
-							seeing the world through an optimistic lens.
+							I promote living the life to the fullest and seeing the world
+							through an optimistic lens.
 						</p>
 						<p>
-							I'm Osman Işık. I'm a filmmaker, photographer, designer and director living
-							in Turkey. I produce creative content for brands and artists.
+							I'm Osman Işık. I'm a filmmaker, photographer, designer and
+							director living in Turkey. I produce creative content for brands
+							and artists.
 						</p>
 						<p>
-							You can take a look at and see what I'm doing on
-							my <a href="https://www.instagram.com/osmanthewho" target="_blank">
-							Instagram</a> account.
-							I'm available for freelance work.
+							You can take a look at and see what I'm doing on my{" "}
+							<a href="https://www.instagram.com/osmanthewho" target="_blank">
+								Instagram
+							</a>{" "}
+							account. I'm available for freelance work.
 						</p>
-
 					</div>
 				</section>
 			</SmoothScroll>

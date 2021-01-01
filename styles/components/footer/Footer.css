@@ -7,7 +7,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 5fr 1fr 1fr;
 	grid-template-areas:
-  	"headline  headline  headline"
+		"headline  headline  headline"
 		"logo			 mail      copyright"
 		"punchline social    span";
 }
@@ -21,9 +21,14 @@
 	height: 24px;
 }
 
+.footer-punchline,
+.footer-email,
+.footer-copyright {
+	font-size: 0.7rem;
+}
+
 .footer-headline {
 	grid-area: headline;
-	font-family: 'Monument Extended', sans-serif;
 	font-size: 2rem;
 	letter-spacing: 3px;
 	line-height: 0.9;
@@ -40,7 +45,6 @@
 	grid-area: punchline;
 	justify-self: start;
 	align-self: start;
-	font-size: 0.70rem;
 }
 
 .footer-social {
@@ -52,42 +56,23 @@
 	margin-left: 1rem;
 }
 
-.footer-email {
-	grid-area: mail;
-	font-size: 0.7rem;
-	align-self: end;
+.footer-email,
+.footer-copyright {
 	padding-top: 1.5rem;
 	border-top: 1px solid grey;
+	align-self: end;
+}
+
+.footer-email {
+	grid-area: mail;
 }
 
 .footer-copyright {
 	grid-area: copyright;
-	align-self: end;
-	font-size: 0.7rem;
-	padding-top: 1.5rem;
-	border-top: 1px solid grey;
 }
 
 .button-cta {
 	margin-top: -0.4rem;
 	border: none;
 	font-size: 2rem;
-	background: transparent;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	font-family: 'Monument Extended Bold', sans-serif;
-	letter-spacing: 3px;
-	color: #fff;
-}
-
-.button-cta a {
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 1px white;
-}
-
-.button-cta a:hover {
-	-webkit-text-fill-color: unset;
-	-webkit-text-stroke: 1px white;
-	color: #fff;
 }
