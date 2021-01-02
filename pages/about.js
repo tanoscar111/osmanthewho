@@ -1,45 +1,21 @@
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import SmoothScroll from "../components/constants/SmoothScroll"
-import {
-	motion,
-	useSpring,
-	useTransform,
-	useViewportScroll,
-} from "framer-motion"
 import TiltCard from "../components/tiltCard/TiltCard"
+import SlideOnScroll from "../components/slideOnScroll/SlideOnScroll"
 
 export default function About() {
-	const { scrollYProgress, scrollY } = useViewportScroll()
-	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
-
-	const transformRight = useTransform(scrollY, [0, 800], [0, 200])
-	const transformLeft = useTransform(scrollY, [0, 800], [0, -200])
-
-	const transformRightFast = useTransform(scrollY, [0, 400], [0, 200])
-	const transformLeftFast = useTransform(scrollY, [0, 400], [0, -200])
-
-	const springRight = useSpring(transformRight, physics)
-	const springLeft = useSpring(transformLeft, physics)
-
-	const springRightFast = useSpring(transformRightFast, physics)
-	const springLeftFast = useSpring(transformLeftFast, physics)
-
 	return (
 		<Layout>
 			<SmoothScroll>
 				<Head>
 					<title>About Osman Işık</title>
 				</Head>
-				<section className="hero center-content">
-					<motion.div style={{ x: springRight }}>FILMMAKER</motion.div>
-					<motion.div style={{ x: springLeftFast }}>STORY</motion.div>
-					<motion.div style={{ x: springRightFast }}>TELLER</motion.div>
-					<motion.div style={{ x: springLeft }}>DIRECTOR</motion.div>
-				</section>
+
+				<SlideOnScroll />
 
 				<section className="intro">
-					<div className="lan">
+					<div className="tilt-card-container-osman">
 						<TiltCard />
 					</div>
 					<div className="intro-text">

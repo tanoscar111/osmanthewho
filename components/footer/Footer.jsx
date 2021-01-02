@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
 	return (
 		<footer className="footer">
-			<div className="footer-headline">
+			<div className="footer-heading">
 				<h2>LET'S MAKE</h2>
 				<h1>GREAT THINGS TOGETHER.</h1>
 				<button className="button-cta text-stroke">

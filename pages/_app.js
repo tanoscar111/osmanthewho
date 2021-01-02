@@ -12,6 +12,7 @@ import "../styles/components/footer/Footer.css"
 import "../styles/components/contactForm/ContactForm.css"
 import "../styles/components/videoGallery/VideoGallery.css"
 import "../styles/components/tiltCard/TiltCard.css"
+import "../styles/components/slideOnScroll/SlideOnScroll.css"
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />

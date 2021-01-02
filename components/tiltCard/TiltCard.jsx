@@ -8,8 +8,8 @@ export default function TiltCard() {
 			glareMaxOpacity={0.7}
 			glareColor="black"
 			glarePosition="all"
-			scale={1.07}
-			transitionSpeed={1500}
+			scale={1.06}
+			transitionSpeed={1000}
 			gyroscrope={true}
 		>
 			<img
@@ -22,7 +22,7 @@ export default function TiltCard() {
 				alt="Osman Işık"
 				className="tilt-photo-front"
 			/>
-			<div className="tilt-title-container">
+			<div className="tilt-title-container center-content text-stroke">
 				<div>THE</div>
 				<div>WHO</div>
 			</div>

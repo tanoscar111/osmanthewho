@@ -55,7 +55,7 @@ a {
 button {
 	color: var(--white);
 	font-family: var(--font-heading-bold);
-	transition: 0.5s;
+	transition: opacity 0.5s;
 	background: none;
 	border: 1px solid var(--white);
 	cursor: pointer;

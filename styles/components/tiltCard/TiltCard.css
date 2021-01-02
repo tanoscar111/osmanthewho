@@ -1,10 +1,10 @@
 .tilt {
 	width: 100%;
 	height: 100%;
-	transform-style: preserve-3d;
 }
 
-.tilt-photo-back, .tilt-photo-front {
+.tilt-photo-back,
+.tilt-photo-front {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -13,8 +13,8 @@
 
 .tilt-photo-front {
 	opacity: 0;
-	z-index: 3;
-	transition: opacity 0.7s;
+	z-index: 1;
+	transition: opacity 0.5s;
 }
 
 .tilt:hover .tilt-photo-front {
@@ -22,21 +22,14 @@
 }
 
 .tilt-title-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 	height: 100%;
-	font-family: 'Monument Extended Bold';
-	font-size: 120px;
-	line-height: 1;
 	color: var(--grey);
+	font-family: var(--font-heading-bold);
+	font-size: 5rem;
+	line-height: 0.8;
 	mix-blend-mode: overlay;
 	backdrop-filter: blur(10px);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 2px white;
 	font-style: italic;
 	padding-right: 30px;

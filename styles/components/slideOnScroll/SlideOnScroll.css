@@ -1,0 +1,29 @@
+.slide-text-container {
+	height: 100vh;
+	font-size: 5em;
+	font-weight: bold;
+	line-height: 0.9;
+	color: var(--grey);
+	font-family: var(--font-heading);
+	letter-spacing: 5px;
+	font-style: italic;
+	--a: var(--black) 0%;
+	--b: var(--grey) 50%;
+}
+
+.slide-text-container > div {
+	background: linear-gradient(180deg, var(--a), var(--b));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	will-change: transform;
+	padding-right: 20px;
+}
+
+.slide-text-container > div:nth-child(even) {
+	align-self: flex-end;
+}
+
+.slide-text-container > div:nth-child(odd) {
+	align-self: flex-start;
+}
