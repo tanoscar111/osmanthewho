@@ -44,7 +44,9 @@ body {
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: url("../public/images/noise.png");
 	background-color: var(--black);
+	animation: noise 1s steps(20) infinite;
 }
 
 a {
@@ -68,7 +70,8 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: var(--font-heading);
 }
 
@@ -102,4 +105,10 @@ h3 {
 .text-stroke:hover {
 	-webkit-text-fill-color: unset;
 	color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 20px;
+	}
 }

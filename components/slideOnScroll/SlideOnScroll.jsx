@@ -9,15 +9,13 @@ export default function SlideOnScroll() {
 	const { scrollYProgress, scrollY } = useViewportScroll()
 	const physics = { damping: 5, mass: 0.3, stiffness: 20 }
 
-	const transformRight = useTransform(scrollY, [0, 800], [0, 200])
-	const transformLeft = useTransform(scrollY, [0, 800], [0, -200])
-
-	const transformRightFast = useTransform(scrollY, [0, 400], [0, 200])
-	const transformLeftFast = useTransform(scrollY, [0, 400], [0, -200])
-
+	const transformRight = useTransform(scrollY, [0, 1200], [0, 200])
+	const transformLeft = useTransform(scrollY, [0, 1200], [0, -200])
 	const springRight = useSpring(transformRight, physics)
 	const springLeft = useSpring(transformLeft, physics)
 
+	const transformRightFast = useTransform(scrollY, [0, 400], [0, 200])
+	const transformLeftFast = useTransform(scrollY, [0, 400], [0, -200])
 	const springRightFast = useSpring(transformRightFast, physics)
 	const springLeftFast = useSpring(transformLeftFast, physics)
 

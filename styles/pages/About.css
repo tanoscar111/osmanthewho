@@ -1,13 +1,28 @@
 .intro {
-	height: 100vh;
+	min-height: 100vh;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 1rem 0;
 	justify-items: center;
 	align-items: center;
 }
 
 .intro-text {
 	max-width: 450px;
+	font-size: 1rem;
+}
+
+/* experimental */
+@media screen and (max-width: 1023px) {
+	.intro-text {
+		text-align: center;
+		max-width: 425px;
+	}
+
+	.tilt-card-container-osman {
+		max-width: 400px;
+		max-height: 489px;
+	}
 }
 
 .intro-text p:nth-child(-n + 2) {
