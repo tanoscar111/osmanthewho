@@ -11,6 +11,8 @@ export default function TiltCard() {
 			scale={1.06}
 			transitionSpeed={1000}
 			gyroscrope={true}
+			tiltMaxAngleX={45}
+			tiltMaxAngleY={45}
 		>
 			<img
 				src="/images/osman/lezmove.png"
