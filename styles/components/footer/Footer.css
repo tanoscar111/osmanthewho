@@ -1,121 +1,36 @@
 .footer {
-	min-height: 100vh;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	padding: 3rem 0 2rem 0;
 }
 
 .footer-heading {
-	font-size: 3rem;
-	letter-spacing: 3px;
-	line-height: 0.9;
-	height: 100%;
+	margin-bottom: 3rem;
 }
 
-.button-cta {
-	border: none;
-	font-size: 1.5rem;
-	line-height: 0.9;
+.footer-btn-cta {
 }
 
-.footer-main {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 0.9rem;
-	padding-bottom: 1rem;
-	line-height: 1.2;
-}
-
-.footer-main > * {
-	flex: 1;
-	padding: 1rem 0;
-}
-
-.footer-copyright {
-	padding: 1.3rem;
-	font-size: 0.8rem;
-}
-
-.footer-contact {
-	padding: 1rem;
+.footer-mail {
+	display: block;
+	margin-bottom: 1rem;
 }
 
 .footer-social {
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 5px;
+	margin-bottom: 1rem;
+}
+
+.footer-social a:not(:last-child) {
+	padding-right: 1.5rem;
 }
 
 .footer-social img {
-	width: 24px;
-	height: 24px;
+	width: clamp(16px, 0.5rem + 1vw, 32px);
 }
 
-@media screen and (max-width: 950px) {
-	.footer-contact,
-	.footer-copyright {
-		font-size: 0.6rem;
-	}
-
-	.footer-heading {
-		font-size: 1.9rem;
-	}
-	.button-cta {
-		font-size: 1.4rem;
-	}
-
-	.footer-logo img {
-		width: calc(100% - 50px);
-	}
+.footer-copyright {
 }
 
-@media screen and (max-width: 768px) {
-	.footer {
-		font-size: 0.8rem;
-	}
-
-	.footer-main {
-		flex-direction: column;
-	}
-
-	.footer-heading {
-		font-size: 1.7rem;
-	}
-
-	.button-cta {
-		font-size: 1.2rem;
-	}
-
-	.footer-logo img {
-		width: calc(100% - 100px);
-	}
-	.footer-social img {
-		width: 20px;
-		height: 20px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.footer-main {
-		font-size: 0.6rem;
-	}
-
-	.footer-heading {
-		font-size: 1.1rem;
-	}
-
-	.button-cta {
-		font-size: 0.6rem;
-	}
-	.footer-logo img {
-		width: calc(100% - 150px);
-	}
-	.footer-social img {
-		width: 16px;
-		height: 16px;
-	}
+.footer-mail,
+.footer-social,
+.footer-copyright {
+	font-size: var(--font-size-fluid-md1);
 }

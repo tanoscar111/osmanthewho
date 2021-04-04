@@ -1,9 +1,8 @@
 import Head from "next/head"
 import Navigation from "../navigation/Navigation"
-//import Footer from '../footer/Footer'
+import Footer from "../footer/Footer"
 
-// !! ONLY CONSTANT ELEMENTS 'THAT DOESN'T NEED TO BE SMOOTH SCROLLED' GOES HERE !!
-// css transform broke the position: fixed rule
+// css transform breaks the 'position: fixed' rule
 
 export default function Layout({ children }) {
 	return (
@@ -14,7 +13,7 @@ export default function Layout({ children }) {
 			</Head>
 			<Navigation />
 			{children}
-			{/*<Footer />*/}
+			<Footer />
 		</div>
 	)
 }

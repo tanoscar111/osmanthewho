@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* chrome | safari */
+}
+
+html,
+body {
+	scrollbar-width: none; /* firefox */
+	background-color: var(--black);
+	color: var(--white);
+	overflow-x: hidden;
+	user-select: none;
+	overscroll-behavior-y: none;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: var(--font-family-main);
+	line-height: var(--line-height-md);
+}
+
+h1,
+h2,
+h3,
+button,
+span {
+	font-family: var(--font-family-heading-bold);
+	line-height: var(--line-height-sm);
+	letter-spacing: var(--letter-spacing-md);
+}
+
+h1 {
+	font-size: var(--font-size-fluid-xl);
+}
+
+h2 {
+	font-size: var(--font-size-fluid-lg);
+}
+
+a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+p {
+	font-size: var(--font-size-fluid-md2);
+}
+
+button {
+	color: var(--white);
+	transition: opacity 0.5s;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Small (0px-599px)
+• Medium (600px-899px)
+• Large (900px-1199px)
+• Extra large (1200px and up) */

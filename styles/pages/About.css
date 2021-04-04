@@ -1,39 +1,88 @@
-.intro {
+.about-hero {
 	min-height: 100vh;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	grid-gap: 1rem 0;
-	justify-items: center;
-	align-items: center;
+	font-size: var(--font-size-fluid-xl);
+	color: var(--grey);
+	--a: var(--black) 0%;
+	--b: var(--grey) 50%;
+}
+
+.about-hero > div > span {
+	background: linear-gradient(180deg, var(--a), var(--b));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	will-change: transform;
+	will-change: transform;
+}
+
+.about-hero > div {
+	display: flex;
+	text-align: center;
+}
+
+/* ------------------------------------------------- */
+.intro {
+	min-height: 120vh;
 }
 
 .intro-text {
-	max-width: 450px;
-	font-size: 1rem;
+	max-width: 452px;
 }
 
-/* experimental */
-@media screen and (max-width: 1023px) {
-	.intro-text {
-		text-align: center;
-		max-width: 425px;
-	}
-
-	.tilt-card-container-osman {
-		max-width: 400px;
-		max-height: 489px;
-	}
-}
-
-.intro-text p:nth-child(-n + 2) {
-	margin-bottom: 1.1rem;
+.intro-text p:not(:last-child) {
+	margin-bottom: 1rem;
 }
 
 .intro a {
 	text-decoration: underline;
 }
 
-.tilt-card-container-osman {
-	width: 452px;
-	height: 552px;
+/* ------------------------------------------------- */
+.tilt {
+	max-width: 452px;
+	max-height: 552px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3rem;
+}
+
+.tilt-photo-back,
+.tilt-photo-front {
+	width: 100%;
+	height: 100%;
+	max-width: 452px;
+	max-height: 552px;
+	position: absolute;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.tilt-photo-front {
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 0.5s;
+}
+
+.tilt:hover .tilt-photo-front {
+	opacity: 1;
+}
+
+.tilt-title-container {
+	width: 100%;
+	height: 100%;
+	color: var(--grey);
+	mix-blend-mode: overlay;
+	backdrop-filter: blur(10px);
+	-webkit-text-stroke: 2px white;
+	font-style: italic;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+/* ------------------------------------------------- */
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+	.about-hero > div {
+		flex-direction: column;
+	}
 }

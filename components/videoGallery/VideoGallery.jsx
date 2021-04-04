@@ -1,8 +1,8 @@
 import Link from "next/link"
-import useHover from "../../hooks/useHover"
+// import useHover from "../../hooks/useHover"
 
 export default function VideoGallery() {
-	//const [hoverRef1, isHovered1] = useHover();
+	// const [hoverRef1, isHovered1] = useHover();
 
 	return (
 		<div class="video-gallery-container-container">

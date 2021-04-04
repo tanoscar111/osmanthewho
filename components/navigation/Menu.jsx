@@ -19,11 +19,11 @@ export default function Menu({ isMenuOpen }) {
 		},
 	}
 
-	const links = ["HOME", "ABOUT", "CONTACT", "WORK"]
+	const links = ["HOME", "ABOUT", "WORK"]
 
 	return (
 		<motion.nav
-			className="nav noise-background"
+			className="nav"
 			initial={false}
 			animate={isMenuOpen ? "open" : "closed"}
 			variants={menuVariants}

@@ -1,0 +1,77 @@
+:root {
+	--black: black;
+	--grey: lightgrey;
+	--white: white;
+/* ---------------------------------------------------- */
+	--font-family-main: "Space Grotesk", sans-serif;
+	--font-family-heading: "Monument Extended", sans-serif;
+	--font-family-heading-bold: "Monument Extended Bold", sans-serif;
+/* ---------------------------------------------------- */
+	--font-size-sm1: 0.5rem;
+	--font-size-sm2: 0.75rem;
+
+	--font-size-md1: 1rem;
+	--font-size-md2: 1.5rem;
+
+	--font-size-md1-2: 1.2rem;
+
+	--font-size-lg1: 2rem;
+	--font-size-lg2: 3rem;
+
+	--font-size-xl1: 4rem;
+	--font-size-xl2: 6rem;
+
+	--font-size-xxl1: 8rem;
+	--font-size-xxl2: 12rem;
+/* ---------------------------------------------------- */
+	--fluid-size-md1: -0.375rem + 1.444vw;
+	--font-size-fluid-md1: clamp(var(--font-size-md1),
+		var(--fluid-size-md1), var(--font-size-md2));
+
+	--fluid-size-md2: -0.075rem + 1.555vw;
+	--font-size-fluid-md2: clamp(var(--font-size-md1),
+		var(--fluid-size-md2), var(--font-size-lg1));
+
+	--fluid-size-lg: -0.5rem + 6vw;
+	--font-size-fluid-lg: clamp(var(--font-size-md1-2),
+		var(--fluid-size-lg), var(--font-size-xl2));
+
+	--fluid-size-xl: -0.4rem + 9vw;
+	--font-size-fluid-xl: clamp(var(--font-size-lg1),
+		var(--fluid-size-xl), var(--font-size-xxl2));
+/* ---------------------------------------------------- */
+	--line-height-sm: 0.95;
+	--line-height-md: 1.6;
+
+	--letter-spacing-sm: 1.5px;
+	--letter-spacing-md: 3px;
+	--letter-spacing-lg: 4.5px;
+/* ---------------------------------------------------- */
+
+/*	--mod-1: 1.067;
+	--mod-2: 1.333;
+
+	--h1-min: var(--mod-1) * var(--mod-1) * var(--mod-1) * var(--mod-1) * 1rem;
+	--h1-max: var(--mod-2) * var(--mod-2) * var(--mod-2) * var(--mod-2) * 1rem;
+
+	--h2-min: var(--mod-1) * var(--mod-1) * var(--mod-1) * 1rem;
+	--h2-max: var(--mod-2) * var(--mod-2) * var(--mod-2) * 1rem;
+
+	--h3-min: var(--mod-1) * var(--mod-1) * 1rem;
+	--h3-max: var(--mod-2) * var(--mod-2) * 1rem;
+
+	--h4-min: var(--mod-1) * 1rem;
+	--h4-max: var(--mod-2) * 1rem;
+
+	--h5-min: 1rem;
+	--h5-max: 1rem;
+
+	--h6-min: (1rem / var(--mod-1));
+	--h6-max: (1rem / var(--mod-2));
+
+	h1 {
+		@include fluid-type(font-size,37.5rem, 80rem, $h1-min, $h1-max);
+	}
+*/
+
+}

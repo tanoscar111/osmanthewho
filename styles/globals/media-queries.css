@@ -1,0 +1,6 @@
+/* Footer */
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
