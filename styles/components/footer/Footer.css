@@ -9,8 +9,13 @@
 .footer-btn-cta {
 }
 
+.footer-btn-cta a {
+	float: left;
+	text-align: left;
+}
+
 .footer-mail {
-	display: block;
+	display: inline-block;
 	margin-bottom: 1rem;
 }
 
@@ -32,5 +37,4 @@
 .footer-mail,
 .footer-social,
 .footer-copyright {
-	font-size: var(--font-size-fluid-md1);
 }

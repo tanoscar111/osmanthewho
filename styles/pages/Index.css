@@ -3,7 +3,6 @@
 	height: 100vh;
 	position: relative;
 }
-
 .video-full-screen {
 	object-fit: cover;
 	width: 100%;
@@ -18,14 +17,31 @@
 	background: linear-gradient(0deg, #000 0%, #ffffff00 100%);
 }
 
+.landing-content h1 {
+	font-family: var(--font-family-heading);
+	letter-spacing: var(--letter-spacing-xl);
+	font-style: italic;
+}
+
 .landing-content {
+	color: hsl(50, 50%, 50%);
 	height: 100%;
+	transform: rotate(-5deg);
+  text-shadow: 1px 1px hsl(50, 50%, 45%),
+               2px 2px hsl(50, 50%, 40%),
+               3px 3px hsl(50, 50%, 35%),
+               4px 4px hsl(50, 50%, 34%),
+               5px 5px hsl(50, 50%, 33%),
+               6px 6px hsl(50, 50%, 32%),
+               7px 7px hsl(50, 50%, 31%),
+               8px 8px hsl(50, 50%, 30%),
+               9px 9px hsl(50, 50%, 29%),
+               10px 10px hsl(50, 50%, 28%),
+               10px 10px 30px rgba(0,0,0,.7)
 }
 
 .landing-content-title {
 	z-index: 1;
-	white-space: nowrap;
-	font-size: var(--font-size-fluid-xl);
 }
 
 .skills {

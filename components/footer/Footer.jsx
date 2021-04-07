@@ -11,19 +11,21 @@ export default function Footer() {
 				<button className="footer-btn-cta text-stroke">
 					<h2>
 					<Link href="/">
-						<a>LET'S TALK. ➤</a>
+						<a>LET'S TALK.➤</a>
 					</Link>
 					</h2>
 				</button>
 			</div>
 
-			<a
-				className="footer-mail"
-				target="_blank"
-				href="mailto:info@osmanthewho.com?subject=I'm contacting because..."
-			>
-				info@osmanthewho.com
-			</a>
+			<p>
+				<a
+					className="footer-mail"
+					target="_blank"
+					href="mailto:info@osmanthewho.com?subject=I'm contacting because..."
+				>
+					info@osmanthewho.com
+				</a>
+			</p>
 
 			<div className="footer-social">
 				<a target="_blank" href="https://www.instagram.com/osmanthewho/">

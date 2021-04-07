@@ -3,6 +3,7 @@ import Head from "next/head"
 import Layout from "../components/constants/Layout"
 
 export default function Home() {
+	// blackout the video on scroll down
 	useEffect(() => {
 		let video = document.querySelector("video")
 		window.addEventListener("scroll", function () {

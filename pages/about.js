@@ -10,18 +10,18 @@ export default function About() {
 				<title>About Osman Işık</title>
 			</Head>
 
-			<section className="about-hero center-content">
-				<div>
+			<section className="about-hero">
+				<h1>
 						<span>FILM</span>
 						<span>MAKER</span>
-				</div>
-				<div>
+				</h1>
+				<h1>
 						<span>STORY</span>
 						<span>TELLER</span>
-				</div>
-				<div>
+				</h1>
+				<h1>
 						<span>DIRECTOR</span>
-				</div>
+				</h1>
 			</section>
 
 			<section className="intro">
@@ -59,14 +59,14 @@ export default function About() {
 					</p>
 					<p>
 						I'm Osman Işık. I'm a filmmaker, photographer, designer and director
-						living in Turkey. I produce creative content for brands and artists.
+					  in Turkey. I produce creative content for brands and artists.
 					</p>
 					<p>
-						You can take a look at and see what I'm doing on my{" "}
+						You can visit my{" "}
 						<a href="https://www.instagram.com/osmanthewho" target="_blank">
 							Instagram
 						</a>{" "}
-						account. I'm available for freelance work.
+						account to see my jobs. I'm available for freelance work.
 					</p>
 				</div>
 			</section>

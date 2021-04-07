@@ -1,25 +1,20 @@
 .about-hero {
 	min-height: 100vh;
-	font-size: var(--font-size-fluid-xl);
-	color: var(--grey);
-	--a: var(--black) 0%;
-	--b: var(--grey) 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.about-hero > div > span {
-	background: linear-gradient(180deg, var(--a), var(--b));
+.about-hero > h1 > span {
+	background: linear-gradient(180deg, var(--black) 3%, var(--grey) 60%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	will-change: transform;
-	will-change: transform;
 }
 
-.about-hero > div {
+.about-hero > h1 {
 	display: flex;
-	text-align: center;
 }
-
 /* ------------------------------------------------- */
 .intro {
 	min-height: 120vh;
@@ -36,7 +31,6 @@
 .intro a {
 	text-decoration: underline;
 }
-
 /* ------------------------------------------------- */
 .tilt {
 	max-width: 452px;
@@ -81,8 +75,12 @@
 /* ------------------------------------------------- */
 
 /* Media queries */
-@media only screen and (max-width: 768px) {
-	.about-hero > div {
+@media only screen and (max-width: 899px) {
+	.about-hero > h1 {
 		flex-direction: column;
+	}
+
+	.tilt-photo-front {
+		opacity: 1;
 	}
 }

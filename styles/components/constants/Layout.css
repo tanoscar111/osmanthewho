@@ -1,6 +1,6 @@
 .layout-container {
 	display: grid;
-	grid-template-columns: 1fr min(90%, calc(100% - 1rem)) 1fr;
+	grid-template-columns: 1fr min(85%, calc(100% - 1rem)) 1fr;
 }
 
 .layout-container > * {
