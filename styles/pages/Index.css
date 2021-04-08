@@ -17,16 +17,10 @@
 	background: linear-gradient(0deg, #000 0%, #ffffff00 100%);
 }
 
-.landing-content h1 {
-	font-family: var(--font-family-heading);
-	letter-spacing: var(--letter-spacing-xl);
-	font-style: italic;
-}
-
 .landing-content {
 	color: hsl(50, 50%, 50%);
 	height: 100%;
-	transform: rotate(-5deg);
+	transform: rotate(-0deg);
   text-shadow: 1px 1px hsl(50, 50%, 45%),
                2px 2px hsl(50, 50%, 40%),
                3px 3px hsl(50, 50%, 35%),
@@ -41,7 +35,11 @@
 }
 
 .landing-content-title {
-	z-index: 1;
+	display: flex;
+}
+
+.landing-content-title > span {
+	padding-right: 1.3rem;
 }
 
 .skills {
@@ -49,3 +47,8 @@
 	height: 100vh;
 }
 
+@media screen and (max-width: 599px) {
+	.landing-content-title {
+		flex-direction: column;
+	}
+}

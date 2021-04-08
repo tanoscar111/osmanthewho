@@ -24,10 +24,18 @@ export default function Home() {
 					src="/showreel.m4v"
 					poster="/showreel.png"
 				/>
+
 				<div className="linear-gradient-div"></div>
+
 				<div className="landing-content center-content">
-					<h1 className="landing-content-title">BE WILD</h1>
-					<h1 className="landing-content-title">HAVE MOVE</h1>
+					<h1 className="landing-content-title">
+						<span>be</span>
+						<span>wild</span>
+					</h1>
+					<h1 className="landing-content-title">
+						<span>move</span>
+						<span>on</span>
+					</h1>
 				</div>
 			</div>
 			<div className="skills center-content">

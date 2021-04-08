@@ -6,12 +6,12 @@ export default function Footer() {
 
 			<div className="footer-heading">
 				<h2>
-					CREATE THE GREAT!
+					A PROJECT?
 				</h2>
 				<button className="footer-btn-cta text-stroke">
 					<h2>
 					<Link href="/">
-						<a>LET'S TALK.➤</a>
+						<a>LET'S TALK.</a>
 					</Link>
 					</h2>
 				</button>

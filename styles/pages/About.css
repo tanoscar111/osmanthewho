@@ -1,12 +1,9 @@
 .about-hero {
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .about-hero > h1 > span {
-	background: linear-gradient(180deg, var(--black) 3%, var(--grey) 60%);
+	background: linear-gradient(180deg, var(--black) 0%, var(--grey) 60%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

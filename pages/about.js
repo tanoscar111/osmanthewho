@@ -10,17 +10,19 @@ export default function About() {
 				<title>About Osman Işık</title>
 			</Head>
 
-			<section className="about-hero">
+			<section className="about-hero center-content">
 				<h1>
-						<span>FILM</span>
-						<span>MAKER</span>
+					<span>FILM</span>
+					<span>MAKER</span>
 				</h1>
 				<h1>
-						<span>STORY</span>
-						<span>TELLER</span>
+					<span>DESIGNER</span>
 				</h1>
 				<h1>
-						<span>DIRECTOR</span>
+					<span>DIRECTOR</span>
+				</h1>
+				<h1>
+					<span>EDITOR</span>
 				</h1>
 			</section>
 
