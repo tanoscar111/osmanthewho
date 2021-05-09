@@ -16,9 +16,6 @@ export default function About() {
 					<span>MAKER</span>
 				</h1>
 				<h1>
-					<span>DESIGNER</span>
-				</h1>
-				<h1>
 					<span>DIRECTOR</span>
 				</h1>
 				<h1>

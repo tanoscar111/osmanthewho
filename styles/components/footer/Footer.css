@@ -32,9 +32,21 @@
 }
 
 .footer-copyright {
+	background: green;
+}
+
+.footer-copyright a {
+	background: red;
 }
 
 .footer-mail,
 .footer-social,
 .footer-copyright {
+	color: var(--grey);
+}
+
+.footer-mail,
+.footer-social,
+.footer-copyright:hover {
+	color: var(--white);
 }
