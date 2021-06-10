@@ -9,22 +9,22 @@
 	line-height: $line-height-sm;
 	font-family: $font-family-heading-bold;
 	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
-}
 
-.nav li {
-	float: left;
-	clear: left;
-}
+	li {
+		float: left;
+		clear: left;
+	}
 
-.nav a {
-	@include text-stroke;
-	transition: 0.2s;
-}
+	a {
+		@include text-stroke;
+		transition: 0.2s;
+	}
 
-.nav a:hover {
-	@include text-stroke-hover;
-}
+	a:hover {
+		@include text-stroke-hover;
+	}
 
-.nav li:hover a {
-	padding-left: $step-5;
+	li:hover a {
+		padding-left: $step-5;
+	}
 }
