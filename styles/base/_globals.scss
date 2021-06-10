@@ -1,0 +1,33 @@
+html,
+body {
+	scrollbar-width: none; /* firefox */
+	background-color: $black;
+	color: $white;
+	overflow-x: hidden;
+	user-select: none;
+	overscroll-behavior-y: none;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font-family-main;
+	line-height: $line-height-md;
+}
+
+
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+button {
+	color: $white;
+	transition: opacity 0.5s;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}

@@ -15,7 +15,7 @@ export default function MenuItem({ link }) {
 		return (
 			<motion.li variants={menuItemVariants}>
 				<Link href="/">
-					<a className="text-stroke">{link}</a>
+					<a>{link}</a>
 				</Link>
 			</motion.li>
 		)
@@ -23,7 +23,7 @@ export default function MenuItem({ link }) {
 		return (
 			<motion.li variants={menuItemVariants}>
 				<Link href={`/${link.toLowerCase()}`}>
-					<a className="text-stroke">{link}</a>
+					<a>{link}</a>
 				</Link>
 			</motion.li>
 		)

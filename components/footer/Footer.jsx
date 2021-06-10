@@ -8,7 +8,7 @@ export default function Footer() {
 				<h2>
 					A PROJECT?
 				</h2>
-				<button className="footer-btn-cta text-stroke">
+				<button className="footer-btn-cta">
 					<h2>
 					<Link href="/">
 						<a>LET'S TALK.</a>
@@ -17,9 +17,8 @@ export default function Footer() {
 				</button>
 			</div>
 
-			<p>
+			<p className="footer-mail">
 				<a
-					className="footer-mail"
 					target="_blank"
 					href="mailto:info@osmanthewho.com?subject=I'm contacting because..."
 				>
@@ -42,15 +41,6 @@ export default function Footer() {
 				</a>
 			</div>
 
-			<p className="footer-copyright">
-				© Made with{" "}
-				<a
-					target="_blank"
-					href="https://www.youtube.com/watch?v=2ZIpFytCSVc"
-				>
-					🄱🅁🅄🄷
-				</a>
-			</p>
 		</footer>
 	)
 }

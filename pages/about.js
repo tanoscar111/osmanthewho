@@ -10,7 +10,7 @@ export default function About() {
 				<title>About Osman Işık</title>
 			</Head>
 
-			<section className="about-hero center-content">
+			<section className="about-hero">
 				<h1>
 					<span>FILM</span>
 					<span>MAKER</span>
@@ -46,7 +46,7 @@ export default function About() {
 						alt="Osman Işık"
 						className="tilt-photo-front"
 					/>
-					<div className="tilt-title-container center-content text-stroke">
+					<div className="tilt-title-container">
 						<h2>THE</h2>
 						<h2>WHO</h2>
 					</div>

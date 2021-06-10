@@ -1,0 +1,39 @@
+.footer {
+	padding: 3rem 0 2rem 0;
+}
+
+.footer-heading {
+	margin-bottom: 3rem;
+
+	.footer-btn-cta {
+		@include text-stroke;
+		a {
+			float: left;
+			text-align: left;
+		}
+	}
+	.footer-btn-cta:hover {
+		@include text-stroke-hover;
+	}
+}
+
+.footer-mail  {
+	a {
+		color: $grey;
+	}
+}
+	a:hover {
+		color: $white;
+}
+
+.footer-social {
+	margin-bottom: 1rem;
+
+	img {
+		width: clamp(16px, 0.5rem + 1vw, 32px);
+	}
+
+	a:not(:last-child) {
+		padding-right: 1.5rem;
+	}
+}

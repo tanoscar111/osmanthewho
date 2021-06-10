@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+button,
+span {
+	font-family: $font-family-heading-bold;
+	line-height: $line-height-sm;
+	letter-spacing: $letter-spacing-md;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 599px) {
+	h1 { font-size: $step-10; }
+	h2 { font-size: $step-8; }
+	li { font-size: $step-9; }
+	p	 { font-size: $step-0; }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	h1 { font-size: $step-10; }
+	h2 { font-size: $step-8; }
+	li { font-size: $step-9; }
+	p	 { font-size: $step-1; }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1439px) {
+	h1 { font-size: $step-9; }
+	h2 { font-size: $step-7; }
+	li { font-size: $step-8; }
+	p	 { font-size: $step-2; }
+}
+
+@media screen and (min-width: 1440px) {
+	h1 { font-size: $step-9; }
+	h2 { font-size: $step-7; }
+	li { font-size: $step-8; }
+	p	 { font-size: $step-2; }
+}

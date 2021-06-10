@@ -16,18 +16,18 @@ export default function Home() {
 		<Layout>
 			<div className="landing full-bleed">
 				<video
+					className="video-full-screen"
 					muted
 					playsInline
 					autoPlay
 					loop
-					className="video-full-screen"
 					src="/showreel.m4v"
 					poster="/showreel.png"
 				/>
 
 				<div className="linear-gradient-div"></div>
 
-				<div className="landing-content center-content">
+				<div className="landing-content">
 					<h1 className="landing-content-title">
 						<span>be</span>
 						<span>wild</span>
@@ -38,7 +38,7 @@ export default function Home() {
 					</h1>
 				</div>
 			</div>
-			<div className="skills center-content">
+			<div className="skills">
 				<h2>skills</h2>
 			</div>
 		</Layout>

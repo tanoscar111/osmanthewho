@@ -1,0 +1,16 @@
+.layout-container {
+	display: grid;
+	grid-template-columns: 1fr min(85%, calc(100% - 1rem)) 1fr;
+}
+
+.layout-container > * {
+	grid-column: 2;
+}
+
+/* not used */
+.full-bleed {
+	width: 100%;
+	grid-column: 1 / -1;
+}
+
+/* !! fixed elements overrides layout restrictions !! */
