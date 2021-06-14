@@ -10,7 +10,7 @@
 	-webkit-text-fill-color: transparent;
 }
 
-.about-hero > h1 {
+.about-hero > h1:nth-child(1) {
 	display: flex;
 }
 
@@ -68,12 +68,16 @@
 }
 
 @media only screen and (max-width: 899px) {
-	.about-hero > h1 {
+	.about-hero > h1:nth-child(1) {
 		flex-direction: column;
 	}
 }
 
 @media only screen and (max-width: 599px) {
+	.about-hero {
+		min-height: 50vh;
+		justify-content: flex-end;
+	}
 	.intro {
 		.intro-text {
 			margin-top: -4rem;

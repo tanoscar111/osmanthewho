@@ -15,6 +15,9 @@ export default function About() {
 					<span>MAKER</span>
 				</h1>
 				<h1>
+					<span>CREATIVE</span>
+				</h1>
+				<h1>
 					<span>DIRECTOR</span>
 				</h1>
 				<h1>

@@ -31,7 +31,7 @@
 	margin: 1rem 0 1rem 0;
 
 	img {
-		width: clamp(16px, 0.5rem + 1vw, 32px);
+		width: clamp(16px, 1rem + 1vw, 32px);
 		filter: invert(30%) sepia(50%) saturate(7%) hue-rotate(334deg) brightness(100%) contrast(89%);
 	}
 
