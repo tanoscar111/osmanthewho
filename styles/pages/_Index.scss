@@ -21,8 +21,8 @@
 	@include center-content;
 	width: 100%;
 	height: 100%;
-	mix-blend-mode: overlay;
-	-webkit-text-stroke: 3px white;
+	mix-blend-mode: hard-light;
+	-webkit-text-stroke: 2px white;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -44,5 +44,9 @@
 @media screen and (max-width: 599px) {
 	.landing-content-title {
 		flex-direction: column;
+	}
+
+	.landing-content-title > span {
+		padding-right: 0rem;
 	}
 }

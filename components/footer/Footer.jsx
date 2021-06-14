@@ -1,18 +1,19 @@
-import Link from "next/link"
-
 export default function Footer() {
 	return (
 		<footer className="footer">
 
 			<div className="footer-heading">
 				<h2>
-					A PROJECT?
+					a project?
 				</h2>
 				<button className="footer-btn-cta">
 					<h2>
-					<Link href="/">
-						<a>LET'S TALK.</a>
-					</Link>
+						<a
+							target="_blank"
+							href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
+						>
+							let's talk!
+						</a>
 					</h2>
 				</button>
 			</div>
@@ -20,7 +21,7 @@ export default function Footer() {
 			<p className="footer-mail">
 				<a
 					target="_blank"
-					href="mailto:info@osmanthewho.com?subject=I'm contacting because..."
+					href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
 				>
 					info@osmanthewho.com
 				</a>

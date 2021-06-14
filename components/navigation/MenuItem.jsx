@@ -11,7 +11,7 @@ const menuItemVariants = {
 }
 
 export default function MenuItem({ link }) {
-	if (link === "HOME") {
+	if (link === "home") {
 		return (
 			<motion.li variants={menuItemVariants}>
 				<Link href="/">
@@ -22,7 +22,7 @@ export default function MenuItem({ link }) {
 	} else {
 		return (
 			<motion.li variants={menuItemVariants}>
-				<Link href={`/${link.toLowerCase()}`}>
+				<Link href={`/${link}`}>
 					<a>{link}</a>
 				</Link>
 			</motion.li>

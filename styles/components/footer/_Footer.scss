@@ -1,5 +1,8 @@
 .footer {
 	padding: 3rem 0 2rem 0;
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 50px;
 }
 
 .footer-heading {
@@ -7,11 +10,8 @@
 
 	.footer-btn-cta {
 		@include text-stroke;
-		a {
-			float: left;
-			text-align: left;
-		}
 	}
+
 	.footer-btn-cta:hover {
 		@include text-stroke-hover;
 	}
@@ -21,19 +21,25 @@
 	a {
 		color: $grey;
 	}
-}
+
 	a:hover {
 		color: $white;
+	}
 }
 
 .footer-social {
-	margin-bottom: 1rem;
+	margin: 1rem 0 1rem 0;
 
 	img {
 		width: clamp(16px, 0.5rem + 1vw, 32px);
+		filter: invert(30%) sepia(50%) saturate(7%) hue-rotate(334deg) brightness(100%) contrast(89%);
+	}
+
+	img:hover {
+		filter: brightness(0) invert(1);
 	}
 
 	a:not(:last-child) {
-		padding-right: 1.5rem;
+		padding-right: 3rem;
 	}
 }

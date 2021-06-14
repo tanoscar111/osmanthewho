@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 		<div className="layout-container">
 			<Head>
 				<title>Osman Işık | Film Creator</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/images/favicon.ico" />
 			</Head>
 			<Navigation />
 			{children}

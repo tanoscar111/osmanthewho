@@ -17,22 +17,22 @@ export default function Home() {
 			<div className="landing full-bleed">
 				<video
 					className="video-full-screen"
+					poster="/images/showreel.jpg"
+					src="/images/showreel.m4v"
 					muted
 					playsInline
 					autoPlay
 					loop
-					src="/showreel.m4v"
-					poster="/showreel.png"
 				/>
 
 				<div className="linear-gradient-div"></div>
 
 				<div className="landing-content">
-					<h1 className="landing-content-title">
+					<h1 className="landing-content-title test">
 						<span>be</span>
 						<span>wild</span>
 					</h1>
-					<h1 className="landing-content-title">
+					<h1 className="landing-content-title test">
 						<span>move</span>
 						<span>on</span>
 					</h1>

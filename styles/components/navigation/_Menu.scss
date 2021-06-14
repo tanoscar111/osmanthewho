@@ -5,12 +5,12 @@
 	position: fixed;
 	display: flex;
 	align-items: center;
-	background-color: $black;
-	line-height: $line-height-sm;
+	background: $black;
 	font-family: $font-family-heading-bold;
 	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
 
 	li {
+		line-height: $line-height-sm;
 		float: left;
 		clear: left;
 	}
@@ -26,5 +26,21 @@
 
 	li:hover a {
 		padding-left: $step-5;
+	}
+}
+
+@media only screen and (max-width: 899px) {
+	.nav {
+		@include center-content;
+
+		li {
+			float: none;
+			clear: none;
+			line-height: $line-height-lg;
+		}
+
+		li:hover a {
+			padding-left: 0;
+		}
 	}
 }

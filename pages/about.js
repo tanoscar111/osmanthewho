@@ -1,6 +1,5 @@
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
-import Tilt from "react-parallax-tilt"
 import Footer from "../components/footer/Footer"
 
 export default function About() {
@@ -24,40 +23,21 @@ export default function About() {
 			</section>
 
 			<section className="intro">
-				<Tilt
-					className="tilt"
-					glareEnable={true}
-					glareMaxOpacity={0.7}
-					glareColor="black"
-					glarePosition="all"
-					scale={1.04}
-					transitionSpeed={1000}
-					gyroscrope={true}
-					tiltMaxAngleX={3}
-					tiltMaxAngleY={3}
-				>
 					<img
-						src="/images/osman/lezmove.png"
+						src="/images/osman.jpg"
 						alt="Osman Işık"
-						className="tilt-photo-back"
 					/>
-					<img
-						src="/images/osman/lezmove-bg-removed.png"
-						alt="Osman Işık"
-						className="tilt-photo-front"
-					/>
-					<div className="tilt-title-container">
-						<h2>THE</h2>
-						<h2>WHO</h2>
-					</div>
-				</Tilt>
 				<div className="intro-text">
+					<h3>Osman Işık</h3>
+					<br />
+					<hr />
+					<br />
 					<p>
 						I promote living the life to the fullest and seeing the world
 						through an optimistic lens.
 					</p>
 					<p>
-						I'm Osman Işık. I'm a filmmaker, photographer, designer and director
+						I'm Osman. I'm a filmmaker, photographer, designer and director
 					  in Turkey. I produce creative content for brands and artists.
 					</p>
 					<p>
@@ -66,6 +46,10 @@ export default function About() {
 							Instagram
 						</a>{" "}
 						account to see my jobs. I'm available for freelance work.
+					</p>
+					<p>
+						Dolor magni fugit voluptas nulla eius. Porro sequi dolorem
+						necessitatibus nihil rem Mollitia laborum libero eos!
 					</p>
 				</div>
 			</section>
