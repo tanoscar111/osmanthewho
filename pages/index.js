@@ -1,6 +1,7 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
+import gsap from "gsap";
 
 export default function Home() {
 	// blackout the video on scroll down
@@ -10,6 +11,13 @@ export default function Home() {
 			let value = 0.7 + window.scrollY / -1000
 			video.style.opacity = value
 		})
+	}, [])
+
+	// define title animation reference
+	const titleRef = useRef(null);
+
+	useEffect(() => {
+		gsap.from(titleRef.current, {y: 30, duration: 0.7, autoAlpha: 0, delay: 2.2});
 	}, [])
 
 	return (
@@ -39,7 +47,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="skills">
-				<h2>skills</h2>
+				<h3 ref={titleRef}>what i do</h3>
 			</div>
 		</Layout>
 	)
