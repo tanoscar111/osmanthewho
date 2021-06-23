@@ -1,9 +1,13 @@
 import { useEffect, useRef } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
-import gsap from "gsap";
+import gsap from 'gsap'
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
 
 export default function Home() {
+
+	gsap.registerPlugin(ScrollTrigger);
+
 	// blackout the video on scroll down
 	useEffect(() => {
 		let video = document.querySelector("video")
