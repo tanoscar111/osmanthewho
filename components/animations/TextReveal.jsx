@@ -4,28 +4,28 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function TextReveal({ children }) { // childreni parantezsiz dene
+export function TextReveal({ children }) {
 	const textRef = useRef(null)
 
 	useEffect(() => {
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: textRef.current,
-				start: "center 70%",
-				end: "center 30%",
-				markers: true,
+				start: "center center",
+				end: "+=" + (window.innerHeight * 1.5),
 				scrub: 1,
+				pin: true,
 			}
 		})
 
 		tl.from(textRef.current, {
-			opacity: 0,
-			y: 70,
-		}).to(textRef.current, {
-			y: -70,
 			autoAlpha: 0,
+			y: 50,
+		}).to(textRef.current, {
+			autoAlpha: 0,
+			y: -50,
 		})
 	}, [])
 
-  return <div ref={textRef}>{children}</div>
+	return <div ref={textRef}>{children}</div>
 }

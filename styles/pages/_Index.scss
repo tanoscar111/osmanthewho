@@ -3,6 +3,7 @@
 	height: 100vh;
 	position: relative;
 }
+
 .video-full-screen {
 	object-fit: cover;
 	width: 100%;
@@ -35,9 +36,7 @@
 }
 
 .skills {
-	@include center-content;
-	width: 100%;
-	height: 100vh;
+	text-align: center;
 }
 
 @media screen and (max-width: 599px) {

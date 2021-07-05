@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
-import TextReveal from '../components/animations/TextReveal'
+import { TextReveal } from '../components/animations/TextReveal'
 
 export default function Home() {
 
@@ -16,7 +16,7 @@ export default function Home() {
 
 	return (
 		<Layout>
-			<div className="landing full-bleed">
+			<section className="landing full-bleed">
 				<video
 					className="video-full-screen"
 					poster="/images/showreel.jpg"
@@ -39,12 +39,16 @@ export default function Home() {
 						<span>on</span>
 					</h1>
 				</div>
-			</div>
-			<div className="skills">
+			</section>
+
+			<section className="skills">
 				<TextReveal>
-					<h2>i make films</h2>
+					<h2 style={{ color: "blue" }}>what i do?</h2>
 				</TextReveal>
-			</div>
+				<TextReveal>
+					<h2 style={{ color: "blue" }}>i make films</h2>
+				</TextReveal>
+			</section>
 		</Layout>
 	)
 }
