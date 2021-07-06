@@ -43,10 +43,11 @@ export default function Home() {
 
 			<section className="skills">
 				<TextReveal>
-					<h2 style={{ color: "blue" }}>what i do?</h2>
+					<h2>what i do?</h2>
 				</TextReveal>
+				<div className="bosluk"></div>
 				<TextReveal>
-					<h2 style={{ color: "blue" }}>i make films</h2>
+					<h2>i make films</h2>
 				</TextReveal>
 			</section>
 		</Layout>

@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	margin-bottom: 500px;
 }
 
 .video-full-screen {
@@ -37,6 +38,10 @@
 
 .skills {
 	text-align: center;
+}
+
+.bosluk {
+	height: 50vh;
 }
 
 @media screen and (max-width: 599px) {
