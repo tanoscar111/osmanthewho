@@ -11,33 +11,33 @@ export function TextReveal({ children }) {
 		ScrollTrigger.create({
 			trigger: textRef.current,
 			//markers: true,
-			start: "center 65%",
-			end: "center 35%",
+			start: "center 60%",
+			end: "center 40%",
 			scrub: 1,
 			onEnter: () => {
 				gsap.to(textRef.current, {
-					y: -50,
+					y: -25,
 					duration: 1,
 					autoAlpha: 1
 				})
 			},
 			onLeave: () => {
 				gsap.to(textRef.current, {
-					y: -100,
+					y: -50,
 					duration: 1,
 					autoAlpha: 0
 				})
 			},
 			onEnterBack: () => {
 				gsap.to(textRef.current, {
-					y: 50,
+					y: 25,
 					duration: 1,
 					autoAlpha: 1
 				})
 			},
 			onLeaveBack: () => {
 				gsap.to(textRef.current, {
-					y: 100,
+					y: 50,
 					duration: 1,
 					autoAlpha: 0
 				})
