@@ -1,9 +1,21 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
-import { TextReveal } from '../components/animations/TextReveal'
+import { TextRevealAnimation } from '../components/animations/TextRevealAnimation'
+import gsap from 'gsap'
 
 export default function Home() {
+	const heading1 = useRef(null)
+	const heading2 = useRef(null)
+
+	useEffect(() => {
+		gsap.timeline()
+			.fromTo(heading1.current, {
+				y: 100,
+			}, {
+				y: 0,
+			}, 1)
+	}, [])
 
 	// blackout the video on scroll down
 	useEffect(() => {
@@ -27,14 +39,16 @@ export default function Home() {
 					loop
 				/>
 
-				<div className="linear-gradient-div"></div>
+				<div className="linear-gradient-div1"></div>
+				<div className="linear-gradient-div2"></div>
+				<div className="linear-gradient-div3"></div>
 
 				<div className="landing-content">
-					<h1 className="landing-content-title test">
+					<h1 ref={heading1} className="landing-content-title">
 						<span>be</span>
 						<span>wild</span>
 					</h1>
-					<h1 className="landing-content-title test">
+					<h1 ref={heading2} className="landing-content-title">
 						<span>move</span>
 						<span>on</span>
 					</h1>
@@ -42,13 +56,9 @@ export default function Home() {
 			</section>
 
 			<section className="skills">
-				<TextReveal>
-					<h2>what i do?</h2>
-				</TextReveal>
-				<div className="bosluk"></div>
-				<TextReveal>
-					<h2>i make films</h2>
-				</TextReveal>
+				<TextRevealAnimation>
+					<h3>what i do?</h3>
+				</TextRevealAnimation>
 			</section>
 		</Layout>
 	)

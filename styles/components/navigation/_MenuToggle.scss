@@ -1,6 +1,20 @@
+.menu-toggle-svg,
+.menu-toggle-text {
+}
+
 .menu-toggle-svg {
-	z-index: 2;
+}
+
+.menu-toggle-text {
+	margin: 3px 5px 0 0;
+}
+
+.menu-toggle {
+	@include center-content;
+	flex-direction: row;
 	position: fixed;
-	right: 2rem;
-	top: 2rem;
+	z-index: 2;
+	cursor: pointer;
+	right: 3rem;
+	top: 3rem;
 }
