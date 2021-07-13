@@ -11,7 +11,9 @@ export default function About() {
 
 			<section className="about-hero">
 				<h1>
-					<span>FILM</span>
+					<h1>
+						<span>FILM</span>
+					</h1>
 					<span>MAKER</span>
 				</h1>
 				<h1>

@@ -3,11 +3,17 @@
 	min-height: 100vh;
 }
 
-.about-hero > h1 > span {
-	background: linear-gradient(180deg, $black 0%, $grey 60%);
+.about-hero h1 {
+	overflow: hidden;
+}
+
+.about-hero h1 span {
+	display: block;
 	background-clip: text;
+	background: linear-gradient(180deg, $black 0%, $grey 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
 
 .about-hero > h1:nth-child(1) {
@@ -64,18 +70,21 @@
 			margin-top: 50px;
 		}
 	}
-
 }
 
 @media only screen and (max-width: 899px) {
-	.about-hero > h1:nth-child(1) {
+	.about-hero h1:nth-child(1) {
 		flex-direction: column;
+	}
+
+	.about-hero h1 {
+		flex-direction: column;
+		font-size: $step-11-2;
 	}
 }
 
 @media only screen and (max-width: 599px) {
 	.about-hero {
 		min-height: 50vh;
-		justify-content: flex-end;
 	}
 }

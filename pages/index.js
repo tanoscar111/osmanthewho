@@ -1,21 +1,9 @@
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import { TextRevealAnimation } from '../components/animations/TextRevealAnimation'
-import gsap from 'gsap'
 
 export default function Home() {
-	const heading1 = useRef(null)
-	const heading2 = useRef(null)
-
-	useEffect(() => {
-		gsap.timeline()
-			.fromTo(heading1.current, {
-				y: 100,
-			}, {
-				y: 0,
-			}, 1)
-	}, [])
 
 	// blackout the video on scroll down
 	useEffect(() => {
@@ -39,18 +27,16 @@ export default function Home() {
 					loop
 				/>
 
-				<div className="linear-gradient-div1"></div>
-				<div className="linear-gradient-div2"></div>
-				<div className="linear-gradient-div3"></div>
+				<div className="linear-gradient-div"></div>
 
 				<div className="landing-content">
-					<h1 ref={heading1} className="landing-content-title">
-						<span>be</span>
-						<span>wild</span>
+					<h1 className="landing-content-title">
+						<div><span>be</span></div>
+						<div><span>wild</span></div>
 					</h1>
-					<h1 ref={heading2} className="landing-content-title">
-						<span>move</span>
-						<span>on</span>
+					<h1 className="landing-content-title">
+						<div><span>move</span></div>
+						<div><span>on</span></div>
 					</h1>
 				</div>
 			</section>

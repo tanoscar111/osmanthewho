@@ -11,52 +11,73 @@
 	position: absolute;
 }
 
-.linear-gradient-div1 {
+.linear-gradient-div {
+	background: -webkit-linear-gradient(bottom, #000 0%, rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(bottom, #000 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(bottom, #000 0%, rgba(255, 255, 255, 0) 100%);
 	position: absolute;
 	width: 100%;
 	height: 102%;
-	background: -webkit-linear-gradient(90deg, #000 0%, #ffffff00 100%);
-}
-.linear-gradient-div2 {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: -webkit-linear-gradient(0deg, #000 0%, #ffffff00 50%);
-}
-.linear-gradient-div3 {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: -webkit-linear-gradient(180deg, #000 0%, #ffffff00 50%);
 }
 
 .landing-content {
 	@include center-content;
 	width: 100%;
 	height: 100%;
-	mix-blend-mode: hard-light;
-	-webkit-text-stroke: 2px white;
-	-webkit-text-fill-color: transparent;
+	mix-blend-mode: overlay;
+	-webkit-text-stroke: 3px white;
 }
 
 .landing-content-title {
 	display: flex;
+	font-size: $step-10;
+
+	div {
+		overflow: hidden;
+	}
 
 	span {
 		padding-right: 1.3rem;
+		display: block;
+		animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 	}
 }
 
 .skills {
 	text-align: center;
+	margin-top: 20%;
+	height: 50vh;
 }
 
 @media screen and (max-width: 599px) {
-	.landing-content-title {
-		flex-direction: column;
+	.landing-content {
+		-webkit-text-stroke: 1px white;
 	}
 
-	.landing-content-title > span {
+	.landing-content-title {
+		flex-direction: column;
+		font-size: $step-11;
+	}
+
+	.landing-content-title span {
 		padding-right: 0rem;
 	}
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes reveal-reverse {
+  0% {
+    transform: translate(0,-100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
 }

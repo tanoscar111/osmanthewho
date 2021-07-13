@@ -7,6 +7,7 @@
 
 .footer-heading {
 	margin-bottom: 3rem;
+	white-space: nowrap;
 
 	.footer-btn-cta {
 		@include text-stroke;

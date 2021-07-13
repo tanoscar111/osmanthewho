@@ -11,7 +11,7 @@ export function TextRevealAnimation({ children }) {
 	useEffect(() => {
 		ScrollTrigger.create({
 			trigger: textRef.current,
-			start: "center 75%",
+			start: "center 70%",
 			end: "center 30%",
 			onEnter: () => {
 				gsap.to(textRef.current, {
