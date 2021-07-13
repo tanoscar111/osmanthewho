@@ -28,7 +28,6 @@ export default function Home() {
 				/>
 
 				<div className="linear-gradient-div"></div>
-				<div className="linear-gradient-div2"></div>
 
 				<div className="landing-content">
 					<h1 className="landing-content-title">
