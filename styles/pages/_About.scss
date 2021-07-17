@@ -1,6 +1,7 @@
 .about-hero {
   @include center-content;
 	min-height: 100vh;
+	margin-top: 50px;
 }
 
 .about-hero h1 {
@@ -79,7 +80,6 @@
 
 	.about-hero h1 {
 		flex-direction: column;
-		font-size: $step-11-2;
 	}
 }
 

@@ -19,7 +19,7 @@ export default function Home() {
 			<section className="landing full-bleed">
 				<video
 					className="video-full-screen"
-					poster="/images/showreel.jpg"
+					poster="/images/showreel.png"
 					src="/images/showreel.m4v"
 					muted
 					playsInline
@@ -35,8 +35,8 @@ export default function Home() {
 						<div><span>wild</span></div>
 					</h1>
 					<h1 className="landing-content-title">
-						<div><span>move</span></div>
-						<div><span>on</span></div>
+						<div><span>be</span></div>
+						<div><span>moved</span></div>
 					</h1>
 				</div>
 			</section>

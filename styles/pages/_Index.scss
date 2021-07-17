@@ -27,14 +27,13 @@
 
 .landing-content-title {
 	display: flex;
-	font-size: $step-10;
 
 	div {
 		overflow: hidden;
 	}
 
 	span {
-		padding-right: 1.3rem;
+		padding: 0 0.7rem 0 0.7rem;
 		display: block;
 		animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 	}
@@ -53,7 +52,7 @@
 	}
 
 	.landing-content-title span {
-		padding-right: 0rem;
+		padding: 0;
 	}
 }
 
@@ -68,7 +67,7 @@
 
 @keyframes reveal-reverse {
   0% {
-    transform: translate(0,-100%);
+    transform: translate(0,-120%);
   }
   100% {
     transform: translate(0,0);

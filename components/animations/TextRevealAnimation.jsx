@@ -6,23 +6,23 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function TextRevealAnimation({ children }) {
 	const textRef = useRef(null)
-	const duration = 1
+	const duration = 0.7
 
 	useEffect(() => {
 		ScrollTrigger.create({
 			trigger: textRef.current,
-			start: "center 70%",
-			end: "center 30%",
+			start: "center 67%",
+			end: "center 33%",
 			onEnter: () => {
 				gsap.to(textRef.current, {
-					y: -30,
+					y: -35,
 					duration,
 					opacity: 1
 				})
 			},
 			onLeave: () => {
 				gsap.to(textRef.current, {
-					y: -60,
+					y: -70,
 					duration,
 					opacity: 0
 				})
@@ -36,7 +36,7 @@ export function TextRevealAnimation({ children }) {
 			},
 			onLeaveBack: () => {
 				gsap.to(textRef.current, {
-					y: 30,
+					y: 35,
 					duration,
 					opacity: 0
 				})

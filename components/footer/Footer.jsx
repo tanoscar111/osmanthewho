@@ -3,16 +3,13 @@ export default function Footer() {
 		<footer className="footer">
 
 			<div className="footer-heading">
-				<h2>
-					a project?
-				</h2>
 				<button className="footer-btn-cta">
 					<h2>
 						<a
 							target="_blank"
 							href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
 						>
-							let's talk!
+							hit me up!
 						</a>
 					</h2>
 				</button>

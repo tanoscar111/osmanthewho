@@ -9,8 +9,9 @@
 @import "components/constants/Layout";
 @import "components/constants/SmoothScroll";
 @import "components/footer/Footer";
-@import "components/navigation/Menu";
-@import "components/navigation/MenuToggle";
+@import "components/header/navigation/Menu";
+@import "components/header/navigation/MenuToggle";
+@import "components/header/logo/Logo";
 @import "components/videoGallery/VideoGallery";
 
 @import "pages/About";

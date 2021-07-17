@@ -3,24 +3,21 @@
 	animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 }
 
-.menu-toggle-svg {
-}
-
 .menu-toggle-text {
+	@include text-stroke;
 	margin: 3px 5px 0 0;
 	font-size: 1.4em;
 }
 
 .menu-toggle {
 	@include center-content;
-	@include text-stroke;
 	flex-direction: row;
 	position: fixed;
 	right: 3rem;
 	top: 3rem;
-	overflow: hidden;
 	z-index: 2;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 599px) {
