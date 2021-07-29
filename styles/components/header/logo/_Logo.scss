@@ -1,13 +1,13 @@
 .logo-img {
 	width: 270px;
 	height: 63px;
-	animation: reveal-reverse 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	animation: $reveal-reverse;
 }
 
 .logo-wrapper {
 	position: fixed;
 	top: 2rem;
-	left: 2rem;
+	left: 6rem;
 	z-index: 1;
 	cursor: pointer;
 	overflow: hidden;
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 599px) {
 	.logo-wrapper {
-		right: 1.5rem;
+		right: 2rem;
 		top: 1.5rem;
 	}
 

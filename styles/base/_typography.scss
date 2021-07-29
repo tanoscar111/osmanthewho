@@ -2,11 +2,16 @@ h1,
 h2,
 h3,
 button,
-span,
 li {
 	font-family: $font-family-heading-bold;
 	line-height: $line-height-sm;
 	letter-spacing: $letter-spacing-md;
+	text-transform: uppercase;
+}
+
+span {
+	font-family: $font-family-main;
+	font-size: $step-0;
 	text-transform: uppercase;
 }
 

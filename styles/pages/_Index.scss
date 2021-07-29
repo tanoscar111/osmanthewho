@@ -35,14 +35,23 @@
 	span {
 		padding: 0 0.7rem 0 0.7rem;
 		display: block;
-		animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+		animation: $reveal;
+		font-family: $font-family-heading;
+		font-size: $step-10;
+		text-transform: uppercase;
 	}
 }
 
 .skills {
 	text-align: center;
-	margin-top: 20%;
-	height: 50vh;
+	margin: 20% 0 20% 0;
+
+	p {
+		@include center-content;
+		opacity: 0;
+		min-height: $step-9;
+		font-size: $step-4;
+	}
 }
 
 @media screen and (max-width: 599px) {
@@ -54,22 +63,4 @@
 	.landing-content-title span {
 		padding: 0;
 	}
-}
-
-@keyframes reveal {
-  0% {
-    transform: translate(0,100%);
-  }
-  100% {
-    transform: translate(0,0);
-  }
-}
-
-@keyframes reveal-reverse {
-  0% {
-    transform: translate(0,-120%);
-  }
-  100% {
-    transform: translate(0,0);
-  }
 }

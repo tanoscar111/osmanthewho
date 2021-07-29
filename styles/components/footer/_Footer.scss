@@ -1,7 +1,6 @@
 .footer {
 	padding: 3rem 0 2rem 0;
 	text-align: center;
-	padding-top: 50px;
 	margin-top: 50px;
 }
 
@@ -18,7 +17,22 @@
 	}
 }
 
+.footer-body {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-copyright {
+	margin: auto;
+}
+
+.footer-copyright {
+	color: $grey;
+}
+
 .footer-mail  {
+	margin: auto;
+
 	a {
 		color: $grey;
 	}
@@ -29,9 +43,10 @@
 }
 
 .footer-social {
-	margin: 1rem 0 1rem 0;
+	margin: auto;
 
 	img {
+		margin-top: 10px;
 		width: clamp(16px, 1rem + 1vw, 32px);
 		filter: invert(30%) sepia(50%) saturate(7%) hue-rotate(334deg) brightness(100%) contrast(89%);
 	}
@@ -42,5 +57,16 @@
 
 	a:not(:last-child) {
 		padding-right: 3rem;
+	}
+}
+
+@media screen and (max-width: 899px) {
+	.footer-body {
+		flex-direction: column;
+		height: calc(+150px);
+	}
+
+	.footer-heading h2 {
+		font-size: $step-7;
 	}
 }

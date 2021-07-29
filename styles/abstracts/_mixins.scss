@@ -12,6 +12,7 @@
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 1.3px white;
 }
+
 @mixin text-stroke-hover {
 	-webkit-text-fill-color: unset;
 	color: $white;
@@ -20,13 +21,5 @@
 // Background noise effect
 @mixin noise-background {
 	background: url("../../public/images/noise.png");
-	animation: noise 1s steps(20) infinite;
-}
-@keyframes noise {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 100% 100%;
-	}
+	animation: $noise;
 }

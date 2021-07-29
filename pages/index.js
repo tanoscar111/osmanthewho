@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
-import { TextRevealAnimation } from '../components/animations/TextRevealAnimation'
+import { TextReveal, TextRevealPinned } from '../components/animations/TextReveal'
 
 export default function Home() {
 
@@ -35,16 +35,31 @@ export default function Home() {
 						<div><span>wild</span></div>
 					</h1>
 					<h1 className="landing-content-title">
-						<div><span>be</span></div>
-						<div><span>moved</span></div>
+						<div><span>move</span></div>
+						<div><span>on</span></div>
 					</h1>
 				</div>
 			</section>
 
 			<section className="skills">
-				<TextRevealAnimation>
-					<h3>what i do?</h3>
-				</TextRevealAnimation>
+				<TextReveal>
+					<p>
+						I promote living your life to the fullest <br />
+						and seeing the world through an optimistic lens.
+					</p>
+					<p>
+						I'm Osman. I'm a filmmaker, photographer, <br />
+						designer and director in Turkey.
+					</p>
+					<p>
+						I produce creative contents for brands.
+					</p>
+				</TextReveal>
+				{/*
+				<TextRevealPinned>
+					<h3>i make films</h3>
+				</TextRevealPinned>
+				*/}
 			</section>
 		</Layout>
 	)
