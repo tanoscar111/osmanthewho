@@ -65,28 +65,33 @@ export function TextReveal({ children }) {
 ///////////////////////////////////////////////////////////////////////////
 
 export function TextRevealPinned({ children }) {
-	const parentRef = useRef(null)
+	const el = useRef()
 
 	useEffect(() => {
-		const tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: parentRef.current,
-				markers: true,
+		const animations = []
+		const elements = gsap.utils.toArray(el.current.children)
+		elements.forEach((element) => {
+			const tl = gsap.timeline(element, {
+			})
+				.from(element, { opacity: 0 })
+				.to(element,  { opacity: 1 })
+				.to(element,  { opacity: 0 })
+
+			const animation = ScrollTrigger.create({
+				animation: tl,
+				trigger: element,
 				start: "center center",
-				end: "+=" + (window.innerHeight * 0.7),
+				end: "+=" + (window.innerHeight * 0.5),
 				scrub: true,
 				pin: true,
-			}
+			})
+			animations.push(animation)
 		})
 
-		tl
-			.from(parentRef.current, {
-				opacity: 0,
-			})
-			.to(parentRef.current, {
-				opacity: 0,
-			})
+		return () => {
+			animations.forEach((animation) => animation.scrollTrigger.kill())
+		}
 	}, [])
 
-	return <div ref={parentRef}>{children}</div>
+	return <div ref={el}>{children}</div>
 }

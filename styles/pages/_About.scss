@@ -92,4 +92,8 @@
 	.about-hero {
 		min-height: 50vh;
 	}
+
+	.about-hero h1 span {
+		font-size: $step-10;
+	}
 }
