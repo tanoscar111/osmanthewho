@@ -44,12 +44,13 @@
 ////////////////////////////////////////////////////////
 .self-intro {
 	text-align: center;
-	margin: 20% 0 20% 0;
+	margin: 20% 0 0 0;
 
 	p {
 		@include center-content;
 		opacity: 0;
-		font-size: $step-4;
+		font-size: $step-5;
+		font-weight: bold;
 		min-height: 250px;
 	}
 }
@@ -60,7 +61,7 @@
 
 	h3 {
 		text-shadow: 0 5px 10px rgb(0 0 0 / 90%);
-		z-index: 2;
+		z-index: 1;
 	}
 }
 
@@ -195,7 +196,7 @@
 	#img-wrapper_2-3 {
 		width: clamp(220px, 30vw, 750px);
 		top: 90%;
-		right: 15%;
+		right: 10%;
 	}
 
 	#img-wrapper_3-1 {
