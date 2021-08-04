@@ -22,21 +22,21 @@ export function TextReveal({ children }) {
 					end: "center center-=" + offset / 2,
 					onEnter: () => {
 						gsap.to(element, {
-							y: -50,
+							y: -70,
 							duration,
 							opacity: 1,
 						})
 					},
 					onLeave: () => {
 						gsap.to(element, {
-							y: -100,
+							y: -140,
 							duration,
 							opacity: 0
 						})
 					},
 					onEnterBack: () => {
 						gsap.to(element, {
-							y: -50,
+							y: -70,
 							duration,
 							opacity: 1
 						})
@@ -71,20 +71,19 @@ export function TextRevealPinned({ children }) {
 		const animations = []
 		const elements = gsap.utils.toArray(el.current.children)
 		elements.forEach((element) => {
-			const tl = gsap.timeline(element, {
+			const animation = gsap.timeline({
+				scrollTrigger: {
+					trigger: element,
+					start: "center center",
+					end: "+=" + (window.innerHeight * 0.5),
+					scrub: true,
+					pin: true,
+				}
 			})
 				.from(element, { opacity: 0 })
 				.to(element,  { opacity: 1 })
 				.to(element,  { opacity: 0 })
 
-			const animation = ScrollTrigger.create({
-				animation: tl,
-				trigger: element,
-				start: "center center",
-				end: "+=" + (window.innerHeight * 0.5),
-				scrub: true,
-				pin: true,
-			})
 			animations.push(animation)
 		})
 
