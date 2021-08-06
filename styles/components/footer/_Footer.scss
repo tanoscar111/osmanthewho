@@ -1,7 +1,6 @@
 .footer {
 	padding: 3rem 0 2rem 0;
 	text-align: center;
-	margin-top: 200px;
 }
 
 .footer-heading {
@@ -24,9 +23,6 @@
 
 .footer-copyright {
 	margin: auto;
-}
-
-.footer-copyright {
 	color: $grey;
 }
 
@@ -48,25 +44,34 @@
 	img {
 		margin-top: 10px;
 		width: clamp(16px, 1rem + 1vw, 32px);
-		filter: invert(30%) sepia(50%) saturate(7%) hue-rotate(334deg) brightness(100%) contrast(89%);
+		opacity: .5;
+		transition: .3s;
 	}
 
 	img:hover {
-		filter: brightness(0) invert(1);
+		opacity: 1;
 	}
 
 	a:not(:last-child) {
-		padding-right: 3.3rem;
+		padding-right: 2rem;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.footer-copyright,
+	.footer-mail {
+		font-size: 15px;
 	}
 }
 
 @media screen and (max-width: 899px) {
 	.footer-body {
 		flex-direction: column;
-		height: calc(+150px);
+		height: calc(+130px);
 	}
 
 	.footer-heading h2 {
-		font-size: $step-6;
+		font-size: $step-8;
 	}
+
 }

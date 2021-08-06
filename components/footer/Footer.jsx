@@ -9,21 +9,21 @@ export default function Footer() {
 							target="_blank"
 							href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
 						>
-							Get in touch!
+							hit me up.
 						</a>
 					</h2>
 				</button>
 			</div>
 
 			<div className="footer-body">
-				<span className="footer-mail">
+				<p className="footer-mail">
 					<a
 						target="_blank"
 						href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
 					>
 						info@osmanthewho.com
 					</a>
-				</span>
+				</p>
 
 				<div className="footer-social">
 					<a target="_blank" href="https://www.instagram.com/osmanthewho/">
@@ -40,9 +40,9 @@ export default function Footer() {
 					</a>
 				</div>
 
-				<span className="footer-copyright">
-					© 2021 - All rights reserved.
-				</span>
+				<p className="footer-copyright">
+					2021 - All rights reserved
+				</p>
 			</div>
 
 		</footer>

@@ -72,11 +72,22 @@ export default function Home() {
 					<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img src="/images/skills/1-3.jpg"/></ParallaxOverflow></div>
 					<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7"><ParallaxOverflow><img src="/images/skills/2-1.jpg"/></ParallaxOverflow></div>
 					<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6"><ParallaxOverflow><img src="/images/skills/2-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.6"><ParallaxOverflow><img src="/images/skills/2-3.jpg"/></ParallaxOverflow></div>
+					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5"><ParallaxOverflow><img src="/images/skills/2-3.jpg"/></ParallaxOverflow></div>
 					<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8"><ParallaxOverflow><img src="/images/skills/3-1.jpg"/></ParallaxOverflow></div>
 					<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2"><ParallaxOverflow><img src="/images/skills/3-2.jpg"/></ParallaxOverflow></div>
 					<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1"><ParallaxOverflow><img src="/images/skills/3-3.jpg"/></ParallaxOverflow></div>
 				</Parallax>
+			</section>
+
+			<section className="brands">
+				<p>Here is some of the brands I've worked with.</p>
+				<div className="brands-images">
+					<img src="/images/brands/samsung.png" alt="Samsung" />
+					<img src="/images/brands/trt.png" alt="TRT" />
+					<img src="/images/brands/altinpusula.png" alt="Altın Pusula" />
+					<img src="/images/brands/aydindogan.png" alt="Aydın Doğan Vakfı" />
+					<img src="/images/brands/yildizholding.png" alt="Yıldız Holding" />
+				</div>
 			</section>
 		</Layout>
 	)

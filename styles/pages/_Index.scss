@@ -44,14 +44,14 @@
 ////////////////////////////////////////////////////////
 .self-intro {
 	text-align: center;
-	margin: 20% 0 0 0;
 
 	p {
 		@include center-content;
 		opacity: 0;
 		font-size: $step-5;
 		font-weight: bold;
-		min-height: 250px;
+		min-height: 200px;
+		margin: 40px 0;
 	}
 }
 ////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@
 	position: relative;
 
 	h3 {
-		text-shadow: 0 5px 10px rgb(0 0 0 / 90%);
+		text-shadow: 0 10px 40px rgb(0 0 0 / 55%);
 		z-index: 1;
 	}
 }
@@ -147,7 +147,36 @@
 	left: 15%;
 }
 
-///////////////////////////////////////////////////////
+.brands {
+	@include center-content;
+	min-height: 70vh;
+	margin-top: 10rem;
+
+	p {
+		margin-bottom: 3rem;
+	}
+}
+
+.brands-images {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	img {
+		transition: 0.3s;
+		opacity: .5;
+		max-width: 100%;
+		height: auto;
+	}
+
+	img:hover {
+		opacity: 1;
+	}
+}
+
+/////////////////////////////////////////////
+
 @media screen and (max-width: 599px) {
 	.landing-content-title {
 		flex-direction: column;
@@ -161,7 +190,24 @@
 		padding: 0;
 	}
 }
+
+@media screen and (max-width: 899px) {
+	.brands {
+
+		p {
+			margin-bottom: 1rem;
+			font-size: $step-3;
+		}
+
+		.brands-images {
+			flex-direction: column;
+			width: 40%;
+		}
+	}
+}
+
 /////////////////////////////////////////////
+
 @media screen and (max-width: 599px) {
 	#img-wrapper_1-1 {
 		width: clamp(300px, 80vw, 1366px);
@@ -183,25 +229,25 @@
 
 	#img-wrapper_2-1 {
 		width: clamp(200px, 30vw, 1080px);
-		top: 33%;
+		top: 34%;
 		right: 1%;
 	}
 
 	#img-wrapper_2-2 {
 		width: clamp(200px, 25vw, 640px);
-		top: 55%;
+		top: 58%;
 		left: 1%;
 	}
 
 	#img-wrapper_2-3 {
 		width: clamp(220px, 30vw, 750px);
-		top: 90%;
+		top: 91%;
 		right: 10%;
 	}
 
 	#img-wrapper_3-1 {
 		width: clamp(180px, 25vw, 480px);
-		top: 40%;
+		top: 42%;
 		left: 1%;
 	}
 
@@ -212,13 +258,13 @@
 	}
 
 	#img-wrapper_3-3 {
-		width: clamp(140px, 15vw, 320px);
-		top: 80%;
+		width: clamp(150px, 18vw, 320px);
+		top: 82%;
 		left: 10%;
 	}
 }
 
-////////////////////////////////////////////////
+/////////////////////////////////////////////
 
 @media screen and (min-width: 599px) and (max-width: 899px) {
 	#img-wrapper_1-1 {
