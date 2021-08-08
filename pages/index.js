@@ -3,6 +3,7 @@ import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import { TextReveal, TextRevealPinned } from '../components/animations/TextReveal'
 import { Parallax, ParallaxOverflow } from '../components/animations/Parallax'
+import { FadeIn, FadeInStagger } from '../components/animations/FadeIn'
 
 export default function Home() {
 	// blackout the video on scroll down
@@ -31,12 +32,12 @@ export default function Home() {
 
 				<div className="landing-content">
 					<h1 className="landing-content-title">
-						<div><span>be</span></div>
+						<div><span>stay</span></div>
 						<div><span>wild</span></div>
 					</h1>
 					<h1 className="landing-content-title">
+						<div><span>have</span></div>
 						<div><span>move</span></div>
-						<div><span>on</span></div>
 					</h1>
 				</div>
 			</section>
@@ -80,14 +81,16 @@ export default function Home() {
 			</section>
 
 			<section className="brands">
-				<p>Here is some of the brands I've worked with.</p>
-				<div className="brands-images">
+				<FadeIn>
+					<p>I've worked with great artists and brands. There is love for them all.</p>
+				</FadeIn>
+				<FadeInStagger>
 					<img src="/images/brands/samsung.png" alt="Samsung" />
 					<img src="/images/brands/trt.png" alt="TRT" />
 					<img src="/images/brands/altinpusula.png" alt="Altın Pusula" />
 					<img src="/images/brands/aydindogan.png" alt="Aydın Doğan Vakfı" />
 					<img src="/images/brands/yildizholding.png" alt="Yıldız Holding" />
-				</div>
+				</FadeInStagger>
 			</section>
 		</Layout>
 	)

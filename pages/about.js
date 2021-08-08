@@ -43,7 +43,7 @@ export default function About() {
 					</p>
 					<p>
 						I'm Osman. I'm a filmmaker, photographer, designer and director
-					  in Turkey. I produce creative content for brands and artists.
+					  in Turkey. I produce creative content for brands.
 					</p>
 					<p>
 						You can visit my{" "}
@@ -51,10 +51,6 @@ export default function About() {
 							Instagram
 						</a>{" "}
 						account to see my jobs. I'm available for freelance work.
-					</p>
-					<p>
-						Dolor magni fugit voluptas nulla eius. Porro sequi dolorem
-						necessitatibus nihil rem Mollitia laborum libero eos!
 					</p>
 				</div>
 			</section>

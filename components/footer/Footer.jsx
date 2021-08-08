@@ -9,7 +9,7 @@ export default function Footer() {
 							target="_blank"
 							href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
 						>
-							hit me up.
+							hit me up
 						</a>
 					</h2>
 				</button>

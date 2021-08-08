@@ -29,14 +29,11 @@
 /* ------------------------------------------------- */
 .intro {
 	min-height: 120vh;
-	@include center-content;
-	flex-direction: row;
-	text-align: left;
+	display: flex;
+	align-items: center;
 	justify-content: space-around;
 
 	img {
-		width: 100%;
-		height: auto;
 		object-fit: cover;
 		margin-right: 50px;
 	}
@@ -46,6 +43,12 @@
 
 		h3 {
 			@include text-stroke;
+		}
+
+		hr {
+			border: none;
+			height: 1px;
+			background-color: grey;
 		}
 
 		p:not(:last-child) {
@@ -71,10 +74,6 @@
 		img {
 			margin-right: 0px;
 		}
-
-		.intro-text {
-			margin-top: 50px;
-		}
 	}
 }
 
@@ -91,11 +90,11 @@
 @media only screen and (max-width: 599px) {
 	.about-hero {
 		min-height: 50vh;
-		margin-top: 65px;
+		margin-top: 95px;
 	}
 
 	.about-hero h1 span {
 		font-size: $step-10;
-		line-height: $line-height-md;
+		line-height: 1.3;
 	}
 }

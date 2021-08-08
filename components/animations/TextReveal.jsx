@@ -22,21 +22,21 @@ export function TextReveal({ children }) {
 					end: "center center-=" + offset / 2,
 					onEnter: () => {
 						gsap.to(element, {
-							y: -70,
+							y: -55,
 							duration,
 							opacity: 1,
 						})
 					},
 					onLeave: () => {
 						gsap.to(element, {
-							y: -140,
+							y: -110,
 							duration,
 							opacity: 0
 						})
 					},
 					onEnterBack: () => {
 						gsap.to(element, {
-							y: -70,
+							y: -55,
 							duration,
 							opacity: 1
 						})

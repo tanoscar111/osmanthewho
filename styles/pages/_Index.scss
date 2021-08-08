@@ -37,7 +37,7 @@
 		display: block;
 		animation: $reveal;
 		font-family: $font-family-heading;
-		font-size: $step-10;
+		font-size: $step-9;
 		text-transform: uppercase;
 	}
 }
@@ -50,8 +50,7 @@
 		opacity: 0;
 		font-size: $step-5;
 		font-weight: bold;
-		min-height: 200px;
-		margin: 40px 0;
+		min-height: 300px;
 	}
 }
 ////////////////////////////////////////////////////////
@@ -158,21 +157,17 @@
 }
 
 .brands-images {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-	img {
-		transition: 0.3s;
-		opacity: .5;
-		max-width: 100%;
-		height: auto;
-	}
-
-	img:hover {
-		opacity: 1;
-	}
+  img {
+    transition: 0.3s;
+    opacity: 0.5;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /////////////////////////////////////////////
@@ -193,7 +188,6 @@
 
 @media screen and (max-width: 899px) {
 	.brands {
-
 		p {
 			margin-bottom: 1rem;
 			font-size: $step-3;

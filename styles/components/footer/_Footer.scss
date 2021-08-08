@@ -1,4 +1,5 @@
 .footer {
+	margin-top: 300px;
 	padding: 3rem 0 2rem 0;
 	text-align: center;
 }
@@ -24,10 +25,12 @@
 .footer-copyright {
 	margin: auto;
 	color: $grey;
+	font-size: $step-0;
 }
 
 .footer-mail  {
 	margin: auto;
+	font-size: $step-0;
 
 	a {
 		color: $grey;
@@ -53,14 +56,14 @@
 	}
 
 	a:not(:last-child) {
-		padding-right: 2rem;
+		padding-right: 2.3rem;
 	}
 }
 
 @media screen and (max-width: 599px) {
 	.footer-copyright,
 	.footer-mail {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 
