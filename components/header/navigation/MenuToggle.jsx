@@ -23,10 +23,10 @@ export default function MenuToggle({ isMenuOpen, setIsMenuOpen }) {
 			onClick={() => handleClick()}
 			className="menu-toggle"
 		>
-			<span className="menu-toggle-text">menu</span>
+			<span className="menu-toggle-text">Menu</span>
 			<svg
 				className="menu-toggle-svg"
-				viewBox="0 0 12 10"
+				viewBox="0 0 5 15"
 				height="30px"
 				width="30px"
 			>

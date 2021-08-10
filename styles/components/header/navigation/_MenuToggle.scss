@@ -3,10 +3,16 @@
 	animation: $reveal-reverse;
 }
 
+.menu-toggle-svg {
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+
 .menu-toggle-text {
 	margin: 0 5px 0 0;
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.1em;
+	font-weight: 400;
 }
 
 .menu-toggle {
@@ -14,7 +20,7 @@
 	flex-direction: row;
 	position: fixed;
 	right: 6rem;
-	top: 3rem;
+	top: 2.2rem;
 	z-index: 2;
 	cursor: pointer;
 	overflow: hidden;

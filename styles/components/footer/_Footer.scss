@@ -1,80 +1,50 @@
 .footer {
-	margin-top: 300px;
-	padding: 3rem 0 2rem 0;
+	background: $white;
 	text-align: center;
 }
 
-.footer-heading {
+.footer a,
+.footer span,
+.footer div {
+	color: $black;
+}
+
+.letsmeet {
+	font-family: "Have Heart One";
+	font-size: $step-12;
+}
+
+.mail {
+	text-decoration: underline;
+	font-size: $step-3;
+	display: block;
 	margin-bottom: 3rem;
-	white-space: nowrap;
-
-	.footer-btn-cta {
-		@include text-stroke;
-	}
-
-	.footer-btn-cta:hover {
-		@include text-stroke-hover;
-	}
+	font-weight: 400;
 }
 
-.footer-body {
-	display: flex;
-	justify-content: center;
+.social {
+	margin-bottom: 3rem;
 }
 
-.footer-copyright {
-	margin: auto;
-	color: $grey;
-	font-size: $step-0;
+.social a {
+	padding: 0 10px;
 }
 
-.footer-mail  {
-	margin: auto;
-	font-size: $step-0;
-
-	a {
-		color: $grey;
-	}
-
-	a:hover {
-		color: $white;
-	}
-}
-
-.footer-social {
-	margin: auto;
-
-	img {
-		margin-top: 10px;
-		width: clamp(16px, 1rem + 1vw, 32px);
-		opacity: .5;
-		transition: .3s;
-	}
-
-	img:hover {
-		opacity: 1;
-	}
-
-	a:not(:last-child) {
-		padding-right: 2.3rem;
-	}
+.social img {
+	width: 24px;
 }
 
 @media screen and (max-width: 599px) {
-	.footer-copyright,
-	.footer-mail {
-		font-size: 16px;
-	}
-}
-
-@media screen and (max-width: 899px) {
-	.footer-body {
-		flex-direction: column;
-		height: calc(+130px);
+	.mail {
+		font-size: $step-2;
 	}
 
-	.footer-heading h2 {
-		font-size: $step-8;
+	.social img {
+		width: 20px;
 	}
 
+	.social,
+	.mail {
+		margin-bottom: 2rem;
+	}
 }

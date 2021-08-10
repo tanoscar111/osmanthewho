@@ -1,6 +1,6 @@
 .logo-img {
-	width: 270px;
-	height: 63px;
+	width: 200px;
+	height: 46px;
 	animation: $reveal-reverse;
 }
 
@@ -15,12 +15,12 @@
 
 @media screen and (max-width: 599px) {
 	.logo-wrapper {
-		right: 2rem;
-		top: 1.5rem;
+		left: 2rem;
+		top: 2rem;
 	}
 
 	.logo-img {
-		width: 204px;
-		height: 48px;
+		width: 150px;
+		height: 35px;
 	}
 }

@@ -9,12 +9,6 @@ li {
 	text-transform: uppercase;
 }
 
-span {
-	font-family: $font-family-main;
-	font-size: $step-0;
-	text-transform: uppercase;
-}
-
 @media screen and (max-width: 599px) {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }

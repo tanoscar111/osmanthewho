@@ -1,50 +1,38 @@
 export default function Footer() {
 	return (
-		<footer className="footer">
+		<footer className="footer full-bleed">
+			<div className="letsmeet">Let's meet</div>
 
-			<div className="footer-heading">
-				<button className="footer-btn-cta">
-					<h2>
-						<a
-							target="_blank"
-							href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
-						>
-							hit me up
-						</a>
-					</h2>
-				</button>
-			</div>
+			<div className="footer-main">
+				<a
+					target="_blank"
+					href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
+					className="mail"
+				>
+					info@osmanthewho.com
+				</a>
 
-			<div className="footer-body">
-				<p className="footer-mail">
-					<a
-						target="_blank"
-						href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
-					>
-						info@osmanthewho.com
-					</a>
-				</p>
-
-				<div className="footer-social">
+				<div className="social">
 					<a target="_blank" href="https://www.instagram.com/osmanthewho/">
 						<img src="../../icons/social/instagram.svg" alt="Instagram" />
 					</a>
 					<a target="_blank" href="https://youtube.com/osmanthewho">
 						<img src="../../icons/social/youtube.svg" alt="YouTube" />
 					</a>
-					<a target="_blank" href="https://vimeo.com/osmanthewho/">
-						<img src="../../icons/social/vimeo.svg" alt="Vimeo" />
-					</a>
 					<a target="_blank" href="https://www.behance.net/osmanthewho">
 						<img src="../../icons/social/behance.svg" alt="Behance" />
 					</a>
+					<a target="_blank" href="https://vimeo.com/osmanthewho/">
+						<img src="../../icons/social/vimeo.svg" alt="Vimeo" />
+					</a>
+					<a target="_blank" href="https://tr.linkedin.com/in/osmanthewho">
+						<img src="../../icons/social/linkedin.svg" alt="LinkedIn" />
+					</a>
+					<a target="_blank" href="https://twitter.com/osmanthewho">
+						<img src="../../icons/social/twitter.svg" alt="Twitter" />
+					</a>
 				</div>
-
-				<p className="footer-copyright">
-					2021 - All rights reserved
-				</p>
 			</div>
-
 		</footer>
 	)
 }

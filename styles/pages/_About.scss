@@ -53,11 +53,11 @@
 
 		p:not(:last-child) {
 			padding-bottom: 1.5rem;
+		}
 
-			a {
-				text-decoration: underline;
-				font-style: italic;
-			}
+		a {
+			font-style: italic;
+			text-decoration: underline;
 		}
 	}
 }
