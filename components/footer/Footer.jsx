@@ -32,6 +32,12 @@ export default function Footer() {
 						<img src="../../icons/social/twitter.svg" alt="Twitter" />
 					</a>
 				</div>
+
+				{/*
+					<div className="copyright">
+						© 2021 · OsmanThewho — Code by Yunus Emre.
+					</div>
+				*/}
 			</div>
 		</footer>
 	)

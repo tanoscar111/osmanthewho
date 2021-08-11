@@ -39,6 +39,7 @@ export default function Home() {
 						<div><span>have</span></div>
 						<div><span>move</span></div>
 					</h1>
+					<h3 className="down-arrow">▾</h3>
 				</div>
 			</section>
 

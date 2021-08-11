@@ -25,6 +25,11 @@
 	height: 100%;
 }
 
+.down-arrow {
+	position: absolute;
+	bottom: 10%;
+}
+
 .landing-content-title {
 	display: flex;
 
@@ -50,7 +55,7 @@
 		opacity: 0;
 		font-size: $step-5;
 		font-weight: bold;
-		min-height: 300px;
+		min-height: 200px;
 	}
 }
 ////////////////////////////////////////////////////////
@@ -177,7 +182,8 @@
 		flex-direction: column;
 
 		span {
-			font-size: $step-12;
+			font-size: $step-11;
+			margin: 25px 0;
 		}
 	}
 
