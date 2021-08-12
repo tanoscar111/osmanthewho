@@ -49,13 +49,15 @@
 ////////////////////////////////////////////////////////
 .self-intro {
 	text-align: center;
+	margin-top: 5rem;
 
 	p {
 		@include center-content;
 		opacity: 0;
 		font-size: $step-5;
 		font-weight: bold;
-		min-height: 200px;
+		min-height: 160px;
+		margin: 20px 0;
 	}
 }
 ////////////////////////////////////////////////////////
@@ -151,10 +153,12 @@
 	left: 15%;
 }
 
+///////////////// brands /////////////////
+
 .brands {
 	@include center-content;
 	min-height: 70vh;
-	margin: 5rem 0;
+	margin: 7rem 0 3rem;
 
 	p {
 		margin-bottom: 3rem;
@@ -183,12 +187,16 @@
 
 		span {
 			font-size: $step-11;
-			margin: 25px 0;
+			margin: 15px 0;
 		}
 	}
 
 	.landing-content-title span {
 		padding: 0;
+	}
+
+	.down-arrow {
+		bottom: 15%;
 	}
 }
 

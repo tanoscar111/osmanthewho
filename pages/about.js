@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import Footer from "../components/footer/Footer"
+import { FadeIn, FadeInStagger } from "../components/animations/FadeIn"
 
 export default function About() {
 	return (
@@ -28,31 +29,24 @@ export default function About() {
 			</section>
 
 			<section className="intro">
-					<img
-						src="/images/osman.jpg"
-						alt="Osman Işık"
-					/>
-				<div className="intro-text">
-					<h3>Osman Işık</h3>
-					<br />
-					<hr />
-					<br />
-					<p>
-						I promote living the life to the fullest and seeing the world
-						through an optimistic lens.
-					</p>
-					<p>
-						I'm Osman. I'm a filmmaker, photographer, designer and director
-					  in Turkey. I produce creative content for brands.
-					</p>
-					<p>
-						You can visit my{" "}
-						<a href="https://www.instagram.com/osmanthewho" target="_blank">
-							Instagram
-						</a>{" "}
-						account to see my jobs. I'm available for freelance work.
-					</p>
-				</div>
+				<FadeIn>
+					<img src="/images/osman.jpg" alt="Osman Işık" />
+				</FadeIn>
+				<FadeIn>
+					<div className="intro-text">
+						<h3>Osman Işık</h3>
+						<br /> <hr /> <br />
+						<p>I promote living the life to the fullest and seeing the world
+							through an optimistic lens.</p>
+						<p>I'm Osman. I'm a filmmaker, photographer, designer and director
+							in Turkey. I produce creative content for brands.</p>
+						<p>You can visit my{" "}
+							<a href="https://www.instagram.com/osmanthewho" target="_blank">
+								Instagram
+							</a>{" "}
+							account to see my jobs. I'm available for freelance work.</p>
+					</div>
+				</FadeIn>
 			</section>
 		</Layout>
 	)

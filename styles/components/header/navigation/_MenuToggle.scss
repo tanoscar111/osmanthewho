@@ -24,6 +24,7 @@
 	z-index: 2;
 	cursor: pointer;
 	overflow: hidden;
+	mix-blend-mode: difference;
 }
 
 @media screen and (max-width: 599px) {

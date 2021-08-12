@@ -1,25 +1,26 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
-export function FadeIn ({
-  children,
-}) {
+gsap.registerPlugin(ScrollTrigger)
 
-  let componentRef = useRef(null)
+export function FadeIn ({ children }) {
+  let el = useRef()
+
   useEffect(() => {
-    gsap.from(componentRef.current, {
-			ease: "none",
+    gsap.from(el.current, {
+			y: 15,
 			duration: 1,
-      opacity: 0,
+      autoAlpha: 0,
 			scrollTrigger: {
-				trigger: componentRef.current,
-				start: "center 65%",
-				end: "center 65%",
+				trigger: el.current,
+				start: "top 70%",
+				end: "top 70%",
 				toggleActions: "play play reverse reverse",
 			},
     })
   }, [])
-  return <div ref={componentRef}>{children}</div>
+  return <div ref={el}>{children}</div>
 }
 
 export function FadeInStagger({ children }) {
@@ -27,21 +28,17 @@ export function FadeInStagger({ children }) {
 
   useEffect(() => {
 		gsap.from(el.current.children, {
+			y: 15,
 			duration: 1,
 			autoAlpha: 0,
-			ease: "none",
-			stagger: 0.1,
+			ease: "power4.out",
+			stagger: 0.2,
 			scrollTrigger: {
 				trigger: el.current,
-				start: "top 65%",
-				end: "top 65%",
+				start: "top 70%",
+				end: "top 70%",
 				toggleActions: "play play reverse reverse",
 			}
-		})
-
-		gsap.utils.toArray(el.current.children).forEach((element) => {
-			element.addEventListener("mouseenter", () => gsap.to(element, {opacity: 1, duration: 0.1}))
-			element.addEventListener("mouseleave", () => gsap.to(element, {opacity: 0.5, duration: 0.1}))
 		})
   }, [])
 

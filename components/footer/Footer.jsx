@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
 		<footer className="footer full-bleed">
-			<div className="letsmeet">Let's meet</div>
+			<div className="letsmeet">Let's create</div>
 
 			<div className="footer-main">
 				<a
