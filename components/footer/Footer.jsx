@@ -11,7 +11,7 @@ export default function Footer() {
 				>
 					info@osmanthewho.com
 				</a>
-
+				<hr />
 				<div className="social">
 					<a target="_blank" href="https://www.instagram.com/osmanthewho/">
 						<img src="../../icons/social/instagram.svg" alt="Instagram" />

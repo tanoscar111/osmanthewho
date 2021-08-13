@@ -30,9 +30,9 @@ export function FadeInStagger({ children }) {
 		gsap.from(el.current.children, {
 			y: 15,
 			duration: 1,
-			autoAlpha: 0,
-			ease: "power4.out",
-			stagger: 0.2,
+			opacity: 0,
+			ease: "power4",
+			stagger: 0.1,
 			scrollTrigger: {
 				trigger: el.current,
 				start: "top 70%",

@@ -1,7 +1,7 @@
 .footer {
 	text-align: center;
 	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(215,232,233,1) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(204,204,204,1) 100%);
 }
 
 .footer a,
@@ -15,11 +15,15 @@
 	font-size: $step-12;
 }
 
-.footer-main {
+.footer-main hr {
+	border: none;
+	height: 1px;
+	width: 600px;
+	margin: auto;
+	background-color: lightgrey;
 }
 
 .mail {
-	text-decoration: underline;
 	font-size: $step-3;
 	display: block;
 	padding: 0 0 1.6rem;
@@ -30,14 +34,19 @@
 }
 
 .social a {
-	padding: 5px 10px;
+	padding: 0 10px;
 }
 
 .social img {
 	width: 24px;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 899px) {
+	.footer-main hr {
+		width: 250px;
+	}
+
 	.mail {
 		font-size: $step-1;
 	}

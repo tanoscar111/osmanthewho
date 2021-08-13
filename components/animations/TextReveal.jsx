@@ -18,8 +18,8 @@ export function TextReveal({ children }) {
 				ease: "none",
 				scrollTrigger: {
 					trigger: element,
-					start: "center center+=" + offset / 2,
-					end: "center center-=" + offset / 2,
+					start: "center center+=" + (offset / 1.5),
+					end: "center center-=" + (offset / 3),
 					onEnter: () => {
 						gsap.to(element, {
 							y: -55,
