@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import { TextReveal, TextRevealPinned } from '../components/animations/TextReveal'
-import { Parallax, ParallaxOverflow } from '../components/animations/Parallax'
+import { Parallax } from '../components/animations/Parallax'
 import { FadeIn, FadeInStagger } from '../components/animations/FadeIn'
 
 export default function Home() {
@@ -69,15 +69,15 @@ export default function Home() {
 					<h3>directory of photography</h3>
 				</TextRevealPinned>
 				<Parallax>
-					<div id="img-wrapper_1-1" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img src="/images/skills/1-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_1-2" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img src="/images/skills/1-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img src="/images/skills/1-3.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7"><ParallaxOverflow><img src="/images/skills/2-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6"><ParallaxOverflow><img src="/images/skills/2-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5"><ParallaxOverflow><img src="/images/skills/2-3.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8"><ParallaxOverflow><img src="/images/skills/3-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2"><ParallaxOverflow><img src="/images/skills/3-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1"><ParallaxOverflow><img src="/images/skills/3-3.jpg"/></ParallaxOverflow></div>
+					<div id="img-wrapper_1-1" className="image-wrapper" data-speed="0.2"><img src="/images/skills/1-1.jpg"/></div>
+					<div id="img-wrapper_1-2" className="image-wrapper" data-speed="0.2"><img src="/images/skills/1-2.jpg"/></div>
+					<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2"><img src="/images/skills/1-3.jpg"/></div>
+					<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7"><img src="/images/skills/2-1.jpg"/></div>
+					<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6"><img src="/images/skills/2-2.jpg"/></div>
+					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5"><img src="/images/skills/2-3.jpg"/></div>
+					<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8"><img src="/images/skills/3-1.jpg"/></div>
+					<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2"><img src="/images/skills/3-2.jpg"/></div>
+					<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1"><img src="/images/skills/3-3.jpg"/></div>
 				</Parallax>
 			</section>
 

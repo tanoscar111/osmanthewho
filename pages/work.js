@@ -4,18 +4,7 @@ import VideoGallery from "../components/videoGallery/VideoGallery"
 import gsap from 'gsap'
 
 export default function Work() {
-	const titleStyle = {
-		padding: "10rem 0 5rem",
-		textAlign: "center",
-		whiteSpace: "nowrap",
-	}
-
-	const spanStyle = {
-		display: "inline-block",
-	}
-
 	const titleRef = useRef()
-
 	useEffect(() => {
 		gsap.timeline({
 			delay: 0.5,
@@ -31,15 +20,15 @@ export default function Work() {
 
 	return (
 		<Layout>
-			<h1 ref={titleRef} style={titleStyle}>
-				<span style={spanStyle}>p</span>
-				<span style={spanStyle}>r</span>
-				<span style={spanStyle}>o</span>
-				<span style={spanStyle}>j</span>
-				<span style={spanStyle}>e</span>
-				<span style={spanStyle}>c</span>
-				<span style={spanStyle}>t</span>
-				<span style={spanStyle}>s</span>
+			<h1 ref={titleRef} className="works-title">
+				<span>p</span>
+				<span>r</span>
+				<span>o</span>
+				<span>j</span>
+				<span>e</span>
+				<span>c</span>
+				<span>t</span>
+				<span>s</span>
 			</h1>
 			<VideoGallery />
 		</Layout>

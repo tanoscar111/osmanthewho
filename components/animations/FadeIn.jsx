@@ -27,7 +27,7 @@ export function FadeInStagger({ children }) {
   const el = useRef()
 
   useEffect(() => {
-		gsap.from(el.current.children, {
+		gsap.fromTo(el.current.children, {
 			y: 15,
 			duration: 1,
 			opacity: 0,
@@ -39,6 +39,8 @@ export function FadeInStagger({ children }) {
 				end: "top 70%",
 				toggleActions: "play play reverse reverse",
 			}
+		}, {
+			opacity: 0.5,
 		})
   }, [])
 
