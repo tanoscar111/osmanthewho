@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function VideoGallery() {
 
 	return (
-		<div className="video-gallery-container-container">
+		<div className="video-gallery-container-container full-bleed">
 			<div className="video-gallery-container">
 				<div className="video">
 					<Link href="/work">
