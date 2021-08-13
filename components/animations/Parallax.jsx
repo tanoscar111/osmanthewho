@@ -20,14 +20,10 @@ export function Parallax({ children }) {
 					scrub: 0.2
 				}
 			})
-				.to(element, {y: movement, ease: "none"}, 0)
+				.to(element, {y: movement, ease: "none"})
 
 			animations.push(animation)
 		})
-
-		return () => {
-			animations.forEach((animation) => animation.scrollTrigger.kill())
-		}
 	}, [])
 
 	return <div ref={el}>{children}</div>
