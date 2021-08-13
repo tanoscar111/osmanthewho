@@ -1,8 +1,7 @@
 .footer {
-	background: $white;
 	text-align: center;
 	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(190,190,190,1) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(215,232,233,1) 100%);
 }
 
 .footer a,
@@ -23,11 +22,11 @@
 	text-decoration: underline;
 	font-size: $step-3;
 	display: block;
-	padding: 2.5rem 0 1rem;
+	padding: 0 0 1.6rem;
 }
 
 .social {
-	padding: 1rem 0 2.5rem;
+	padding: 1.6rem 0 10rem;
 }
 
 .social a {
@@ -38,7 +37,7 @@
 	width: 24px;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 899px) {
 	.mail {
 		font-size: $step-1;
 	}
@@ -48,10 +47,10 @@
 	}
 
 	.mail {
-		padding: 1rem 0 0.5rem;
+		padding: 0 0 0.5rem;
 	}
 
 	.social {
-		padding: 0.5rem 0 1.5rem;
+		padding: 0.5rem 0 3rem;
 	}
 }

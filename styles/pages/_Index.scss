@@ -182,6 +182,10 @@
 /////////////////////////////////////////////
 
 @media screen and (max-width: 599px) {
+	.landing-content {
+		margin-top: -30px;
+	}
+
 	.landing-content-title {
 		flex-direction: column;
 
@@ -196,7 +200,7 @@
 	}
 
 	.down-arrow {
-		bottom: 15%;
+		bottom: 20%;
 	}
 }
 
