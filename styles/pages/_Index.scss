@@ -46,7 +46,7 @@
 		text-transform: uppercase;
 	}
 }
-////////////////////////////////////////////////////////
+/////////////////// self intro /////////////////////////
 .self-intro {
 	text-align: center;
 	margin-top: 5rem;
@@ -59,7 +59,7 @@
 		min-height: 250px;
 	}
 }
-////////////////////////////////////////////////////////
+////////////////// skills ///////////////////////////////
 .skills {
 	@include center-content;
 	position: relative;
@@ -171,13 +171,14 @@
   align-items: center;
 
   img {
+		opacity: 0.5;
     transition: 0.3s;
     max-width: 100%;
     height: auto;
   }
 }
 
-/////////////////////////////////////////////
+///////////// media queries /////////////
 
 @media screen and (max-width: 599px) {
 	.landing-content {
@@ -216,7 +217,7 @@
 	}
 }
 
-/////////////////////////////////////////////
+//// media queries for skills section images ////
 
 @media screen and (max-width: 599px) {
 	#img-wrapper_1-1 {

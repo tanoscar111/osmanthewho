@@ -27,21 +27,24 @@ export function FadeInStagger({ children }) {
   const el = useRef()
 
   useEffect(() => {
-		gsap.fromTo(el.current.children, {
-			y: 15,
-			duration: 1,
-			opacity: 0,
-			ease: "power4",
-			stagger: 0.1,
+		gsap.timeline({
 			scrollTrigger: {
 				trigger: el.current,
 				start: "top 70%",
 				end: "top 70%",
 				toggleActions: "play play reverse reverse",
 			}
-		}, {
-			opacity: 0.5,
 		})
+			.from(el.current.children, {
+				y: 15,
+				duration: 1,
+				opacity: 0,
+				ease: "power4",
+				stagger: 0.1,
+			})
+			.to(el.current.children, {
+				opacity: 0.5
+			})
   }, [])
 
   return <div className="brands-images" ref={el}>{children}</div>
