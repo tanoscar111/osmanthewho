@@ -28,6 +28,7 @@ export function Parallax({ children }) {
 		return () => {
 			animations.forEach((animation) => animation.scrollTrigger.kill())
 		}
+
 	}, [])
 
 	return <div ref={el}>{children}</div>

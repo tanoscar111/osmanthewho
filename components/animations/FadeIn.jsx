@@ -36,14 +36,11 @@ export function FadeInStagger({ children }) {
 			}
 		})
 			.from(el.current.children, {
-				y: 15,
+				y: 20,
 				duration: 1,
 				opacity: 0,
 				ease: "power4",
 				stagger: 0.1,
-			})
-			.to(el.current.children, {
-				opacity: 0.5
 			})
   }, [])
 
