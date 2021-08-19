@@ -30,7 +30,7 @@ export default function About() {
 
 			<section className="intro">
 				<FadeIn>
-					<img src="/images/osman.jpg" alt="Osman Işık" />
+					<img src="/images/osman.webp" alt="Osman Işık" />
 				</FadeIn>
 				<FadeIn>
 					<div className="intro-text">

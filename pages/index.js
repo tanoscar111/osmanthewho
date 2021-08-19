@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import Head from "next/head"
 import Image from 'next/image'
-//import profilePic from '../public/images/skills/1-1.jpg'
 import Layout from "../components/constants/Layout"
 import { TextReveal, TextRevealPinned } from '../components/animations/TextReveal'
 import { Parallax, ParallaxOverflow } from '../components/animations/Parallax'
@@ -71,15 +70,105 @@ export default function Home() {
 					<h3>directory of photography</h3>
 				</TextRevealPinned>
 				<Parallax>
-					<div id="img-wrapper_1-1" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img style={{ width: "1366px", height: "570px" }} src="/images/skills/1-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_1-2" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img style={{ width: "640px", height: "360px" }} src="/images/skills/1-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2"><ParallaxOverflow><img style={{ width: "519px", height: "369px" }} src="/images/skills/1-3.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7"><ParallaxOverflow><img style={{ width: "1080px", height: "1350px" }} src="/images/skills/2-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6"><ParallaxOverflow><img style={{ width: "640px", height: "800px" }} src="/images/skills/2-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5"><ParallaxOverflow><img style={{ width: "750px", height: "938px" }} src="/images/skills/2-3.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8"><ParallaxOverflow><img style={{ width: "480px", height: "853px" }} src="/images/skills/3-1.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2"><ParallaxOverflow><img style={{ width: "640px", height: "1138px" }} src="/images/skills/3-2.jpg"/></ParallaxOverflow></div>
-					<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1"><ParallaxOverflow><img style={{ width: "320px", height: "569px" }} src="/images/skills/3-3.jpg"/></ParallaxOverflow></div>
+					<div id="img-wrapper_1-1" className="image-wrapper" data-speed="0.2">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/1-1.webp'
+								objectFit="contain"
+								width="1366"
+								height="570"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_1-2" className="image-wrapper" data-speed="0.2">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/1-2.webp'
+								objectFit="contain"
+								width="640"
+								height="360"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/1-3.webp'
+								objectFit="contain"
+								width="519"
+								height="369"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/2-1.webp'
+								objectFit="contain"
+								width="1080"
+								height="1350"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/2-2.webp'
+								objectFit="contain"
+								width="640"
+								height="800"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/2-3.webp'
+								objectFit="contain"
+								width="750"
+								height="938"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/3-1.webp'
+								objectFit="contain"
+								width="480"
+								height="853"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/3-2.webp'
+								objectFit="contain"
+								width="640"
+								height="1138"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
+					<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1">
+						<ParallaxOverflow>
+							<Image
+								src='/images/skills/3-3.webp'
+								objectFit="contain"
+								width="320"
+								height="569"
+								loading="eager"
+							/>
+						</ParallaxOverflow>
+					</div>
 				</Parallax>
 			</section>
 
@@ -98,105 +187,3 @@ export default function Home() {
 		</Layout>
 	)
 }
-
-/*
-	<div id="img-wrapper_1-1" className="image-wrapper" data-speed="0.2">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/1-1.jpg"
-				objectFit="contain"
-				width="1366"
-				height="570"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_1-2" className="image-wrapper" data-speed="0.2">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/1-2.jpg"
-				objectFit="contain"
-				width="640"
-				height="360"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_1-3" className="image-wrapper" data-speed="0.2">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/1-3.jpg"
-				objectFit="contain"
-				width="519"
-				height="369"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_2-1" className="image-wrapper" data-speed="0.7">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/2-1.jpg"
-				objectFit="contain"
-				width="1080"
-				height="1350"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_2-2" className="image-wrapper" data-speed="0.6">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/2-2.jpg"
-				objectFit="contain"
-				width="640"
-				height="800"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_2-3" className="image-wrapper" data-speed="0.5">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/2-3.jpg"
-				objectFit="contain"
-				width="750"
-				height="938"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_3-1" className="image-wrapper" data-speed="0.8">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/3-1.jpg"
-				objectFit="contain"
-				width="480"
-				height="853"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_3-2" className="image-wrapper" data-speed="1.2">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/3-2.jpg"
-				objectFit="contain"
-				width="640"
-				height="1138"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-	<div id="img-wrapper_3-3" className="image-wrapper" data-speed="1.1">
-		<ParallaxOverflow>
-			<Image
-				src="/images/skills/3-3.jpg"
-				objectFit="contain"
-				width="320"
-				height="569"
-				priority="true"
-			/>
-		</ParallaxOverflow>
-	</div>
-*/
