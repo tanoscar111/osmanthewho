@@ -179,6 +179,26 @@
   }
 }
 
+///////////////// works /////////////////
+
+.featured-productions {
+	background: green;
+	padding: 1rem;
+	height: 100vh;
+}
+
+.overlay {
+	overflow: hidden;
+	background: blue;
+	padding: 1rem;
+	height: 100%;
+}
+
+.plus {
+	width: 100%;
+	height: 100%;
+}
+
 ///////////// media queries /////////////
 
 @media screen and (max-width: 599px) {
