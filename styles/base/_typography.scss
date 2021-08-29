@@ -1,8 +1,7 @@
 h1,
 h2,
 h3,
-button,
-li {
+button {
 	font-family: $font-family-heading-bold;
 	line-height: $line-height-sm;
 	letter-spacing: $letter-spacing-md;
@@ -13,8 +12,6 @@ li {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }
 	h3 { font-size: $step-6; }
-
-	li { font-size: $step-10; }
 	p	 { font-size: $step-1; }
 }
 
@@ -22,8 +19,6 @@ li {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }
 	h3 { font-size: $step-6; }
-
-	li { font-size: $step-9; }
 	p	 { font-size: $step-1; }
 }
 
@@ -31,8 +26,6 @@ li {
 	h1 { font-size: $step-9; }
 	h2 { font-size: $step-7; }
 	h3 { font-size: $step-5; }
-
-	li { font-size: $step-8; }
 	p	 { font-size: $step-2; }
 }
 
@@ -40,7 +33,5 @@ li {
 	h1 { font-size: $step-9; }
 	h2 { font-size: $step-7; }
 	h3 { font-size: $step-5; }
-
-	li { font-size: $step-8; }
 	p	 { font-size: $step-2; }
 }

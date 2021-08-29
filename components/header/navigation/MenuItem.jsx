@@ -15,7 +15,9 @@ export default function MenuItem({ link }) {
 		return (
 			<motion.li variants={menuItemVariants}>
 				<Link href="/">
-					<a>{link}</a>
+					<h1>
+						<a>{link}</a>
+					</h1>
 				</Link>
 			</motion.li>
 		)
@@ -23,7 +25,9 @@ export default function MenuItem({ link }) {
 		return (
 			<motion.li variants={menuItemVariants}>
 				<Link href={`/${link}`}>
-					<a>{link}</a>
+					<h1>
+						<a>{link}</a>
+					</h1>
 				</Link>
 			</motion.li>
 		)
