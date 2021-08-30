@@ -110,6 +110,7 @@ export default function Home() {
 								objectFit="contain"
 								width="640"
 								height="360"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -120,6 +121,7 @@ export default function Home() {
 								objectFit="contain"
 								width="519"
 								height="369"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -130,6 +132,7 @@ export default function Home() {
 								objectFit="contain"
 								width="1080"
 								height="1350"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -140,6 +143,7 @@ export default function Home() {
 								objectFit="contain"
 								width="640"
 								height="800"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -150,6 +154,7 @@ export default function Home() {
 								objectFit="contain"
 								width="750"
 								height="938"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -160,6 +165,7 @@ export default function Home() {
 								objectFit="contain"
 								width="480"
 								height="853"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -170,6 +176,7 @@ export default function Home() {
 								objectFit="contain"
 								width="640"
 								height="1138"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>
@@ -180,6 +187,7 @@ export default function Home() {
 								objectFit="contain"
 								width="320"
 								height="569"
+								loading="eager"
 							/>
 						</ParallaxOverflow>
 					</div>

@@ -32,7 +32,7 @@ export function FadeInStagger({ children }) {
 				trigger: el.current,
 				start: "top 70%",
 				end: "top 70%",
-				toggleActions: "play play reverse reverse",
+				toggleActions: "play play play reverse",
 			}
 		})
 			.from(el.current.children, {

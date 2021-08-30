@@ -19,13 +19,15 @@
 	height: 1px;
 	width: 600px;
 	margin: auto;
-	background-color: lightgrey;
+	background-color: $black;
+	opacity: 0.1;
 }
 
 .mail {
 	font-size: $step-3;
 	display: block;
 	padding: 0 0 1.6rem;
+	opacity: 0.8;
 }
 
 .social {
@@ -39,6 +41,7 @@
 .social img {
 	width: 24px;
 	margin-top: 10px;
+	opacity: 0.8;
 }
 
 @media screen and (max-width: 899px) {
@@ -60,5 +63,9 @@
 
 	.social {
 		padding: 0.5rem 0 3rem;
+	}
+
+	.letsmeet {
+		font-size: 28vw;
 	}
 }

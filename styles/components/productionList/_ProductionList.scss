@@ -1,0 +1,19 @@
+.production-list {
+	font-size: $step-1;
+	cursor: pointer;
+	opacity: 0.5;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.production-list.active {
+	opacity: 1;
+}
+
+@media screen and  (max-width: 899px) {
+	.production-list {
+		font-size: 14px;
+		font-weight: bolder;
+		letter-spacing: 0;
+	}
+}

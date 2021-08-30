@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Layout from "../components/constants/Layout"
 import Footer from "../components/footer/Footer"
-import { FadeIn, FadeInStagger } from "../components/animations/FadeIn"
+import { FadeIn } from "../components/animations/FadeIn"
 
 export default function About() {
 	return (

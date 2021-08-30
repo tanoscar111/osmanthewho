@@ -1,6 +1,7 @@
 h1,
 h2,
 h3,
+h4,
 button {
 	font-family: $font-family-heading-bold;
 	line-height: $line-height-sm;
@@ -12,6 +13,7 @@ button {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }
 	h3 { font-size: $step-6; }
+	h4 { font-size: $step-5; }
 	p	 { font-size: $step-1; }
 }
 
@@ -19,6 +21,7 @@ button {
 	h1 { font-size: $step-10; }
 	h2 { font-size: $step-8; }
 	h3 { font-size: $step-6; }
+	h4 { font-size: $step-5; }
 	p	 { font-size: $step-1; }
 }
 
@@ -26,6 +29,7 @@ button {
 	h1 { font-size: $step-9; }
 	h2 { font-size: $step-7; }
 	h3 { font-size: $step-5; }
+	h4 { font-size: $step-4; }
 	p	 { font-size: $step-2; }
 }
 
@@ -33,5 +37,6 @@ button {
 	h1 { font-size: $step-9; }
 	h2 { font-size: $step-7; }
 	h3 { font-size: $step-5; }
+	h4 { font-size: $step-4; }
 	p	 { font-size: $step-2; }
 }
