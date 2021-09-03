@@ -9,8 +9,8 @@
 
 // Text stroke
 @mixin text-stroke {
-	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 1.3px white;
+	color: transparent;
 }
 
 @mixin text-stroke-hover {

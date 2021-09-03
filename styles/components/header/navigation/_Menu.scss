@@ -6,22 +6,26 @@
 	display: flex;
 	align-items: center;
 	background: $black;
-	font-family: $font-family-heading-bold;
 	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
 
 	li {
-		line-height: $line-height-sm;
 		float: left;
 		clear: left;
+		cursor: pointer;
+	}
+
+	h1 {
+		font-family: $font-family-heading;
 	}
 
 	a {
 		@include text-stroke;
-		transition: 0.2s;
+		transition: .3s ease;
 	}
 
 	a:hover {
 		@include text-stroke-hover;
+		font-style: italic;
 	}
 
 	li:hover a {

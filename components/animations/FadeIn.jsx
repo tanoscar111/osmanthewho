@@ -10,7 +10,8 @@ export function FadeIn ({ children }) {
   useEffect(() => {
     gsap.from(el.current, {
 			y: 15,
-			duration: 1,
+			skewY: 1,
+			duration: 1.5,
       autoAlpha: 0,
 			scrollTrigger: {
 				trigger: el.current,

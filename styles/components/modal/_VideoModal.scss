@@ -1,0 +1,16 @@
+.video-title {
+	font-size: $step-3;
+	font-family: $font-family-heading;
+	color: $white;
+	text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+	.video-title {
+		text-align: left;
+	}
+
+	.test {
+		min-height: calc(100vh - 500px);
+	}
+}
