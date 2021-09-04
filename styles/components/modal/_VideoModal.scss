@@ -3,14 +3,35 @@
 	font-family: $font-family-heading;
 	color: $white;
 	text-align: center;
+	padding: 0 2rem 2rem;
+}
+
+#modal {
+	width: 100%;
+	height: 90%;
+	background: none;
+	box-shadow: none;
+	max-width: 1200px;
+	padding: 20px 14px;
+	margin: auto;
+}
+
+#close-button {
+	background: white;
+}
+
+@media screen and (min-width: 599px) and (max-width: 899px) {
+	#modal {
+		height: 65%;
+	}
 }
 
 @media screen and (max-width: 599px) {
 	.video-title {
-		text-align: left;
+		font-size: $step-2;
 	}
 
-	.test {
-		min-height: calc(100vh - 500px);
+	#modal {
+		height: 45%;
 	}
 }

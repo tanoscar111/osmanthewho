@@ -1,7 +1,7 @@
 export const allProductions = [
 	{
 		id: 1,
-		title: "Avcı İnterior",
+		title: "Avcı Interior",
 		img: "/images/productions/interior.jpg",
 		url: "https://vimeo.com/451153012",
 	},
@@ -170,7 +170,7 @@ export const allProductions = [
 	},
 	{
 		id: 29,
-		title: "REDBULL | KICK IT #REDBULLUÇANTEKME",
+		title: "REDBULL | KICK IT",
 		img: "/images/productions/kick-it.jpg",
 		url: "https://vimeo.com/301719024",
 	},
@@ -179,7 +179,7 @@ export const allProductions = [
 export const commercialProductions = [
 	{
 		id: 1,
-		title: "Avcı İnterior",
+		title: "Avcı Interior",
 		img: "/images/productions/interior.jpg",
 		url: "https://vimeo.com/451153012",
 	},
@@ -321,7 +321,7 @@ export const creativeProductions = [
 	},
 	{
 		id: 6,
-		title: "REDBULL | KICK IT #REDBULLUÇANTEKME",
+		title: "REDBULL | KICK IT",
 		img: "/images/productions/kick-it.jpg",
 		url: "https://vimeo.com/301719024",
 	},
