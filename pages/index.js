@@ -83,7 +83,7 @@ export default function Home() {
 			<section className="self-intro">
 				<TextReveal>
 					<p>
-						I promote living your life to the fullest and <br />
+						I promote living life to the fullest and <br />
 						seeing the world through an optimistic lens.
 					</p>
 					<p>

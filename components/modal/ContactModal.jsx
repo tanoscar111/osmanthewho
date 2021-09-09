@@ -35,7 +35,7 @@ export default function ContactModal() {
 			>
 				<div className="contact-modal-content">
 					<div className="contact-heading-section contact-section">
-						<h2 className="contact-heading-title">Get in touch</h2>
+						<h1 className="contact-heading-title">Get in touch</h1>
 						<p className="contact-heading-subtext">
 							Whenever, wherever. Wer're meant to work together.
 						</p>

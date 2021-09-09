@@ -224,6 +224,7 @@
 	background: $white;
 	color: $black;
 	position: relative;
+	padding-bottom: 10rem;
 }
 
 .overlay {
@@ -251,7 +252,7 @@
 		flex-direction: column;
 
 		.wrapper-span {
-			font-size: $step-12;
+			font-size: $step-11;
 			margin: 15px 0;
 		}
 	}
