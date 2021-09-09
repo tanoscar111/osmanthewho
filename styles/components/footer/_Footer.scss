@@ -1,6 +1,7 @@
 .footer {
 	text-align: center;
-	background: $white;
+	@include noise-background;
+	background-color: $white;
 }
 
 .footer a,

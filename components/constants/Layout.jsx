@@ -9,17 +9,17 @@ import ContactModal from "../modal/ContactModal"
 
 export default function Layout({ children }) {
 	return (
-		<div className="layout-container">
-			<Head>
-				<title>Osman Işık | Film Creator</title>
-				<link rel="icon" href="/images/favicon.ico" />
-			</Head>
-			<Logo />
-			<Navigation />
-			{children}
-			<Footer />
-			<Fullscreen />
-			<ContactModal />
-		</div>
+			<div className="layout-container">
+				<Head>
+					<title>Osman Işık | Film Creator</title>
+					<link rel="icon" href="/images/favicon.ico" />
+				</Head>
+				<Logo />
+				<Navigation />
+				{children}
+				<Footer />
+				<Fullscreen />
+				<ContactModal />
+			</div>
 	)
 }

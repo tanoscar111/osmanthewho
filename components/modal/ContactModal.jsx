@@ -64,7 +64,12 @@ export default function ContactModal() {
 								Email
 							</p>
 							<p className="contact-info-detail">
-								info@osmanthewho.com
+								<a
+									target="_blank"
+									href="mailto:info@osmanthewho.com?subject=Hi Osman! I'm contacting because..."
+								>
+									info@osmanthewho.com
+								</a>
 							</p>
 						</div>
 						<div className="contact-info">
@@ -72,7 +77,9 @@ export default function ContactModal() {
 								Address
 							</p>
 							<p className="contact-info-detail">
-								Kocaeli Turkey
+								<a target="_blank" href="https://goo.gl/maps/VGWB4sXd64Qz3ej56">
+									Kocaeli Turkey
+								</a>
 							</p>
 						</div>
 						<div className="contact-info">
@@ -80,12 +87,24 @@ export default function ContactModal() {
 								Follow me
 							</p>
 							<p className="contact-info-detail social-icons">
-								<img className="contact-social-icons" src="/icons/social/instagram.svg" />
-								<img className="contact-social-icons" src="/icons/social/youtube.svg" />
-								<img className="contact-social-icons" src="/icons/social/behance.svg" />
-								<img className="contact-social-icons" src="/icons/social/vimeo.svg" />
-								<img className="contact-social-icons" src="/icons/social/linkedin.svg" />
-								<img className="contact-social-icons" src="/icons/social/twitter.svg" />
+								<a target="_blank" href="https://www.instagram.com/osmanthewho/">
+									<img className="contact-social-icons" src="../../icons/social/instagram.svg" alt="Instagram" />
+								</a>
+								<a target="_blank" href="https://youtube.com/osmanthewho">
+									<img className="contact-social-icons" src="../../icons/social/youtube.svg" alt="YouTube" />
+								</a>
+								<a target="_blank" href="https://www.behance.net/osmanthewho">
+									<img className="contact-social-icons" src="../../icons/social/behance.svg" alt="Behance" />
+								</a>
+								<a target="_blank" href="https://vimeo.com/osmanthewho/">
+									<img className="contact-social-icons" src="../../icons/social/vimeo.svg" alt="Vimeo" />
+								</a>
+								<a target="_blank" href="https://tr.linkedin.com/in/osmanthewho">
+									<img className="contact-social-icons" src="../../icons/social/linkedin.svg" alt="LinkedIn" />
+								</a>
+								<a target="_blank" href="https://twitter.com/osmanthewho">
+									<img className="contact-social-icons" src="../../icons/social/twitter.svg" alt="Twitter" />
+								</a>
 							</p>
 						</div>
 					</div>

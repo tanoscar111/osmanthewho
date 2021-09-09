@@ -22,7 +22,6 @@
 	width: 100vw;
 	height: 80vh;
 	min-width: 100%;
-	background: #eee;
 	box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 20px;
 	padding: $step-6;
 	margin: 0;
@@ -33,6 +32,8 @@
 	align-items: center;
 	justify-content: center;
 	will-change: transform;
+	@include noise-background;
+	background-color: #eee;
 }
 
 #contact-close-button {
@@ -41,8 +42,9 @@
 	top: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #eee;
-	border-radius: 100%;
+	@include noise-background;
+	background-color: #eee;
+	border-radius: 200px;
 	padding: 2rem;
 	outline: none;
 }
@@ -137,7 +139,9 @@
 	font-size: $step-0;
 }
 
-.contact-info-detail {
+.contact-info-detail * {
+	cursor: pointer;
+	color: #222;
 }
 
 .contact-social-icons:nth-child(n+1) {
@@ -147,6 +151,7 @@
 .contact-social-icons {
 	width: 24px;
 	height: 24px;
+	cursor: pointer;
 }
 
 // -------------------------------------------
@@ -177,13 +182,20 @@
 	.text-area {
 		min-height: 100px;
 	}
+
+	.contact-social-icons {
+		max-width: 16px;
+		max-height: 16px;
+	}
+
+	.contact-social-icons:nth-child(n+1) {
+		margin: 0 17px 0 0;
+	}
 }
 
 @media screen and (max-width: 899px) {
 	#contact-close-button {
-		border-radius: 100%;
 		padding: 1rem;
-		outline: none;
 	}
 
 	.contact-modal-content {

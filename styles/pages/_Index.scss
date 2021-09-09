@@ -221,10 +221,11 @@
 ///////////////// works /////////////////
 
 .featured-productions {
-	background: $white;
 	color: $black;
 	position: relative;
 	padding-bottom: 10rem;
+	@include noise-background;
+	background-color: $white;
 }
 
 .overlay {

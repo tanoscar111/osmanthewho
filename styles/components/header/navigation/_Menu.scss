@@ -5,8 +5,9 @@
 	position: fixed;
 	display: flex;
 	align-items: center;
-	background: $black;
 	padding-left: clamp(1rem, -0.875rem + 8.333vw, 8rem);
+	@include noise-background;
+	background-color: $black;
 
 	li {
 		float: left;
