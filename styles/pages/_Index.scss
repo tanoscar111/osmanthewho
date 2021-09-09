@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	z-index: 0;
 }
 
 .video-full-screen {
@@ -9,44 +10,65 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	z-index: 1;
 }
 
 .linear-gradient-div {
 	background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 	position: absolute;
+	z-index: 2;
 	width: 100%;
 	height: 102%;
 }
 
 .landing-content {
 	@include center-content;
-	mix-blend-mode: overlay;
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	height: 100%;
-}
-
-.down-arrow {
-	position: absolute;
-	bottom: 10%;
+//	mix-blend-mode: overlay;
 }
 
 .landing-content-title {
 	display: flex;
 
-	div {
-		overflow: hidden;
-	}
-
-	span {
+	.wrapper-span {
+		-webkit-text-stroke: clamp(1.1px, 0.2vw, 2px) #ccc;
 		padding: 0 0.7rem 0 0.7rem;
-		display: block;
-		animation: $reveal;
+		letter-spacing: $letter-spacing-xl;
 		font-family: $font-family-heading;
 		font-size: $step-9;
-		text-transform: uppercase;
+		will-change: transform;
+
+		span {
+			color: rgba(20, 20, 20, 0.5);
+			transition: 0.2s;
+		}
+		span:hover {
+			color: rgba(70, 70, 70, 0.5);
+		}
 	}
 }
-/////////////////// self intro /////////////////////////
+
+.watch-showreel-btn {
+	margin-top: 3rem;
+	font-family: $font-family-heading;
+	letter-spacing: 1px;
+	padding: 1rem 2rem;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.watch-showreel-btn:hover {
+	background: rgba(150, 150, 150, 0.5);
+	letter-spacing: 3px;
+}
+
+/////////// self intro ///////////////
+
 .self-intro {
 	text-align: center;
 	margin-top: 5rem;
@@ -57,9 +79,12 @@
 		font-size: $step-5;
 		font-weight: bold;
 		min-height: 250px;
+		will-change: transform;
 	}
 }
-////////////////// skills ///////////////////////////////
+
+////////////// skills /////////////////
+
 .skills {
 	@include center-content;
 	position: relative;
@@ -205,8 +230,10 @@
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
-	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
 	z-index: 10;
+	position: absolute;
 	top: 0;
 	left: 0;
 }
@@ -214,20 +241,17 @@
 .plus {
 	width: 100%;
 	height: 100%;
+	will-change: transform;
 }
 
 ///////////// media queries /////////////
 
 @media screen and (max-width: 599px) {
-	.landing-content {
-		margin-top: -30px;
-	}
-
 	.landing-content-title {
 		flex-direction: column;
 
-		span {
-			font-size: $step-11;
+		.wrapper-span {
+			font-size: $step-12;
 			margin: 15px 0;
 		}
 	}
@@ -235,13 +259,14 @@
 	.landing-content-title span {
 		padding: 0;
 	}
-
-	.down-arrow {
-		bottom: 20%;
-	}
 }
 
 @media screen and (max-width: 899px) {
+  .watch-showreel-btn {
+		font-size: 12px;
+		padding: 0.80rem 1.60rem;
+	}
+
 	.brands {
 		p {
 			margin-bottom: 1rem;

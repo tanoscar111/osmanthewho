@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import ProductionList from "../productionList/ProductionList"
 import { FadeIn, FadeInStagger } from "../animations/FadeIn"
 import VideoModal from "../modal/VideoModal"
@@ -11,12 +11,27 @@ import {
 
 export default function Productions() {
 	const [selected, setSelected] = useState("all")
-	const [data, setData] = useState([])
+
+	const dataArray = new Array(7)
+	const [data, setData] = useState(dataArray)
 
 	const [open, setOpen] = useState(false);
-
 	const [url, setUrl] = useState()
 	const [title, setTitle] = useState()
+
+	const [itemsPerPage, setItemsPerPage] = useState(6)
+	let slice = data.slice(0, itemsPerPage)
+	const viewMoreRef = useRef(null)
+	const viewMore = () => {
+		setItemsPerPage(prevItemsPerPage => prevItemsPerPage + 6)
+	}
+
+	useEffect(() => {
+		if (itemsPerPage < data.length)
+			viewMoreRef.current.style.display = "block"
+		else
+			viewMoreRef.current.style.display = "none"
+	}, [itemsPerPage, data])
 
 	const list = [
 		{
@@ -64,6 +79,7 @@ export default function Productions() {
 			<FadeIn>
 				<h2>Featured Productions</h2>
 			</FadeIn>
+
 			<ul>
 				{list.map(item => (
 					<ProductionList
@@ -72,13 +88,17 @@ export default function Productions() {
 						title={item.title}
 						active={selected === item.id}
 						setSelected={setSelected}
+						setItemsPerPage={setItemsPerPage}
 					/>
 				))}
 			</ul>
+
 			<hr />
+
 			<VideoModal open={open} setOpen={setOpen} url={url} title={title} />
+
 			<div className="production-list-container">
-				{data.map(d => (
+				{slice.map(d => (
 					<div
 						key={d.id}
 						className="item"
@@ -93,6 +113,14 @@ export default function Productions() {
 					</div>
 				))}
 			</div>
+
+			<button
+				className="view-more-btn"
+				onClick={() => viewMore()}
+				ref={viewMoreRef}
+			>
+				view more
+			</button>
 		</div>
 	)
 }

@@ -1,0 +1,39 @@
+.fullscreen-wrapper {
+	position: fixed;
+	bottom: 2.2rem;
+	left: 6rem;
+	width: 30px;
+	height: 15px;
+	z-index: 50;
+	cursor: pointer;
+	mix-blend-mode: difference;
+	transition: .3s;
+	padding: 10px;
+}
+
+.fullscreen-open,
+.fullscreen-close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform-origin: center;
+	transition: .3s;
+}
+
+.fullscreen-open:hover {
+	transform: scale(1.1);
+}
+
+.fullscreen-close:hover {
+	transform: scale(0.9);
+}
+
+@media screen and (max-width: 599px) {
+	.fullscreen-wrapper {
+		bottom: 2rem;
+		left: 2rem;
+		width: 20px;
+		height: 10;
+	}
+}

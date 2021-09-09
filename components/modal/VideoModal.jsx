@@ -1,5 +1,5 @@
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css'
+import { Modal } from 'react-responsive-modal'
 import VideoPlayer from "../videoPlayer/VideoPlayer"
 
 export default function VideoModal({ open, setOpen, url, title }) {
@@ -11,7 +11,6 @@ export default function VideoModal({ open, setOpen, url, title }) {
 				center
 				closeIconId="close-button"
 				modalId="modal"
-				focusTrapped={false}
 				styles={{
           overlay: {
             background: "rgba(0, 0, 0, 0.98)",

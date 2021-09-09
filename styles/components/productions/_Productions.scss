@@ -60,6 +60,22 @@
 	letter-spacing: 3px;
 }
 
+.view-more-btn {
+	margin-top: 5rem;
+	font-family: $font-family-heading;
+	letter-spacing: 1px;
+	padding: 1rem 2rem;
+	background: rgba(230, 230, 230, 0.8);
+	color: $black;
+	border: 2px solid #222;
+}
+
+.view-more-btn:hover {
+	background: rgba(0, 0, 0, 0.9);
+	letter-spacing: 3px;
+	color: $white;
+}
+
 @media screen and (max-width: 599px) {
 	.production-list-container {
 		grid-template-columns: 1fr;

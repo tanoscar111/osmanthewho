@@ -1,7 +1,6 @@
 html,
 body {
 	scrollbar-width: none; /* firefox */
-	background-color: $black;
 	color: $white;
 	overflow-x: hidden;
 	user-select: none;
@@ -13,6 +12,8 @@ body {
 	font-family: $font-family-main;
 	font-weight: 300;
 	line-height: $line-height-md;
+	//@include noise-background;
+	background-color: $black;
 }
 
 
@@ -22,10 +23,7 @@ a {
 }
 
 button {
-	color: $white;
-	transition: opacity 0.5s;
-	background: none;
-	border: none;
+	transition: 0.3s;
 	cursor: pointer;
 }
 

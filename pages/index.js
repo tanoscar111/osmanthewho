@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import Head from "next/head"
 import Image from 'next/image'
 import Layout from "../components/constants/Layout"
@@ -8,10 +8,10 @@ import { Parallax, ParallaxOverflow } from '../components/animations/Parallax'
 import { FadeIn, FadeInStagger } from '../components/animations/FadeIn'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import ReelModal from "../components/modal/ReelModal"
 
 gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
-	// blackout the video on scroll down
 	useEffect(() => {
 		let video = document.querySelector("video")
 		window.addEventListener("scroll", function () {
@@ -20,11 +20,14 @@ export default function Home() {
 		})
 	}, [])
 
+	const [open, setOpen] = useState(false)
+
 	const plus =  useRef()
 	const overlay =  useRef()
 	useEffect(() => {
 		gsap.to(plus.current, {
 			  scale: 100,
+				//force3D: false,
 			scrollTrigger: {
 				trigger: overlay.current,
 				start: "top top",
@@ -52,14 +55,28 @@ export default function Home() {
 
 				<div className="landing-content">
 					<h1 className="landing-content-title">
-						<div><span>stay</span></div>
-						<div><span>wild</span></div>
+						<span className="wrapper-span">
+							<span>s</span><span>t</span><span>a</span><span>y</span>
+						</span>
+						<span className="wrapper-span">
+							<span>w</span><span>i</span><span>l</span><span>d</span>
+						</span>
 					</h1>
 					<h1 className="landing-content-title">
-						<div><span>have</span></div>
-						<div><span>move</span></div>
+						<span className="wrapper-span">
+							<span>h</span><span>a</span><span>v</span><span>e</span>
+						</span>
+						<span className="wrapper-span">
+							<span>m</span><span>o</span><span>v</span><span>e</span>
+						</span>
 					</h1>
-					<h3 className="down-arrow">▾</h3>
+					<ReelModal open={open} setOpen={setOpen} />
+					<button
+						className="watch-showreel-btn"
+						onClick={() => setOpen(true)}
+					>
+						watch showreel
+					</button>
 				</div>
 			</section>
 
@@ -227,7 +244,6 @@ export default function Home() {
 			</section>
 
 			<section className="featured-productions full-bleed">
-				<Productions />
 				<div className="overlay" ref={overlay}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -241,6 +257,7 @@ export default function Home() {
 							fillRule="evenodd"></path>
 					</svg>
 				</div>
+				<Productions />
 			</section>
 		</Layout>
 	)

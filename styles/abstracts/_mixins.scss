@@ -9,7 +9,7 @@
 
 // Text stroke
 @mixin text-stroke {
-	-webkit-text-stroke: 1.3px white;
+	-webkit-text-stroke: clamp(1.1px, 0.2vw, 2px) white;
 	color: transparent;
 }
 
