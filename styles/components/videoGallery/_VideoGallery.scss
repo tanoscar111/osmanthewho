@@ -12,6 +12,11 @@
 	overflow: hidden;
 }
 
+.video-gallery-container video {
+	width: 100%;
+	height: 100%;
+}
+
 .px-480-270 {
 	max-width: 480px;
 	max-height: 270px;
