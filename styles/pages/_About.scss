@@ -87,12 +87,12 @@
 	.intro {
 		flex-direction: column;
 		text-align: center;
-
 		img {
 			margin-right: 0;
+			width: 70%;
+			margin-bottom: 150px;
 		}
 	}
-
 	.intro-text {
 		margin-top: -100px;
 	}
@@ -101,5 +101,8 @@
 @media only screen and (min-width: 599px) and (max-width: 1300px) {
 	.intro img {
 		width: 70%;
+	}
+	.intro-text {
+		margin-bottom: 100px;
 	}
 }
