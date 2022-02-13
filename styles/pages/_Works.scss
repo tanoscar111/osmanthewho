@@ -1,0 +1,39 @@
+.box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+
+.b1 {
+    top: 0;
+    left: 0;
+}
+
+.b2 {
+    top: 0;
+    right: 0;
+}
+
+.c {
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+.b3 {
+    bottom: 0;
+    left: 0;
+}
+
+.b4 {
+    bottom: 0;
+    right: 0;
+
+}
+
+.works-container {
+    position: relative;
+    width: 130vw;
+    height: 150vh;
+    background-color: lightgrey;
+}
