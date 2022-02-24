@@ -1,39 +1,14 @@
-.box {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: gray;
+#thumbnail-container {
+  position: relative;
+  width: 130vw;
+  height: 200vh;
+
+	div {
+		position: absolute;
+		background: rgba(149, 165, 166, 0.3);
+		border: 5px solid #444;
+	//	aspect-ratio: 16 / 9;
+	//	height: auto;
+	}
 }
 
-.b1 {
-    top: 0;
-    left: 0;
-}
-
-.b2 {
-    top: 0;
-    right: 0;
-}
-
-.c {
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-}
-
-.b3 {
-    bottom: 0;
-    left: 0;
-}
-
-.b4 {
-    bottom: 0;
-    right: 0;
-
-}
-
-.works-container {
-    position: relative;
-    width: 130vw;
-    height: 150vh;
-    background-color: lightgrey;
-}
