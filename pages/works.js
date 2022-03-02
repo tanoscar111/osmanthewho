@@ -29,13 +29,12 @@ export default function Works() {
 			const other = thumbnailList[i]
 
 			if (other.pixelWidth > pixelWidth) {
-				minDistanceX = other.pixelWidth / 1.5
-				minDistanceY = other.pixelHeight / 1.5
+				minDistanceX = other.pixelWidth / 1.25
+				minDistanceY = other.pixelHeight / 1.25
 			} else {
-				minDistanceX = pixelWidth / 1.5
-				minDistanceY = pixelHeight / 1.5
+				minDistanceX = pixelWidth / 1.25
+				minDistanceY = pixelHeight / 1.25
 			}
-
 
 			let distanceX = Math.abs(other.randX - randX)
 			let distanceY = Math.abs(other.randY - randY)
@@ -61,7 +60,7 @@ export default function Works() {
 	useEffect(() => {
 		let protection = 0
 
-		while (thumbnailList.length < 7) {
+		while (thumbnailList.length < data.length) {
 		//for (const i = 0; i < 3; i++) {
 			createThumbnail()
 
@@ -69,9 +68,8 @@ export default function Works() {
 			if (protection > 1000000)
 				break
 		}
-		 setThumbnails(thumbnailList)
 
-
+		setThumbnails(thumbnailList)
 
 		class El {
 				constructor(element) {
@@ -79,10 +77,10 @@ export default function Works() {
 				}
 				scrollElement() {
 						window.addEventListener('mousemove', (e) => {
-								let eX = this.element.offsetWidth // container genisligi
-								let eY = this.element.offsetHeight // container yuksekligi
-								let cX = e.clientX  // pointerin soldan uzakligi
-								let cY = e.clientY // pointerin yukardan uzakligi
+								let eX = this.element.offsetWidth
+								let eY = this.element.offsetHeight
+								let cX = e.clientX  // pointer distance from left of the window
+								let cY = e.clientY // pointer distance from top of the window
 								let wX = window.innerWidth
 								let wY = window.innerHeight
 								let difX = eX - wX
@@ -91,7 +89,7 @@ export default function Works() {
 								let tX = gsap.utils.mapRange(0, window.innerWidth, 0, -difX);
 								let tY = gsap.utils.mapRange(0, window.innerHeight, 0, -difY);
 
-								gsap.to(this.element, .5, {
+								gsap.to(this.element, 5, {
 										x: tX(cX),
 										y: tY(cY)
 								})
@@ -102,23 +100,28 @@ export default function Works() {
 		const el = new El('#thumbnail-container')
 		el.scrollElement()
 
-
 	}, [])
+
 
 	return (
 		<div ref={container} id="thumbnail-container">
-			{thumbnails.map((thumbnail, i)=> (
-			 <div
-				 key={i}
-				 style={{
-					 top: `${thumbnail.randY}px`,
-					 left: `${thumbnail.randX}px`,
-					 width: `${thumbnail.randWidth}vw`,
-					 height: `${thumbnail.randHeight}vw`
-				 }}
-			 >
-			 </div>
-			))}
+			{
+				thumbnails.length != 0 ? (
+					thumbnails.map((thumbnail, i) => (
+						<Thumbnail
+							key={i}
+							randWidth={thumbnail.randWidth}
+							randHeight={thumbnail.randHeight}
+							randX={thumbnail.randX}
+							randY={thumbnail.randY}
+							title={data[i].title}
+							img={data[i].img}
+							url={data[i].url}
+						>
+						</Thumbnail>
+					))
+				) : null
+			}
 		</div>
 	)
 }

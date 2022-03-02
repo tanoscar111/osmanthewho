@@ -1,14 +1,20 @@
 #thumbnail-container {
   position: relative;
-  width: 130vw;
-  height: 200vh;
+  width: 150vw;
+  height: 350vh;
+	margin-top: 300px;
 
-	div {
+	.thumbnail {
 		position: absolute;
-		background: rgba(149, 165, 166, 0.3);
-		border: 5px solid #444;
-	//	aspect-ratio: 16 / 9;
-	//	height: auto;
+		background-color: grey;
+		opacity: 0.8;
+		transition: 0.3s;
+		filter: grayscale(0.5);
+	}
+
+	.thumbnail:hover {
+		opacity: 1;
+		z-index: 1;
+		filter: grayscale(0);
 	}
 }
-
