@@ -15,7 +15,7 @@ export default function Productions() {
 	const dataArray = new Array(7)
 	const [data, setData] = useState(dataArray)
 
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false)
 	const [url, setUrl] = useState()
 	const [title, setTitle] = useState()
 
