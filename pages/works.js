@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import gsap from 'gsap'
+import { data }from "../components/selectedWorks/selected-works-data"
+import Thumbnail from "../components/selectedWorks/Thumbnail"
 
 export default function Works() {
 	const [thumbnails, setThumbnails] = useState([])
