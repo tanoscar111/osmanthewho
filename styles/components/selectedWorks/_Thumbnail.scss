@@ -1,11 +1,23 @@
 .thumbnail {
 	position: relative;
+	cursor: pointer;
 }
 
 .thumbnail-title {
 	position: absolute;
-	inset: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 1;
+	font-family: "Have Heart One";
+	font-family: $font-family-heading-bold;
+	font-size: $step-3;
+	letter-spacing: $letter-spacing-md;
+	text-align: center;
+	line-height: $line-height-sm;
+	width: 100%;
+	padding: 0 2rem;
+	display: none;
 }
 
 .thumbnail-video {

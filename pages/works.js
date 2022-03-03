@@ -102,7 +102,6 @@ export default function Works() {
 
 	}, [])
 
-
 	return (
 		<div ref={container} id="thumbnail-container">
 			{
