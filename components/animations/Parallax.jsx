@@ -4,6 +4,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+// Parallax animation
 export function Parallax({ children }) {
 	const el = useRef()
 
@@ -34,8 +35,7 @@ export function Parallax({ children }) {
 	return <div ref={el}>{children}</div>
 }
 
-////////////////////////////////////////////////////////////
-
+// Parallax Overflow animation
 export function ParallaxOverflow({ children }) {
 	const el = useRef()
 

@@ -19,7 +19,7 @@ export default function Menu({ isMenuOpen }) {
 		},
 	}
 
-	const links = ["home", "about", "work", "works"]
+	const links = ["home", "about", "works"]
 
 	return (
 		<motion.nav

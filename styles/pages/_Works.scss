@@ -1,20 +1,32 @@
-#thumbnail-container {
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   position: relative;
-  width: 150vw;
-  height: 350vh;
-	margin-top: 300px;
+}
 
-	.thumbnail {
-		position: absolute;
-		background-color: grey;
-		opacity: 0.8;
-		transition: 0.3s;
-		filter: grayscale(0.5);
-	}
+#container {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
 
-	.thumbnail:hover {
-		opacity: 1;
-		z-index: 1;
-		filter: grayscale(0);
-	}
+#holder {
+  height: 400vh;
+  width: 200vw;
+}
+
+.thumbnail {
+	position: absolute;
+	background-color: grey;
+	opacity: 0.8;
+	transition: 0.3s;
+	filter: grayscale(0.5);
+}
+
+.thumbnail:hover {
+	opacity: 1;
+	z-index: 1;
+	filter: grayscale(0);
 }

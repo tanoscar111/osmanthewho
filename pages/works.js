@@ -1,25 +1,30 @@
-import { useEffect, useState, useRef } from 'react'
-import gsap from 'gsap'
+import { useEffect, useState } from 'react'
+import { MouseOverScroll, Test } from '../components/animations/MouseOverScroll'
 import { data }from "../components/selectedWorks/selected-works-data"
 import Thumbnail from "../components/selectedWorks/Thumbnail"
+import gsap from 'gsap'
 
 export default function Works() {
 	const [thumbnails, setThumbnails] = useState([])
 
-	const container = useRef()
 	const thumbnailList = []
 	const minWidth = 30
 	const maxWidth = 60
 
 	const createThumbnail = () => {
+		const container = document.querySelector('#container')
 		const randWidth = Math.floor(Math.random() * (maxWidth - minWidth + 1)) + minWidth
 		const randHeight = randWidth / 2
 
 		const pixelWidth = document.documentElement.clientWidth * randWidth / 100
 		const pixelHeight = document.documentElement.clientWidth * randHeight / 100
 
-		const randX = Math.floor(Math.random() * (container.current.offsetWidth - pixelWidth))
-		const randY = Math.floor(Math.random() * (container.current.offsetHeight - pixelHeight))
+		function getRandom(min, max) {
+			return Math.random() * (max - min) + min;
+		}
+
+		const randX = getRandom((pixelWidth * 0.5), (container.offsetWidth - (pixelWidth * 1.5)))
+		const randY = getRandom((pixelHeight), (container.offsetHeight - (pixelHeight * 2)))
 
 		let minDistanceX
 		let minDistanceY
@@ -61,66 +66,65 @@ export default function Works() {
 		let protection = 0
 
 		while (thumbnailList.length < data.length) {
-		//for (const i = 0; i < 3; i++) {
 			createThumbnail()
 
 			protection++
 			if (protection > 1000000)
 				break
 		}
-
 		setThumbnails(thumbnailList)
 
-		class El {
-				constructor(element) {
-						this.element = document.querySelector(element)
-				}
-				scrollElement() {
-						window.addEventListener('mousemove', (e) => {
-								let eX = this.element.offsetWidth
-								let eY = this.element.offsetHeight
-								let cX = e.clientX  // pointer distance from left of the window
-								let cY = e.clientY // pointer distance from top of the window
-								let wX = window.innerWidth
-								let wY = window.innerHeight
-								let difX = eX - wX
-								let difY = eY - wY
+		let holder = document.querySelector('#holder'),
+				wrapper = document.querySelector('#wrapper'),
+				overflowX, mapPositionX,
+				overflowY, mapPositionY;
 
-								let tX = gsap.utils.mapRange(0, window.innerWidth, 0, -difX);
-								let tY = gsap.utils.mapRange(0, window.innerHeight, 0, -difY);
-
-								gsap.to(this.element, 5, {
-										x: tX(cX),
-										y: tY(cY)
-								})
-						})
-				}
+		function onResize(e) {
+			overflowX = holder.offsetWidth - window.innerWidth
+			mapPositionX = gsap.utils.mapRange(0, window.innerWidth, overflowX / 2, overflowX / -2)
+			overflowY = holder.offsetHeight - window.innerHeight
+			mapPositionY = gsap.utils.mapRange(0, window.innerHeight, overflowY / 2, overflowY / -2)
 		}
 
-		const el = new El('#thumbnail-container')
-		el.scrollElement()
+		function onMouseMove(e) {
+			if (overflowX > 0 || overflowY > 0) {
+				let x = e.clientX || (e.changedTouches && e.changedTouches[0].clientX) || 0
+				let y = e.clientY || (e.changedTouches && e.changedTouches[0].clientY) || 0
+				gsap.to(holder, {duration: 1, overwrite: true, ease: "power3", x: mapPositionX(x), y: mapPositionY(y) })
+			}
+		}
+
+		window.addEventListener("resize", onResize)
+		document.addEventListener("mousemove", onMouseMove)
+		document.addEventListener("touchmove", onMouseMove)
+		document.addEventListener("pointermove", onMouseMove)
+		onResize()
 
 	}, [])
 
 	return (
-		<div ref={container} id="thumbnail-container">
-			{
-				thumbnails.length != 0 ? (
-					thumbnails.map((thumbnail, i) => (
-						<Thumbnail
-							key={i}
-							randWidth={thumbnail.randWidth}
-							randHeight={thumbnail.randHeight}
-							randX={thumbnail.randX}
-							randY={thumbnail.randY}
-							title={data[i].title}
-							img={data[i].img}
-							url={data[i].url}
-						>
-						</Thumbnail>
-					))
-				) : null
-			}
+		<div id="wrapper">
+			<div id="container">
+				<div id="holder">
+					{
+						thumbnails.length != 0 ? (
+							thumbnails.map((thumbnail, i) => (
+								<Thumbnail
+									key={i}
+									randWidth={thumbnail.randWidth}
+									randHeight={thumbnail.randHeight}
+									randX={thumbnail.randX}
+									randY={thumbnail.randY}
+									title={data[i].title}
+									img={data[i].img}
+									url={data[i].url}
+								>
+								</Thumbnail>
+							))
+						) : null
+					}
+				</div>
+			</div>
 		</div>
 	)
 }
