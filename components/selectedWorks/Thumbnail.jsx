@@ -29,11 +29,12 @@ export default function Thumbnail({ randWidth, randHeight, randX, randY, title, 
 		 style={styles}
 		 onMouseOver={handleMouseOver}
 		 onMouseOut={handleMouseOut}
+		 data-size={randWidth}
 		>
 			<span className="thumbnail-title">{title}</span>
 			<video
 				className="thumbnail-video"
-				preload="none"
+				//preload="none"
 				playsInline
 				muted
 				loop
