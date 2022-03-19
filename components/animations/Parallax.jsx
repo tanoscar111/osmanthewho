@@ -11,7 +11,7 @@ export function Parallax({ children }) {
 	useEffect(() => {
 		const animations = []
 		const elements = gsap.utils.toArray(el.current.children)
-		elements.forEach((element) => {
+		elements.forEach(element => {
 			const movement = -(element.offsetHeight * element.dataset.speed)
 			const animation = gsap.timeline({
 				scrollTrigger: {
